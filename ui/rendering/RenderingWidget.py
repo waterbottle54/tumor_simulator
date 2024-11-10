@@ -5,17 +5,18 @@ import numpy as np
 
 class RenderingWidget(QOpenGLWidget):
     """
-    이 위젯은 model을 GL 화면에 렌더링한다.
-    마우스 입력을 받아 모델의 rotation, scale 등 Model Matrix를 조정한다.
+    입력받은 mesh를 렌더링하는 위젯.
+    - OpenGL perspective projection 사용한다.
+    - 드래그를 인식해 mesh의 회전, scale을 조정한다.
 
     Attributes:
-        mesh (TriangleMesh): Rendering 될 model
-        mouse_latest(NDArray): 직전의 마우스 위치. [0]=x, [1]=y
-        rotation(NDArray): model에 적용될 3D rotation matrix (4 x 4)
-        scale(float): model에 적용될 scale 배율. 확대(>1), 축소(<1)
+        mesh (TriangleMesh):    렌더링할 mesh
+        mouse_latest(NDArray):  드래그 마지막 위치.(x=[0], y=[1])
+        rotation(NDArray):      mesh 적용될 3D rotation matrix (4 x 4)
+        scale(float):           mesh 적용될 scale 배율. 확대(>1), 축소(<1)
 
     Methods:
-        set_mesh: model을 설정하고 화면을 다시 그린다
+        set_mesh: mesh를 설정하고 화면을 다시 그린다
     """
 
     mesh = None
@@ -28,17 +29,17 @@ class RenderingWidget(QOpenGLWidget):
 
     def set_mesh(self, mesh):
         """
-        렌더링할 model을 설정하고 다시 그린다
+        렌더링할 mesh를 설정하고 화면을 업데이트한다
 
         Args:
-            mesh (TriangleMesh): model의 mesh object
+            mesh (TriangleMesh): mesh object to be rendered
         """
         self.mesh = mesh
         self.update()
 
     def initializeGL(self) -> None:
         """
-        GL의 상태머신, 조명을 초기화한다
+        OpenGL의 state machine 및 lighting을 초기화한다
         """
 
         glClearColor(0.0, 0.0, 0.0, 1.0)
@@ -59,21 +60,22 @@ class RenderingWidget(QOpenGLWidget):
         """
         from OpenGL.GLU import gluPerspective, gluLookAt
 
+        # set viewport matrix
         glViewport(0, 0, width, height)
 
-        # Perspective
+        # set perspective projection
         glMatrixMode(GL_PROJECTION)
         glLoadIdentity()
         gluPerspective(45, width / height, 0.1, 1000)
 
-        # Camera
+        # setup camera
         glMatrixMode(GL_MODELVIEW)
         glLoadIdentity()
         gluLookAt(0, 0, 200, 0, 0, 0, 0, 1, 0)
 
     def setup_lighting(self):
         """
-        model의 음영, 질감 표현을 위해 조명, material을 설정한다.
+        mesh model의 음영, 질감 표현을 위해 조명, material을 설정한다.
         """
         light_position = [0.0, 50.0, 150.0, 0.0]
         glLightfv(GL_LIGHT0, GL_POSITION, light_position)
@@ -81,7 +83,7 @@ class RenderingWidget(QOpenGLWidget):
 
     def paintGL(self):
         """
-        model을 rendering한다.
+        mesh를 렌더링한다.
         """
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 
@@ -90,13 +92,13 @@ class RenderingWidget(QOpenGLWidget):
 
         mesh = self.mesh
         if mesh is not None:
-            # 모델을 원점으로 옮기고 scale 및 rotation을 적용한다.
+            # mesh model을 원점으로 옮기고 scale 및 rotation을 적용한다.
             center = mesh.get_center()
             glMultMatrixf(self.rotation)
             glScalef(self.scale, self.scale, self.scale)
             glTranslatef(-center[0], -center[1], -center[2])
 
-            # mesh의 polygon을 모두 그린다 (gray)
+            # mesh의 polygon을 모두 그린다 (gray color)
             vertices = np.asarray(mesh.vertices)
             normals = np.asarray(mesh.vertex_normals)
             glBegin(GL_TRIANGLES)
@@ -132,7 +134,7 @@ class RenderingWidget(QOpenGLWidget):
         마우스 drag를 인식하여 모델의 rotation을 변경한다.
         model에서 가까운 영역을 drag하면 (x,y,0)-axis rotation을 적용하고,
         model에서 먼 영역을 drag하면 z-axis rotation을 적용한다.
-        (performance를 위해 inverse projection 사용하지 않는다.)
+        (performance를 위해 inverse projection 미사용)
         """
         if self.mouse_latest is not None: # drag 중일 때
             new_rotation = None
@@ -195,7 +197,7 @@ class RenderingWidget(QOpenGLWidget):
 
     def get_rotation_matrix(self, axis, angle):
         """
-        axis를 축으로 angle(in degree)만큼 회전시키는 행렬 계산
+        axis를 축으로 angle(in degrees)만큼 회전시키는 행렬 계산
 
         Args:
             axis (NDArray): 축 벡터 (x, y, z) 
