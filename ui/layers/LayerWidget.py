@@ -1,8 +1,8 @@
 from PyQt5.QtWidgets import QGraphicsView, QGraphicsScene
 from PyQt5.QtGui import QPixmap, QPen, QColor, QMouseEvent, QWheelEvent, QKeyEvent, QPainterPath, QPainter, QTransform
 from PyQt5.QtCore import QPoint, Qt, QPointF
-from Camera import *
-from Layer import *
+from data.Camera import *
+from data.Layer import *
 
 class LayerWidget(QGraphicsView):
 

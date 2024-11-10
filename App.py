@@ -2,12 +2,12 @@ import os
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QToolBar, QAction, QMessageBox, QFileDialog
 from PyQt5.QtGui import QCloseEvent
-from ViewModel import *
-from LayersFragment import *
-from RenderingFragment import *
-from ChartDialog import *
-from AboutDialog import *
-from TipsDialog import *
+from ui.ViewModel import *
+from ui.layers.LayersFragment import *
+from ui.rendering.RenderingFragment import *
+from ui.dialogs.ChartDialog import *
+from ui.dialogs.AboutDialog import *
+from ui.dialogs.TipsDialog import *
 
 class MainWindow(QMainWindow):
 

@@ -1,11 +1,10 @@
 from PyQt5.QtCore import QObject, pyqtSignal
 from datetime import date
-from LiveData import *
-from Layer import *
-from Tumor import *
+from data.common.LiveData import *
+from data.Layer import *
+from data.Tumor import *
 import numpy as np
 import pickle
-import O3dUtil
 import logging
 
 class Event: pass

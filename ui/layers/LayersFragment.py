@@ -1,9 +1,9 @@
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QListWidget, QLabel, QListView
 from PyQt5.QtGui import QStandardItemModel, QStandardItem, QIcon
-from ViewModel import *
+from ui.ViewModel import *
 from PyQt5.QtCore import QSize, QModelIndex
-from LayerWidget import *
-from Layer import *
+from ui.layers.LayerWidget import *
+from data.Layer import *
 
 class LayersFragment(QWidget):
     

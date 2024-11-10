@@ -1,8 +1,8 @@
 
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QTableWidget, QHeaderView, QTableWidgetItem
 from PyQt5.QtGui import QColor
-from ViewModel import *
-from RenderingWidget import *
+from ui.ViewModel import *
+from ui.rendering.RenderingWidget import *
 
 class RenderingFragment(QWidget):
 
