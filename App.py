@@ -1,3 +1,10 @@
+"""
+    
+
+
+
+"""
+
 import os
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QToolBar, QAction, QMessageBox, QFileDialog
@@ -10,12 +17,25 @@ from ui.dialogs.AboutDialog import *
 from ui.dialogs.TipsDialog import *
 
 class MainWindow(QMainWindow):
+    """
 
-    view_model: ViewModel
-    layout: QHBoxLayout
-    mri_fragment: LayersFragment
-    rendering_fragment: RenderingFragment
-    toolbar: QToolBar
+    Attributes:
+        view_model(ViewModel): 뷰모델 (poject-level)
+        layout_top(QHBoxLayout): 최상위 레이아웃
+        layers_fragment(LayersFragment): 단층(layer) 탐색 화면 (화면 좌측)
+        rendering_fragment(RenderingFragment): 3D 렌더링 화면 (화면 우측)
+
+    Methods:
+        setup_menu: 
+        setup_toolbar: 
+        on_event: 
+        closeEvent: 
+        update_status_bar: 
+        update_title_bar: 
+        show_tips: 
+        show_about: 
+
+    """
 
     def __init__(self):
         super().__init__()
@@ -24,22 +44,27 @@ class MainWindow(QMainWindow):
         self.setWindowIcon(QIcon('icons/render.png'))
         self.setGeometry(0, 0, 1200, 800)
         
+        # 뷰모델(project-level)과 최상위 레이아웃을 생성한다.
         self.view_model = ViewModel()
-        self.layout = QHBoxLayout()
+        self.layout_top = QHBoxLayout()
         
         widget = QWidget()
-        widget.setLayout(self.layout)
+        widget.setLayout(self.layout_top)
         self.setCentralWidget(widget)
 
+        # Dropdown 메뉴와 툴바를 초기화한다.
         self.setup_menu()
         self.setup_toolbar()
 
-        self.mri_fragment = LayersFragment(self.view_model)
-        self.layout.addWidget(self.mri_fragment)
+        # LayersFragment를 생성하고 화면 좌측에 배치한다.
+        self.layers_fragment = LayersFragment(self.view_model)
+        self.layout_top.addWidget(self.layers_fragment)
 
+        # RenderingFragment를 생성하고 화면 우측에 배치한다.
         self.rendering_fragment = RenderingFragment(self.view_model)
-        self.layout.addWidget(self.rendering_fragment)
+        self.layout_top.addWidget(self.rendering_fragment)
 
+        # 뷰모델이 보낸 이벤트를 처리하고, UI(title bar, status bar)를 연결한다.
         self.view_model.event.connect(self.on_event)
         self.view_model.current_filename.observe(self.update_title_bar)
         self.view_model.current_world_position.observe(self.update_status_bar)

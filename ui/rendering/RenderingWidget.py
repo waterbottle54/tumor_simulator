@@ -6,7 +6,7 @@ import numpy as np
 class RenderingWidget(QOpenGLWidget):
     """
     입력받은 mesh를 렌더링하는 위젯.
-    - OpenGL perspective projection 사용한다.
+    - OpenGL perspective projection을 적용한다.
     - 드래그를 인식해 mesh의 회전, scale을 조정한다.
 
     Attributes:
@@ -16,16 +16,28 @@ class RenderingWidget(QOpenGLWidget):
         scale(float):           mesh 적용될 scale 배율. 확대(>1), 축소(<1)
 
     Methods:
-        set_mesh: mesh를 설정하고 화면을 다시 그린다
+        set_mesh: 렌더링할 mesh를 설정하고 화면을 다시 그린다.
+        initializeGL: OpenGL의 state machine 및 lighting을 초기화한다.
+        resizeGL: 요청된 크기로 viewport를 조정한다.
+        setup_lighting: mesh의 음영 표현을 위해 조명을 설정한다.
+        paintGL: mesh를 렌더링한다.
+        mousePressEvent: 마우스 press 위치를 저장하고 drag 인식을 시작한다.
+        mouseReleaseEvent: 마우스가 release 되면 drag 인식을 끝낸다.
+        mouseMoveEvent: 마우스 drag를 인식하여 모델의 rotation을 변경한다.
+        wheelEvent: 마우스 휠 회전 시 모델의 scale 배율 적용 후 다시 렌더링한다.
+        apply_matrix: mesh에 적용되는 기존 변환에 추가 변환을 적용한다.
+        get_rotation_matrix: axis를 축으로 angle(in degrees)만큼 회전시키는 행렬을 계산한다.
     """
 
-    mesh = None
-    mouse_latest = None
-    rotation = np.identity(4)
-    scale = 1.0
+    # Copyright (c) 2023 Sung Won Jo
+    # For more details: https://github.com/waterbottle54/tumor_simulator
 
     def __init__(self):
         super().__init__()
+        self.mesh = None
+        self.mouse_latest = None
+        self.rotation = np.identity(4)
+        self.scale = 1.0
 
     def set_mesh(self, mesh):
         """
@@ -167,7 +179,7 @@ class RenderingWidget(QOpenGLWidget):
     
     def wheelEvent(self, a0: QWheelEvent) -> None:
         """
-        휠 사용 시 모델의 scale 배율 적용 후 다시 렌더링.
+        마우스 휠 회전 시 모델의 scale 배율 적용 후 다시 렌더링한다.
         """
         if a0.angleDelta().y() > 0:
             self.scale *= 1.2
@@ -178,7 +190,7 @@ class RenderingWidget(QOpenGLWidget):
     
     def apply_matrix(self, original, applied):
         """
-        기존 변환에 새로운 변환을 가한다. 
+        mesh에 적용되는 기존 변환에 추가 변환을 적용한다.
 
         Args:
             original (NDArray): 기존 변환을 나타내는 행령

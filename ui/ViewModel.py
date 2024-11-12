@@ -3,6 +3,7 @@ from datetime import date
 from data.common.LiveData import *
 from data.Layer import *
 from data.Tumor import *
+import utils.O3dUtil
 import numpy as np
 import pickle
 import logging
@@ -294,7 +295,7 @@ class ViewModel(QObject):
             try:
                 with open(filename, 'rb') as file:
                     tumor_model_data: TumorModelData = pickle.load(file)
-                mesh = O3dUtil.reconstruct_surface(tumor_model_data.points)
+                mesh = utils.O3dUtil.reconstruct_surface(tumor_model_data.points)
                 tumor_models.append(TumorModel.from_tumor_model_data(tumor_model_data, mesh))
             except IOError as e:
                 print(str(e))
@@ -321,7 +322,7 @@ class ViewModel(QObject):
         points = self.extract_points()
         # build mesh object
         if len(points) >= 10:
-            mesh = O3dUtil.reconstruct_surface(points)
+            mesh = utils.O3dUtil.reconstruct_surface(points)
             self.mesh.set_value(mesh)
         else:
             self.mesh.set_value(None)

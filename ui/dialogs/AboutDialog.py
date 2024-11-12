@@ -1,8 +1,22 @@
 from PyQt5.QtWidgets import QDialog, QHBoxLayout, QVBoxLayout, QLabel, QPushButton
 from PyQt5.QtCore import Qt, QUrl
 from PyQt5.QtGui import QPixmap, QDesktopServices
+from Strings import about_text
 
 class AboutDialog(QDialog):
+    """
+    어플리케이션 정보를 보여주는 간단한 대화상자 
+    A simple dialog that displays App information such as...
+    
+    - 어플리케이션 이름과 버젼(Application name and version)
+    - 어플리케이션의 개발 목적(The purpose of the aplication)
+    - 주의사항과 면책공고(The cautions and disclaimer)
+    - 저작권과 개발자 연락처(The copyright and contact information of the developer)
+    """
+
+    # Copyright (c) 2023 Sung Won Jo
+    # For more details: https://github.com/waterbottle54/tumor_simulator
+
     def __init__(self, parent=None):
         super().__init__(parent)
 
@@ -17,20 +31,7 @@ class AboutDialog(QDialog):
         layout.addLayout(left_layout)
 
         # About Text
-        text = """
-Brain Tumor Simulator 1.0
-
-
-Purpose: Tumor volume measurement, comparison, and analysis
-
-Disclaimer: This software is not intended to replace professional medical diagnosis.
-
-Copyright 2023. Sung Won Jo. All rights reserved.
-
-
-Contact: waterbottle54@naver.com
-        """
-        label = QLabel(text)
+        label = QLabel(about_text)
         left_layout.addWidget(label)
 
         # YouTube icon

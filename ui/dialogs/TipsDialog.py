@@ -1,12 +1,15 @@
 from PyQt5.QtWidgets import QDialog, QHBoxLayout, QLabel
 from PyQt5.QtGui import QPixmap
+from Strings import tip_text
 
 class TipsDialog(QDialog):
-    """_summary_
-
-    Att:
-        QDialog (_type_): _description_
     """
+    어플리케이션 사용법을 알려주는 간단한 대화상자
+    A simple dialog that displays App instruction
+    """
+
+    # Copyright (c) 2023 Sung Won Jo
+    # For more details: https://github.com/waterbottle54/tumor_simulator
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -19,34 +22,7 @@ class TipsDialog(QDialog):
         layout.setContentsMargins(32, 32, 32, 32)
 
         # Create a QLabel to display the application information
-        text = """
-Zoom Image: \t Ctrl + Mouse Wheel
-
-Move Focus: \t Right Drag
-
-Mark Tumor: \t Left Drag
-
-Change Layer: \t Mouse Wheel
-
-Skip Layers: \t Page Up / Page Down
-
-Skip All Layers: \t Home / End
-
-Zoom 3D Tumor: \t Mouse Wheel
-
-Rotate 3D Tumor: \t Mouse Drag
-
-
-* Import folder that directly contains DICOM files.
-
-* Importing may take up to two minutes.
-
-* Project documents are *.bts files.
-
-* Tumor object files are *.tmr files.
-        """
-
-        label = QLabel(text)
+        label = QLabel(tip_text)
         layout.addWidget(label)
 
         layout.addSpacing(64)

@@ -6,7 +6,7 @@ from ui.rendering.RenderingWidget import *
 
 class RenderingFragment(QWidget):
     """
-    뷰모델의 종양 3D 모델을 렌더링한다.
+    view model의 3D 종양 모델을 렌더링하는 화면
     - 비교군 list를 표시하고 불러올 수 있다.
 
     Attributes:
@@ -14,14 +14,15 @@ class RenderingFragment(QWidget):
         layout(QVBoxLayout): 최상위 레이아웃
         rendering_widget(RenderingWidget): 3D 렌더링 위젯
         tumor_table(QTableWidget): 비교군 list를 표시하는 위젯
-    
+
+    Methods:
+        update_tumor_rendering: 요청된 종양 모델을 RenderingWidget으로 렌더링한다
+        update_tumor_table: 요청된 비교군 종양 리스트를 TableWidget에 표시한다.
+        on_model_selected: 비교군 list에서 종양이 선택되면 뷰모델에 통보한다.
     """
 
-    view_model: ViewModel
-    layout = QVBoxLayout
-    rendering_widget: RenderingWidget
-    tumor_table: QTableWidget
-
+    # Copyright (c) 2023 Sung Won Jo
+    # For more details: https://github.com/waterbottle54/tumor_simulator
 
     def __init__(self, view_model: ViewModel):
         super().__init__()
@@ -87,7 +88,7 @@ class RenderingFragment(QWidget):
         """
         비교군 list에서 종양이 선택되면 뷰모델에 통보한다.
         """
-        items = self.tumor_table.selectedItems()
+        items = self.tumor_table.selectedItems()    # Multiselection not allowed
         if len(items) > 0 and items[0].row() >= 0:
             self.view_model.on_model_selected(items[0].row())
         

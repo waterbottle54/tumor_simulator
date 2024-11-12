@@ -1,0 +1,360 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2024-11-11 18:33:22
+count workspace : c:\Users\kamut\OneDrive\Desktop\pyqt_practice
+total files : 102
+total code lines : 1397
+total comment lines : 118
+total blank lines : 381
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |            .py|           1351|            118|            376|     97|
+   |          .spec|             46|              0|              5|    3.3|
+   -------------------------------------------------------------------------
+__pycache__\AboutDialog.cpython-310.pyc, it is a binary file.
+__pycache__\AboutDialog.cpython-311.pyc, it is a binary file.
+__pycache__\AboutDialog.cpython-39.pyc, it is a binary file.
+__pycache__\App.cpython-310.pyc, it is a binary file.
+__pycache__\Camera.cpython-310.pyc, it is a binary file.
+__pycache__\Camera.cpython-311.pyc, it is a binary file.
+__pycache__\Camera.cpython-39.pyc, it is a binary file.
+__pycache__\ChartDialog.cpython-310.pyc, it is a binary file.
+__pycache__\ChartDialog.cpython-311.pyc, it is a binary file.
+__pycache__\ChartDialog.cpython-39.pyc, it is a binary file.
+__pycache__\Constant.cpython-39.pyc, it is a binary file.
+__pycache__\DicomUtil.cpython-310.pyc, it is a binary file.
+__pycache__\DicomUtil.cpython-39.pyc, it is a binary file.
+__pycache__\Direction.cpython-39.pyc, it is a binary file.
+__pycache__\Layer.cpython-310.pyc, it is a binary file.
+__pycache__\Layer.cpython-311.pyc, it is a binary file.
+__pycache__\Layer.cpython-313.pyc, it is a binary file.
+__pycache__\Layer.cpython-39.pyc, it is a binary file.
+__pycache__\LayersFragment.cpython-310.pyc, it is a binary file.
+__pycache__\LayersFragment.cpython-311.pyc, it is a binary file.
+__pycache__\LayersFragment.cpython-39.pyc, it is a binary file.
+__pycache__\LayerWidget.cpython-310.pyc, it is a binary file.
+__pycache__\LayerWidget.cpython-311.pyc, it is a binary file.
+__pycache__\LayerWidget.cpython-39.pyc, it is a binary file.
+__pycache__\LiveData.cpython-310.pyc, it is a binary file.
+__pycache__\LiveData.cpython-311.pyc, it is a binary file.
+__pycache__\LiveData.cpython-313.pyc, it is a binary file.
+__pycache__\LiveData.cpython-39.pyc, it is a binary file.
+__pycache__\MriFragment.cpython-39.pyc, it is a binary file.
+__pycache__\MriWidget.cpython-39.pyc, it is a binary file.
+__pycache__\O3dUtil.cpython-310.pyc, it is a binary file.
+__pycache__\O3dUtil.cpython-311.pyc, it is a binary file.
+__pycache__\O3dUtil.cpython-313.pyc, it is a binary file.
+__pycache__\O3dUtil.cpython-39.pyc, it is a binary file.
+__pycache__\OpenGLWidget.cpython-39.pyc, it is a binary file.
+__pycache__\pydicom_PIL.cpython-310.pyc, it is a binary file.
+__pycache__\RenderingFragment.cpython-310.pyc, it is a binary file.
+__pycache__\RenderingFragment.cpython-311.pyc, it is a binary file.
+__pycache__\RenderingFragment.cpython-39.pyc, it is a binary file.
+__pycache__\RenderingWidget.cpython-310.pyc, it is a binary file.
+__pycache__\RenderingWidget.cpython-311.pyc, it is a binary file.
+__pycache__\RenderingWidget.cpython-39.pyc, it is a binary file.
+__pycache__\SectionWidget.cpython-39.pyc, it is a binary file.
+__pycache__\Strings.cpython-311.pyc, it is a binary file.
+__pycache__\TipsDialog.cpython-310.pyc, it is a binary file.
+__pycache__\TipsDialog.cpython-311.pyc, it is a binary file.
+__pycache__\TipsDialog.cpython-39.pyc, it is a binary file.
+__pycache__\Tumor.cpython-310.pyc, it is a binary file.
+__pycache__\Tumor.cpython-311.pyc, it is a binary file.
+__pycache__\Tumor.cpython-313.pyc, it is a binary file.
+__pycache__\Tumor.cpython-39.pyc, it is a binary file.
+__pycache__\Util.cpython-39.pyc, it is a binary file.
+__pycache__\ViewModel.cpython-310.pyc, it is a binary file.
+__pycache__\ViewModel.cpython-311.pyc, it is a binary file.
+__pycache__\ViewModel.cpython-313.pyc, it is a binary file.
+__pycache__\ViewModel.cpython-39.pyc, it is a binary file.
+App.py, code is 252, comment is 3, blank is 58.
+App.spec, code is 46, comment is 0, blank is 5.
+data\__pycache__\Camera.cpython-311.pyc, it is a binary file.
+data\__pycache__\Layer.cpython-311.pyc, it is a binary file.
+data\__pycache__\Tumor.cpython-311.pyc, it is a binary file.
+data\Camera.py, code is 51, comment is 10, blank is 19.
+data\common\__pycache__\LiveData.cpython-311.pyc, it is a binary file.
+data\common\LiveData.py, code is 37, comment is 2, blank is 23.
+data\Layer.py, code is 122, comment is 11, blank is 22.
+data\Tumor.py, code is 15, comment is 2, blank is 8.
+icon.ico, it is a binary file.
+icons\chart.png, it is a binary file.
+icons\clear.png, it is a binary file.
+icons\compare.png, it is a binary file.
+icons\delete.png, it is a binary file.
+icons\delete_all.png, it is a binary file.
+icons\export.png, it is a binary file.
+icons\import.png, it is a binary file.
+icons\new.png, it is a binary file.
+icons\open.png, it is a binary file.
+icons\redo.png, it is a binary file.
+icons\render.png, it is a binary file.
+icons\save.png, it is a binary file.
+icons\tips.png, it is a binary file.
+icons\undo.png, it is a binary file.
+icons\youtube.png, it is a binary file.
+Strings.py, code is 2, comment is 5, blank is 4.
+ui\__pycache__\ViewModel.cpython-311.pyc, it is a binary file.
+ui\dialogs\__pycache__\AboutDialog.cpython-311.pyc, it is a binary file.
+ui\dialogs\__pycache__\ChartDialog.cpython-311.pyc, it is a binary file.
+ui\dialogs\__pycache__\TipsDialog.cpython-311.pyc, it is a binary file.
+ui\dialogs\AboutDialog.py, code is 35, comment is 7, blank is 18.
+ui\dialogs\ChartDialog.py, code is 43, comment is 10, blank is 20.
+ui\dialogs\TipsDialog.py, code is 18, comment is 5, blank is 10.
+ui\layers\__pycache__\LayersFragment.cpython-311.pyc, it is a binary file.
+ui\layers\__pycache__\LayerWidget.cpython-311.pyc, it is a binary file.
+ui\layers\LayersFragment.py, code is 91, comment is 8, blank is 22.
+ui\layers\LayerWidget.py, code is 108, comment is 10, blank is 32.
+ui\rendering\__pycache__\RenderingFragment.cpython-311.pyc, it is a binary file.
+ui\rendering\__pycache__\RenderingWidget.cpython-311.pyc, it is a binary file.
+ui\rendering\RenderingFragment.py, code is 46, comment is 10, blank is 17.
+ui\rendering\RenderingWidget.py, code is 114, comment is 14, blank is 34.
+ui\ViewModel.py, code is 344, comment is 2, blank is 61.
+utils\__pycache__\O3dUtil.cpython-311.pyc, it is a binary file.
+utils\O3dUtil.py, code is 20, comment is 1, blank is 7.
+utils\pydicom_PIL.py, code is 53, comment is 18, blank is 21.
+===============================================================================
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2024-11-11 18:33:34
+count workspace : c:\Users\kamut\OneDrive\Desktop\pyqt_practice
+total files : 102
+total code lines : 1397
+total comment lines : 118
+total blank lines : 381
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |            .py|           1351|            118|            376|     97|
+   |          .spec|             46|              0|              5|    3.3|
+   -------------------------------------------------------------------------
+__pycache__\AboutDialog.cpython-310.pyc, it is a binary file.
+__pycache__\AboutDialog.cpython-311.pyc, it is a binary file.
+__pycache__\AboutDialog.cpython-39.pyc, it is a binary file.
+__pycache__\App.cpython-310.pyc, it is a binary file.
+__pycache__\Camera.cpython-310.pyc, it is a binary file.
+__pycache__\Camera.cpython-311.pyc, it is a binary file.
+__pycache__\Camera.cpython-39.pyc, it is a binary file.
+__pycache__\ChartDialog.cpython-310.pyc, it is a binary file.
+__pycache__\ChartDialog.cpython-311.pyc, it is a binary file.
+__pycache__\ChartDialog.cpython-39.pyc, it is a binary file.
+__pycache__\Constant.cpython-39.pyc, it is a binary file.
+__pycache__\DicomUtil.cpython-310.pyc, it is a binary file.
+__pycache__\DicomUtil.cpython-39.pyc, it is a binary file.
+__pycache__\Direction.cpython-39.pyc, it is a binary file.
+__pycache__\Layer.cpython-310.pyc, it is a binary file.
+__pycache__\Layer.cpython-311.pyc, it is a binary file.
+__pycache__\Layer.cpython-313.pyc, it is a binary file.
+__pycache__\Layer.cpython-39.pyc, it is a binary file.
+__pycache__\LayersFragment.cpython-310.pyc, it is a binary file.
+__pycache__\LayersFragment.cpython-311.pyc, it is a binary file.
+__pycache__\LayersFragment.cpython-39.pyc, it is a binary file.
+__pycache__\LayerWidget.cpython-310.pyc, it is a binary file.
+__pycache__\LayerWidget.cpython-311.pyc, it is a binary file.
+__pycache__\LayerWidget.cpython-39.pyc, it is a binary file.
+__pycache__\LiveData.cpython-310.pyc, it is a binary file.
+__pycache__\LiveData.cpython-311.pyc, it is a binary file.
+__pycache__\LiveData.cpython-313.pyc, it is a binary file.
+__pycache__\LiveData.cpython-39.pyc, it is a binary file.
+__pycache__\MriFragment.cpython-39.pyc, it is a binary file.
+__pycache__\MriWidget.cpython-39.pyc, it is a binary file.
+__pycache__\O3dUtil.cpython-310.pyc, it is a binary file.
+__pycache__\O3dUtil.cpython-311.pyc, it is a binary file.
+__pycache__\O3dUtil.cpython-313.pyc, it is a binary file.
+__pycache__\O3dUtil.cpython-39.pyc, it is a binary file.
+__pycache__\OpenGLWidget.cpython-39.pyc, it is a binary file.
+__pycache__\pydicom_PIL.cpython-310.pyc, it is a binary file.
+__pycache__\RenderingFragment.cpython-310.pyc, it is a binary file.
+__pycache__\RenderingFragment.cpython-311.pyc, it is a binary file.
+__pycache__\RenderingFragment.cpython-39.pyc, it is a binary file.
+__pycache__\RenderingWidget.cpython-310.pyc, it is a binary file.
+__pycache__\RenderingWidget.cpython-311.pyc, it is a binary file.
+__pycache__\RenderingWidget.cpython-39.pyc, it is a binary file.
+__pycache__\SectionWidget.cpython-39.pyc, it is a binary file.
+__pycache__\Strings.cpython-311.pyc, it is a binary file.
+__pycache__\TipsDialog.cpython-310.pyc, it is a binary file.
+__pycache__\TipsDialog.cpython-311.pyc, it is a binary file.
+__pycache__\TipsDialog.cpython-39.pyc, it is a binary file.
+__pycache__\Tumor.cpython-310.pyc, it is a binary file.
+__pycache__\Tumor.cpython-311.pyc, it is a binary file.
+__pycache__\Tumor.cpython-313.pyc, it is a binary file.
+__pycache__\Tumor.cpython-39.pyc, it is a binary file.
+__pycache__\Util.cpython-39.pyc, it is a binary file.
+__pycache__\ViewModel.cpython-310.pyc, it is a binary file.
+__pycache__\ViewModel.cpython-311.pyc, it is a binary file.
+__pycache__\ViewModel.cpython-313.pyc, it is a binary file.
+__pycache__\ViewModel.cpython-39.pyc, it is a binary file.
+App.py, code is 252, comment is 3, blank is 58.
+App.spec, code is 46, comment is 0, blank is 5.
+data\__pycache__\Camera.cpython-311.pyc, it is a binary file.
+data\__pycache__\Layer.cpython-311.pyc, it is a binary file.
+data\__pycache__\Tumor.cpython-311.pyc, it is a binary file.
+data\Camera.py, code is 51, comment is 10, blank is 19.
+data\common\__pycache__\LiveData.cpython-311.pyc, it is a binary file.
+data\common\LiveData.py, code is 37, comment is 2, blank is 23.
+data\Layer.py, code is 122, comment is 11, blank is 22.
+data\Tumor.py, code is 15, comment is 2, blank is 8.
+icon.ico, it is a binary file.
+icons\chart.png, it is a binary file.
+icons\clear.png, it is a binary file.
+icons\compare.png, it is a binary file.
+icons\delete.png, it is a binary file.
+icons\delete_all.png, it is a binary file.
+icons\export.png, it is a binary file.
+icons\import.png, it is a binary file.
+icons\new.png, it is a binary file.
+icons\open.png, it is a binary file.
+icons\redo.png, it is a binary file.
+icons\render.png, it is a binary file.
+icons\save.png, it is a binary file.
+icons\tips.png, it is a binary file.
+icons\undo.png, it is a binary file.
+icons\youtube.png, it is a binary file.
+Strings.py, code is 2, comment is 5, blank is 4.
+ui\__pycache__\ViewModel.cpython-311.pyc, it is a binary file.
+ui\dialogs\__pycache__\AboutDialog.cpython-311.pyc, it is a binary file.
+ui\dialogs\__pycache__\ChartDialog.cpython-311.pyc, it is a binary file.
+ui\dialogs\__pycache__\TipsDialog.cpython-311.pyc, it is a binary file.
+ui\dialogs\AboutDialog.py, code is 35, comment is 7, blank is 18.
+ui\dialogs\ChartDialog.py, code is 43, comment is 10, blank is 20.
+ui\dialogs\TipsDialog.py, code is 18, comment is 5, blank is 10.
+ui\layers\__pycache__\LayersFragment.cpython-311.pyc, it is a binary file.
+ui\layers\__pycache__\LayerWidget.cpython-311.pyc, it is a binary file.
+ui\layers\LayersFragment.py, code is 91, comment is 8, blank is 22.
+ui\layers\LayerWidget.py, code is 108, comment is 10, blank is 32.
+ui\rendering\__pycache__\RenderingFragment.cpython-311.pyc, it is a binary file.
+ui\rendering\__pycache__\RenderingWidget.cpython-311.pyc, it is a binary file.
+ui\rendering\RenderingFragment.py, code is 46, comment is 10, blank is 17.
+ui\rendering\RenderingWidget.py, code is 114, comment is 14, blank is 34.
+ui\ViewModel.py, code is 344, comment is 2, blank is 61.
+utils\__pycache__\O3dUtil.cpython-311.pyc, it is a binary file.
+utils\O3dUtil.py, code is 20, comment is 1, blank is 7.
+utils\pydicom_PIL.py, code is 53, comment is 18, blank is 21.
+===============================================================================
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2024-11-11 19:18:18
+count workspace : c:\Users\kamut\OneDrive\Desktop\pyqt_practice
+total files : 102
+total code lines : 1397
+total comment lines : 122
+total blank lines : 388
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |            .py|           1351|            122|            383|     97|
+   |          .spec|             46|              0|              5|    3.3|
+   -------------------------------------------------------------------------
+__pycache__\AboutDialog.cpython-310.pyc, it is a binary file.
+__pycache__\AboutDialog.cpython-311.pyc, it is a binary file.
+__pycache__\AboutDialog.cpython-39.pyc, it is a binary file.
+__pycache__\App.cpython-310.pyc, it is a binary file.
+__pycache__\Camera.cpython-310.pyc, it is a binary file.
+__pycache__\Camera.cpython-311.pyc, it is a binary file.
+__pycache__\Camera.cpython-39.pyc, it is a binary file.
+__pycache__\ChartDialog.cpython-310.pyc, it is a binary file.
+__pycache__\ChartDialog.cpython-311.pyc, it is a binary file.
+__pycache__\ChartDialog.cpython-39.pyc, it is a binary file.
+__pycache__\Constant.cpython-39.pyc, it is a binary file.
+__pycache__\DicomUtil.cpython-310.pyc, it is a binary file.
+__pycache__\DicomUtil.cpython-39.pyc, it is a binary file.
+__pycache__\Direction.cpython-39.pyc, it is a binary file.
+__pycache__\Layer.cpython-310.pyc, it is a binary file.
+__pycache__\Layer.cpython-311.pyc, it is a binary file.
+__pycache__\Layer.cpython-313.pyc, it is a binary file.
+__pycache__\Layer.cpython-39.pyc, it is a binary file.
+__pycache__\LayersFragment.cpython-310.pyc, it is a binary file.
+__pycache__\LayersFragment.cpython-311.pyc, it is a binary file.
+__pycache__\LayersFragment.cpython-39.pyc, it is a binary file.
+__pycache__\LayerWidget.cpython-310.pyc, it is a binary file.
+__pycache__\LayerWidget.cpython-311.pyc, it is a binary file.
+__pycache__\LayerWidget.cpython-39.pyc, it is a binary file.
+__pycache__\LiveData.cpython-310.pyc, it is a binary file.
+__pycache__\LiveData.cpython-311.pyc, it is a binary file.
+__pycache__\LiveData.cpython-313.pyc, it is a binary file.
+__pycache__\LiveData.cpython-39.pyc, it is a binary file.
+__pycache__\MriFragment.cpython-39.pyc, it is a binary file.
+__pycache__\MriWidget.cpython-39.pyc, it is a binary file.
+__pycache__\O3dUtil.cpython-310.pyc, it is a binary file.
+__pycache__\O3dUtil.cpython-311.pyc, it is a binary file.
+__pycache__\O3dUtil.cpython-313.pyc, it is a binary file.
+__pycache__\O3dUtil.cpython-39.pyc, it is a binary file.
+__pycache__\OpenGLWidget.cpython-39.pyc, it is a binary file.
+__pycache__\pydicom_PIL.cpython-310.pyc, it is a binary file.
+__pycache__\RenderingFragment.cpython-310.pyc, it is a binary file.
+__pycache__\RenderingFragment.cpython-311.pyc, it is a binary file.
+__pycache__\RenderingFragment.cpython-39.pyc, it is a binary file.
+__pycache__\RenderingWidget.cpython-310.pyc, it is a binary file.
+__pycache__\RenderingWidget.cpython-311.pyc, it is a binary file.
+__pycache__\RenderingWidget.cpython-39.pyc, it is a binary file.
+__pycache__\SectionWidget.cpython-39.pyc, it is a binary file.
+__pycache__\Strings.cpython-311.pyc, it is a binary file.
+__pycache__\TipsDialog.cpython-310.pyc, it is a binary file.
+__pycache__\TipsDialog.cpython-311.pyc, it is a binary file.
+__pycache__\TipsDialog.cpython-39.pyc, it is a binary file.
+__pycache__\Tumor.cpython-310.pyc, it is a binary file.
+__pycache__\Tumor.cpython-311.pyc, it is a binary file.
+__pycache__\Tumor.cpython-313.pyc, it is a binary file.
+__pycache__\Tumor.cpython-39.pyc, it is a binary file.
+__pycache__\Util.cpython-39.pyc, it is a binary file.
+__pycache__\ViewModel.cpython-310.pyc, it is a binary file.
+__pycache__\ViewModel.cpython-311.pyc, it is a binary file.
+__pycache__\ViewModel.cpython-313.pyc, it is a binary file.
+__pycache__\ViewModel.cpython-39.pyc, it is a binary file.
+App.py, code is 252, comment is 3, blank is 58.
+App.spec, code is 46, comment is 0, blank is 5.
+data\__pycache__\Camera.cpython-311.pyc, it is a binary file.
+data\__pycache__\Layer.cpython-311.pyc, it is a binary file.
+data\__pycache__\Tumor.cpython-311.pyc, it is a binary file.
+data\Camera.py, code is 51, comment is 10, blank is 19.
+data\common\__pycache__\LiveData.cpython-311.pyc, it is a binary file.
+data\common\LiveData.py, code is 37, comment is 2, blank is 23.
+data\Layer.py, code is 122, comment is 11, blank is 22.
+data\Tumor.py, code is 15, comment is 2, blank is 8.
+icon.ico, it is a binary file.
+icons\chart.png, it is a binary file.
+icons\clear.png, it is a binary file.
+icons\compare.png, it is a binary file.
+icons\delete.png, it is a binary file.
+icons\delete_all.png, it is a binary file.
+icons\export.png, it is a binary file.
+icons\import.png, it is a binary file.
+icons\new.png, it is a binary file.
+icons\open.png, it is a binary file.
+icons\redo.png, it is a binary file.
+icons\render.png, it is a binary file.
+icons\save.png, it is a binary file.
+icons\tips.png, it is a binary file.
+icons\undo.png, it is a binary file.
+icons\youtube.png, it is a binary file.
+Strings.py, code is 2, comment is 5, blank is 4.
+ui\__pycache__\ViewModel.cpython-311.pyc, it is a binary file.
+ui\dialogs\__pycache__\AboutDialog.cpython-311.pyc, it is a binary file.
+ui\dialogs\__pycache__\ChartDialog.cpython-311.pyc, it is a binary file.
+ui\dialogs\__pycache__\TipsDialog.cpython-311.pyc, it is a binary file.
+ui\dialogs\AboutDialog.py, code is 35, comment is 7, blank is 18.
+ui\dialogs\ChartDialog.py, code is 43, comment is 10, blank is 20.
+ui\dialogs\TipsDialog.py, code is 18, comment is 5, blank is 10.
+ui\layers\__pycache__\LayersFragment.cpython-311.pyc, it is a binary file.
+ui\layers\__pycache__\LayerWidget.cpython-311.pyc, it is a binary file.
+ui\layers\LayersFragment.py, code is 91, comment is 12, blank is 29.
+ui\layers\LayerWidget.py, code is 108, comment is 10, blank is 32.
+ui\rendering\__pycache__\RenderingFragment.cpython-311.pyc, it is a binary file.
+ui\rendering\__pycache__\RenderingWidget.cpython-311.pyc, it is a binary file.
+ui\rendering\RenderingFragment.py, code is 46, comment is 10, blank is 17.
+ui\rendering\RenderingWidget.py, code is 114, comment is 14, blank is 34.
+ui\ViewModel.py, code is 344, comment is 2, blank is 61.
+utils\__pycache__\O3dUtil.cpython-311.pyc, it is a binary file.
+utils\O3dUtil.py, code is 20, comment is 1, blank is 7.
+utils\pydicom_PIL.py, code is 53, comment is 18, blank is 21.
+===============================================================================

@@ -1,0 +1,2164 @@
+{
+    "extension": "linecounter",
+    "version": "0.2.7",
+    "workspace": "c:\\Users\\kamut\\OneDrive\\Desktop\\pyqt_practice",
+    "linecount": [
+        {
+            "version": "0.2.7",
+            "counttime": "2024-11-11 18:33:22",
+            "filesum": 102,
+            "codesum": 1397,
+            "commentsum": 118,
+            "blanksum": 381,
+            "statistics": {
+                ".py": {
+                    "code": 1351,
+                    "comment": 118,
+                    "blank": 376
+                },
+                ".spec": {
+                    "code": 46,
+                    "comment": 0,
+                    "blank": 5
+                }
+            },
+            "filelist": [
+                {
+                    "filename": "__pycache__\\AboutDialog.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\AboutDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\AboutDialog.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\App.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Camera.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Camera.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Camera.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ChartDialog.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ChartDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ChartDialog.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Constant.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\DicomUtil.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\DicomUtil.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Direction.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Layer.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Layer.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Layer.cpython-313.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Layer.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayersFragment.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayersFragment.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayersFragment.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayerWidget.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayerWidget.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayerWidget.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LiveData.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LiveData.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LiveData.cpython-313.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LiveData.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\MriFragment.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\MriWidget.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\O3dUtil.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\O3dUtil.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\O3dUtil.cpython-313.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\O3dUtil.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\OpenGLWidget.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\pydicom_PIL.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingFragment.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingFragment.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingFragment.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingWidget.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingWidget.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingWidget.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\SectionWidget.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Strings.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\TipsDialog.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\TipsDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\TipsDialog.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Tumor.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Tumor.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Tumor.cpython-313.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Tumor.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Util.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ViewModel.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ViewModel.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ViewModel.cpython-313.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ViewModel.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 58,
+                    "code": 252,
+                    "comment": 3,
+                    "filename": "App.py"
+                },
+                {
+                    "blank": 5,
+                    "code": 46,
+                    "comment": 0,
+                    "filename": "App.spec"
+                },
+                {
+                    "filename": "data\\__pycache__\\Camera.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "data\\__pycache__\\Layer.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "data\\__pycache__\\Tumor.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 19,
+                    "code": 51,
+                    "comment": 10,
+                    "filename": "data\\Camera.py"
+                },
+                {
+                    "filename": "data\\common\\__pycache__\\LiveData.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 23,
+                    "code": 37,
+                    "comment": 2,
+                    "filename": "data\\common\\LiveData.py"
+                },
+                {
+                    "blank": 22,
+                    "code": 122,
+                    "comment": 11,
+                    "filename": "data\\Layer.py"
+                },
+                {
+                    "blank": 8,
+                    "code": 15,
+                    "comment": 2,
+                    "filename": "data\\Tumor.py"
+                },
+                {
+                    "filename": "icon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\chart.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\clear.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\compare.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\delete.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\delete_all.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\export.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\import.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\new.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\open.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\redo.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\render.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\save.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\tips.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\undo.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\youtube.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 2,
+                    "comment": 5,
+                    "filename": "Strings.py"
+                },
+                {
+                    "filename": "ui\\__pycache__\\ViewModel.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "ui\\dialogs\\__pycache__\\AboutDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "ui\\dialogs\\__pycache__\\ChartDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "ui\\dialogs\\__pycache__\\TipsDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 18,
+                    "code": 35,
+                    "comment": 7,
+                    "filename": "ui\\dialogs\\AboutDialog.py"
+                },
+                {
+                    "blank": 20,
+                    "code": 43,
+                    "comment": 10,
+                    "filename": "ui\\dialogs\\ChartDialog.py"
+                },
+                {
+                    "blank": 10,
+                    "code": 18,
+                    "comment": 5,
+                    "filename": "ui\\dialogs\\TipsDialog.py"
+                },
+                {
+                    "filename": "ui\\layers\\__pycache__\\LayersFragment.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "ui\\layers\\__pycache__\\LayerWidget.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 22,
+                    "code": 91,
+                    "comment": 8,
+                    "filename": "ui\\layers\\LayersFragment.py"
+                },
+                {
+                    "blank": 32,
+                    "code": 108,
+                    "comment": 10,
+                    "filename": "ui\\layers\\LayerWidget.py"
+                },
+                {
+                    "filename": "ui\\rendering\\__pycache__\\RenderingFragment.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "ui\\rendering\\__pycache__\\RenderingWidget.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 17,
+                    "code": 46,
+                    "comment": 10,
+                    "filename": "ui\\rendering\\RenderingFragment.py"
+                },
+                {
+                    "blank": 34,
+                    "code": 114,
+                    "comment": 14,
+                    "filename": "ui\\rendering\\RenderingWidget.py"
+                },
+                {
+                    "blank": 61,
+                    "code": 344,
+                    "comment": 2,
+                    "filename": "ui\\ViewModel.py"
+                },
+                {
+                    "filename": "utils\\__pycache__\\O3dUtil.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 7,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "utils\\O3dUtil.py"
+                },
+                {
+                    "blank": 21,
+                    "code": 53,
+                    "comment": 18,
+                    "filename": "utils\\pydicom_PIL.py"
+                }
+            ]
+        },
+        {
+            "version": "0.2.7",
+            "counttime": "2024-11-11 18:33:34",
+            "filesum": 102,
+            "codesum": 1397,
+            "commentsum": 118,
+            "blanksum": 381,
+            "statistics": {
+                ".py": {
+                    "code": 1351,
+                    "comment": 118,
+                    "blank": 376
+                },
+                ".spec": {
+                    "code": 46,
+                    "comment": 0,
+                    "blank": 5
+                }
+            },
+            "filelist": [
+                {
+                    "filename": "__pycache__\\AboutDialog.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\AboutDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\AboutDialog.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\App.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Camera.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Camera.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Camera.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ChartDialog.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ChartDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ChartDialog.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Constant.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\DicomUtil.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\DicomUtil.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Direction.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Layer.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Layer.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Layer.cpython-313.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Layer.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayersFragment.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayersFragment.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayersFragment.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayerWidget.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayerWidget.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayerWidget.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LiveData.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LiveData.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LiveData.cpython-313.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LiveData.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\MriFragment.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\MriWidget.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\O3dUtil.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\O3dUtil.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\O3dUtil.cpython-313.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\O3dUtil.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\OpenGLWidget.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\pydicom_PIL.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingFragment.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingFragment.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingFragment.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingWidget.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingWidget.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingWidget.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\SectionWidget.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Strings.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\TipsDialog.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\TipsDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\TipsDialog.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Tumor.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Tumor.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Tumor.cpython-313.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Tumor.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Util.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ViewModel.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ViewModel.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ViewModel.cpython-313.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ViewModel.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 58,
+                    "code": 252,
+                    "comment": 3,
+                    "filename": "App.py"
+                },
+                {
+                    "blank": 5,
+                    "code": 46,
+                    "comment": 0,
+                    "filename": "App.spec"
+                },
+                {
+                    "filename": "data\\__pycache__\\Camera.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "data\\__pycache__\\Layer.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "data\\__pycache__\\Tumor.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 19,
+                    "code": 51,
+                    "comment": 10,
+                    "filename": "data\\Camera.py"
+                },
+                {
+                    "filename": "data\\common\\__pycache__\\LiveData.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 23,
+                    "code": 37,
+                    "comment": 2,
+                    "filename": "data\\common\\LiveData.py"
+                },
+                {
+                    "blank": 22,
+                    "code": 122,
+                    "comment": 11,
+                    "filename": "data\\Layer.py"
+                },
+                {
+                    "blank": 8,
+                    "code": 15,
+                    "comment": 2,
+                    "filename": "data\\Tumor.py"
+                },
+                {
+                    "filename": "icon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\chart.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\clear.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\compare.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\delete.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\delete_all.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\export.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\import.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\new.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\open.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\redo.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\render.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\save.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\tips.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\undo.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\youtube.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 2,
+                    "comment": 5,
+                    "filename": "Strings.py"
+                },
+                {
+                    "filename": "ui\\__pycache__\\ViewModel.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "ui\\dialogs\\__pycache__\\AboutDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "ui\\dialogs\\__pycache__\\ChartDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "ui\\dialogs\\__pycache__\\TipsDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 18,
+                    "code": 35,
+                    "comment": 7,
+                    "filename": "ui\\dialogs\\AboutDialog.py"
+                },
+                {
+                    "blank": 20,
+                    "code": 43,
+                    "comment": 10,
+                    "filename": "ui\\dialogs\\ChartDialog.py"
+                },
+                {
+                    "blank": 10,
+                    "code": 18,
+                    "comment": 5,
+                    "filename": "ui\\dialogs\\TipsDialog.py"
+                },
+                {
+                    "filename": "ui\\layers\\__pycache__\\LayersFragment.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "ui\\layers\\__pycache__\\LayerWidget.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 22,
+                    "code": 91,
+                    "comment": 8,
+                    "filename": "ui\\layers\\LayersFragment.py"
+                },
+                {
+                    "blank": 32,
+                    "code": 108,
+                    "comment": 10,
+                    "filename": "ui\\layers\\LayerWidget.py"
+                },
+                {
+                    "filename": "ui\\rendering\\__pycache__\\RenderingFragment.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "ui\\rendering\\__pycache__\\RenderingWidget.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 17,
+                    "code": 46,
+                    "comment": 10,
+                    "filename": "ui\\rendering\\RenderingFragment.py"
+                },
+                {
+                    "blank": 34,
+                    "code": 114,
+                    "comment": 14,
+                    "filename": "ui\\rendering\\RenderingWidget.py"
+                },
+                {
+                    "blank": 61,
+                    "code": 344,
+                    "comment": 2,
+                    "filename": "ui\\ViewModel.py"
+                },
+                {
+                    "filename": "utils\\__pycache__\\O3dUtil.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 7,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "utils\\O3dUtil.py"
+                },
+                {
+                    "blank": 21,
+                    "code": 53,
+                    "comment": 18,
+                    "filename": "utils\\pydicom_PIL.py"
+                }
+            ]
+        },
+        {
+            "version": "0.2.7",
+            "counttime": "2024-11-11 19:18:18",
+            "filesum": 102,
+            "codesum": 1397,
+            "commentsum": 122,
+            "blanksum": 388,
+            "statistics": {
+                ".py": {
+                    "code": 1351,
+                    "comment": 122,
+                    "blank": 383
+                },
+                ".spec": {
+                    "code": 46,
+                    "comment": 0,
+                    "blank": 5
+                }
+            },
+            "filelist": [
+                {
+                    "filename": "__pycache__\\AboutDialog.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\AboutDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\AboutDialog.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\App.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Camera.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Camera.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Camera.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ChartDialog.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ChartDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ChartDialog.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Constant.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\DicomUtil.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\DicomUtil.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Direction.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Layer.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Layer.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Layer.cpython-313.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Layer.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayersFragment.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayersFragment.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayersFragment.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayerWidget.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayerWidget.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LayerWidget.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LiveData.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LiveData.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LiveData.cpython-313.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\LiveData.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\MriFragment.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\MriWidget.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\O3dUtil.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\O3dUtil.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\O3dUtil.cpython-313.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\O3dUtil.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\OpenGLWidget.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\pydicom_PIL.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingFragment.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingFragment.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingFragment.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingWidget.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingWidget.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\RenderingWidget.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\SectionWidget.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Strings.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\TipsDialog.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\TipsDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\TipsDialog.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Tumor.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Tumor.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Tumor.cpython-313.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Tumor.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\Util.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ViewModel.cpython-310.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ViewModel.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ViewModel.cpython-313.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "__pycache__\\ViewModel.cpython-39.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 58,
+                    "code": 252,
+                    "comment": 3,
+                    "filename": "App.py"
+                },
+                {
+                    "blank": 5,
+                    "code": 46,
+                    "comment": 0,
+                    "filename": "App.spec"
+                },
+                {
+                    "filename": "data\\__pycache__\\Camera.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "data\\__pycache__\\Layer.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "data\\__pycache__\\Tumor.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 19,
+                    "code": 51,
+                    "comment": 10,
+                    "filename": "data\\Camera.py"
+                },
+                {
+                    "filename": "data\\common\\__pycache__\\LiveData.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 23,
+                    "code": 37,
+                    "comment": 2,
+                    "filename": "data\\common\\LiveData.py"
+                },
+                {
+                    "blank": 22,
+                    "code": 122,
+                    "comment": 11,
+                    "filename": "data\\Layer.py"
+                },
+                {
+                    "blank": 8,
+                    "code": 15,
+                    "comment": 2,
+                    "filename": "data\\Tumor.py"
+                },
+                {
+                    "filename": "icon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\chart.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\clear.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\compare.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\delete.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\delete_all.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\export.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\import.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\new.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\open.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\redo.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\render.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\save.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\tips.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\undo.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "icons\\youtube.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 2,
+                    "comment": 5,
+                    "filename": "Strings.py"
+                },
+                {
+                    "filename": "ui\\__pycache__\\ViewModel.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "ui\\dialogs\\__pycache__\\AboutDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "ui\\dialogs\\__pycache__\\ChartDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "ui\\dialogs\\__pycache__\\TipsDialog.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 18,
+                    "code": 35,
+                    "comment": 7,
+                    "filename": "ui\\dialogs\\AboutDialog.py"
+                },
+                {
+                    "blank": 20,
+                    "code": 43,
+                    "comment": 10,
+                    "filename": "ui\\dialogs\\ChartDialog.py"
+                },
+                {
+                    "blank": 10,
+                    "code": 18,
+                    "comment": 5,
+                    "filename": "ui\\dialogs\\TipsDialog.py"
+                },
+                {
+                    "filename": "ui\\layers\\__pycache__\\LayersFragment.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "ui\\layers\\__pycache__\\LayerWidget.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 29,
+                    "code": 91,
+                    "comment": 12,
+                    "filename": "ui\\layers\\LayersFragment.py"
+                },
+                {
+                    "blank": 32,
+                    "code": 108,
+                    "comment": 10,
+                    "filename": "ui\\layers\\LayerWidget.py"
+                },
+                {
+                    "filename": "ui\\rendering\\__pycache__\\RenderingFragment.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "ui\\rendering\\__pycache__\\RenderingWidget.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 17,
+                    "code": 46,
+                    "comment": 10,
+                    "filename": "ui\\rendering\\RenderingFragment.py"
+                },
+                {
+                    "blank": 34,
+                    "code": 114,
+                    "comment": 14,
+                    "filename": "ui\\rendering\\RenderingWidget.py"
+                },
+                {
+                    "blank": 61,
+                    "code": 344,
+                    "comment": 2,
+                    "filename": "ui\\ViewModel.py"
+                },
+                {
+                    "filename": "utils\\__pycache__\\O3dUtil.cpython-311.pyc",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 7,
+                    "code": 20,
+                    "comment": 1,
+                    "filename": "utils\\O3dUtil.py"
+                },
+                {
+                    "blank": 21,
+                    "code": 53,
+                    "comment": 18,
+                    "filename": "utils\\pydicom_PIL.py"
+                }
+            ]
+        }
+    ]
+}
