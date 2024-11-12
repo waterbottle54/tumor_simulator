@@ -23,8 +23,6 @@ class LayersFragment(QWidget):
     Methods:
         on_key_press: 키 눌림이 감지되면 뷰모델에 통보한다.
         on_series_click: series 리스트에서 항목 선택이 감지되면 뷰모델에 통보한다.
-        on_key_press: 키 눌림이 감지되면 뷰모델에 통보한다.
-        on_series_click: series 리스트에서 항목 선택이 감지되면 뷰모델에 통보한다.
         on_layer_drag: LayerWidget이 drag 감지 시 호출하는 콜백
         on_layer_hover: LayerWidget이 hovering 감지 시 호출하는 콜백
         on_layer_wheel: LayerWidget이 마우스 휠 조작 감지 시 호출하는 콜백
@@ -118,7 +116,7 @@ class LayersFragment(QWidget):
         Args:
             model_index (QModelIndex): 리스트뷰에서의 항목 위치
         """
-        self.view_model.on_series_change(model_index.row())
+        self.view_model.on_series_click(model_index.row())
 
     def on_layer_drag(self, pos_world):
         """
@@ -145,9 +143,9 @@ class LayersFragment(QWidget):
         Args:
             up_down (bool): 휠 up이면 true, down이면 false
         """
-        self.view_model.on_layer_scroll_by(1 if up_down == True else -1)
+        self.view_model.on_layer_wheel_scroll_by(1 if up_down == True else -1)
 
-    def update_series_list_view(self, layer_map):
+    def update_series_list_view(self, layers):
         """
         series 리스트를 series_list에 업데이트한다.
 
@@ -155,7 +153,7 @@ class LayersFragment(QWidget):
             layer_map(dict[str, Layer]): series의 이름과 그 series에 속하는 Layer 리스트가 key-value인 dictionary
         """
         model = QStandardItemModel()
-        for series, layer_list in layer_map.items():
+        for series, layer_list in layers.items():
             # 각 series에 속하는 layer list 확보
             layer_list: list[Layer]
             if len(layer_list) > 0:

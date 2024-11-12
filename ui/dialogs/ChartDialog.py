@@ -65,7 +65,7 @@ class ChartDialog(QDialog):
         str_dates = [ d.strftime('%m-%d') for d in dates ]
         str_periods = [ f'{str_dates[i-1]}~{str_dates[i]}' if i == 1 else f'~{str_dates[i]}' for i in range(1, len(str_dates)) ]
 
-        # y(체적, 성장률) 축에 표시할 값 추출
+        # y(체적, 성장률) 축에 표시할 값 추출(mm2)
         volumes = [ tumor.volume/1000 for tumor in self.tumor_models ]
         rates = []
 

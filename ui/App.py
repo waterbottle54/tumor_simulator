@@ -1,10 +1,3 @@
-"""
-    
-
-
-
-"""
-
 import os
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QToolBar, QAction, QMessageBox, QFileDialog
@@ -18,12 +11,17 @@ from ui.dialogs.TipsDialog import *
 
 class MainWindow(QMainWindow):
     """
+    프로그램의 메인 윈도우. 
+    
+    - 화면은 layer fragment, rendering fragment 로 구성된다.
+      대부분의 기능이 fragment에 구현되어 있다. (상세: 각 class doc)
+    - menubar, toolbar, status bar를 가지며 뷰모델과 연동한다.
 
     Attributes:
         view_model(ViewModel): 뷰모델 (poject-level)
         layout_top(QHBoxLayout): 최상위 레이아웃
-        layers_fragment(LayersFragment): 단층(layer) 탐색 화면 - 화면 좌측
-        rendering_fragment(RenderingFragment): 종양(3D) 렌더링 화면 - 화면 우측
+        layers_fragment(LayersFragment): Layer 탐색 및 편집 UI - 화면 좌측
+        rendering_fragment(RenderingFragment): 3D Tumor 렌더링 UI - 화면 우측
 
     Methods:
         setup_menu: 메뉴를 초기화한다. (계층도는 함수 doc 참조)
@@ -108,17 +106,17 @@ class MainWindow(QMainWindow):
         # 1. File menus
 
         action_new = QAction("New File", self)
-        action_new.triggered.connect(self.view_model.on_new_click)
+        action_new.triggered.connect(self.view_model.on_new_project_click)
         action_new.setShortcut('Ctrl+N')
         file_menu.addAction(action_new)
 
         action_open = QAction("Open File", self)
-        action_open.triggered.connect(self.view_model.on_open_click)
+        action_open.triggered.connect(self.view_model.on_open_project_click)
         action_open.setShortcut('Ctrl+O')
         file_menu.addAction(action_open)
 
         action_save = QAction("Save File", self)
-        action_save.triggered.connect(self.view_model.on_save_click)
+        action_save.triggered.connect(self.view_model.on_save_project_click)
         action_save.setShortcut('Ctrl+S')
         file_menu.addAction(action_save)
 
@@ -131,7 +129,7 @@ class MainWindow(QMainWindow):
         # 2. Edit menus
 
         action_import = QAction("Import DICOM Folder", self)
-        action_import.triggered.connect(self.view_model.on_import_click)
+        action_import.triggered.connect(self.view_model.on_import_dicom_click)
         action_import.setShortcut('Insert')
         edit_menu.addAction(action_import)
 
@@ -174,7 +172,7 @@ class MainWindow(QMainWindow):
         build_menu.addAction(action_reconstruct)
 
         action_export = QAction("Export Tumor Model (.tmr files)", self)
-        action_export.triggered.connect(self.view_model.on_export_click)
+        action_export.triggered.connect(self.view_model.on_export_model_click)
         action_export.setShortcut('Ctrl+E')
         build_menu.addAction(action_export)
 
@@ -184,7 +182,7 @@ class MainWindow(QMainWindow):
         analyze_menu.addAction(action_add_comparison)
 
         action_growth = QAction("Show Growth Pattern", self)
-        action_growth.triggered.connect(self.view_model.on_show_growth_click)
+        action_growth.triggered.connect(self.view_model.on_show_growth_pattern_click)
         action_growth.setShortcut('Ctrl+G')
         analyze_menu.addAction(action_growth)
 
@@ -213,22 +211,22 @@ class MainWindow(QMainWindow):
         self.addToolBar(self.toolbar)
 
         action_new = QAction("New File", self, icon=QIcon("icons/new.png"))
-        action_new.triggered.connect(self.view_model.on_new_click)
+        action_new.triggered.connect(self.view_model.on_new_project_click)
         self.toolbar.addAction(action_new)
 
         action_open = QAction("Open File", self, icon=QIcon("icons/open.png"))
-        action_open.triggered.connect(self.view_model.on_open_click)
+        action_open.triggered.connect(self.view_model.on_open_project_click)
         self.toolbar.addAction(action_open)
 
         action_save = QAction("Save File", self, icon=QIcon("icons/save.png"))
-        action_save.triggered.connect(self.view_model.on_save_click)
+        action_save.triggered.connect(self.view_model.on_save_project_click)
         self.toolbar.addAction(action_save)
 
         self.toolbar.addSeparator()
         self.toolbar.addSeparator()
 
         action_import = QAction("Import DICOM Folder", self, icon=QIcon("icons/import.png"))
-        action_import.triggered.connect(self.view_model.on_import_click)
+        action_import.triggered.connect(self.view_model.on_import_dicom_click)
         self.toolbar.addAction(action_import)
 
         action_delete_layer = QAction("Delete Layer", self, icon=QIcon("icons/delete.png"))
@@ -264,7 +262,7 @@ class MainWindow(QMainWindow):
 
         action_export = QAction("Export Tumor", self)
         action_export.setIcon(QIcon('icons/export.png'))
-        action_export.triggered.connect(self.view_model.on_export_click)
+        action_export.triggered.connect(self.view_model.on_export_model_click)
         self.toolbar.addAction(action_export)
 
         self.toolbar.addSeparator()
@@ -277,7 +275,7 @@ class MainWindow(QMainWindow):
 
         action_growth = QAction("Show Growth Pattern", self)
         action_growth.setIcon(QIcon('icons/chart.png'))
-        action_growth.triggered.connect(self.view_model.on_show_growth_click)
+        action_growth.triggered.connect(self.view_model.on_show_growth_pattern_click)
         self.toolbar.addAction(action_growth)
 
     def on_event(self, event):
@@ -296,16 +294,16 @@ class MainWindow(QMainWindow):
             # display a file dialog to open a project file.
             filename, _ = QFileDialog.getOpenFileName(self, "Open File", "", "BTS Files (*.bts)")
             if filename:
-                self.view_model.on_open_result(filename)
+                self.view_model.on_open_project_result(filename)
         elif isinstance(event, PromptSaveFile):
             # 프로젝트 파일 저장하기 대화상자를 띄운다.
             # display a file dialog to save the current project file.
             filename, _ = QFileDialog.getSaveFileName(self, "Save File", "", "BTS Files (*.bts)")
             if filename:
-                self.view_model.on_save_result(filename)
+                self.view_model.on_save_project_result(filename)
         elif isinstance(event, PromptDicomFiles):
             # dicom 데이터를 불러오기 위해 폴더 선택 대화상자를 띄운다. (폴더가 직접 .dat 파일을 포함해야 한다.)
-            # show a folder browser to import dicom data from a selected folder (which has to contain *.dat files directly).
+            # show a folder browser to import dicom data from a selected folder (which has to contain *.dat files directly in it).
             folder_name = QFileDialog.getExistingDirectory(self, caption='Import DICOM Folder')
             if not folder_name:
                 return
@@ -314,7 +312,7 @@ class MainWindow(QMainWindow):
                 path = f'{folder_name}/{filename}'
                 if os.path.isfile(path):
                     filenames.append(path)
-            self.view_model.on_import_result(filenames)
+            self.view_model.on_import_dicom_result(filenames)
         elif isinstance(event, ConfirmNewFile):
             # 새 프로젝트 파일을 만들지 물어보는 대화상자를 띄운다.
             # show a message box to confirm whether or not the user wants to create a new project file.
@@ -326,7 +324,7 @@ class MainWindow(QMainWindow):
             message_box.setDefaultButton(QMessageBox.No)
             choice = message_box.exec_()
             if choice == QMessageBox.StandardButton.Yes:
-                self.view_model.on_new_confirm()
+                self.view_model.on_new_project_confirm()
         elif isinstance(event, ConfirmDeleteSeries):
             # 유저에게 series 삭제 여부를 묻는 대화상자를 띄운다.
             # show a message box to confirm whether or not the user wants to delete the requested series.
@@ -347,7 +345,7 @@ class MainWindow(QMainWindow):
             # show a file browser to prompt a tumor model file(*.tmr) to export.
             filename, _ = QFileDialog.getSaveFileName(self, "Export Model", "", "TMR Files (*.tmr)")
             if filename:
-                self.view_model.on_export_result(filename)
+                self.view_model.on_export_model_result(filename)
         elif isinstance(event, PromptOpenModels):
             # 대조군을 형성할 종양 모델 파일들을 선택하는 대화상자를 띄운다.
             # show a file browser to prompt tumor models to be compared with the current one.

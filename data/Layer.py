@@ -18,7 +18,7 @@ class Layer:
         direction_row(list[float]): 이미지의 픽셀행(row)의 물리적(world) 방향벡터
         direction_column(list[float]): 이미지의 픽셀열(column)의 물리적 방향벡터
         pixmap(QPixmap): 단면의 픽셀 이미지 (grayscaled)
-        path(list[list[float]]): 종양의 경계를 이루는 vertex의 리스트. [[x0, y0, z0], [x1, y1, z1], ...]
+        path(list[list[float]]): 종양의 경계를 이루는 vertex의 리스트. [x0, y0, z0, x1, y1, z1, ...]
 
     Methods:
         from_dicom_file(classmethod): DICOM 데이터 파일을 읽어 Layer객체를 생성한다
@@ -152,7 +152,7 @@ class Layer:
         (0,0,0), one vertext(v1), and the next one(v2). (v1)x(v2)/2 will be each small area.
 
         Returns:
-            float: self.path가 이루는 내부 면적 (cm2)
+            float: self.path가 이루는 내부 면적 (mm2)
         """
         
         if len(self.path) < 3:  # make sure that self.path is closed
@@ -168,17 +168,17 @@ class Layer:
 
     def get_distance(self, other):
         """
-        다른 레이어와의 gap을 구한다
+        다른 레이어와 이격된 거리를 구한다
 
         Args:
-            other (Layer): 떨어져있는 다른 레이어
+            other (Layer): 이격된 다른 레이어
 
         Returns:
-            float: 두 레이어 사이의 gap (cm)
+            float: 이격된 거리 (mm)
         """
-        n = np.cross(self.direction_row, self.direction_col)        # 레이어의 방향벡터(norm=1)
-        r = np.array(other.position) - np.array(self.position)      # 변위벡터
-        return abs(np.dot(r, n))                                    # 방향벡터에 대한 변위벡터의 projection
+        n = np.cross(self.direction_row, self.direction_col)        # self의 단위방향벡터 n
+        r = np.array(other.position) - np.array(self.position)      # self에 대한 other의 위치벡터 r
+        return abs(np.dot(r, n))                                    # 위치벡터 r을 단위방향벡터 n에 projection한 값 (거리)
 
     def image_to_world(self, coord_image):
         """

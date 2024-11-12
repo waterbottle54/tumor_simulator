@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import QDialog, QHBoxLayout, QVBoxLayout, QLabel, QPushButton
 from PyQt5.QtCore import Qt, QUrl
 from PyQt5.QtGui import QPixmap, QDesktopServices
-from Strings import about_text
+from utils.Strings import about_text
 
 class AboutDialog(QDialog):
     """

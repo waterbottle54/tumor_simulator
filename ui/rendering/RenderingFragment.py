@@ -90,6 +90,6 @@ class RenderingFragment(QWidget):
         """
         items = self.tumor_table.selectedItems()    # Multiselection not allowed
         if len(items) > 0 and items[0].row() >= 0:
-            self.view_model.on_model_selected(items[0].row())
+            self.view_model.on_tumor_model_selected(items[0].row())
         
     

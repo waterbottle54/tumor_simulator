@@ -525,18 +525,18 @@
     },
     {
         "label": "about_text",
-        "importPath": "Strings",
-        "description": "Strings",
+        "importPath": "utils.Strings",
+        "description": "utils.Strings",
         "isExtraImport": true,
-        "detail": "Strings",
+        "detail": "utils.Strings",
         "documentation": {}
     },
     {
         "label": "tip_text",
-        "importPath": "Strings",
-        "description": "Strings",
+        "importPath": "utils.Strings",
+        "description": "utils.Strings",
         "isExtraImport": true,
-        "detail": "Strings",
+        "detail": "utils.Strings",
         "documentation": {}
     },
     {
@@ -652,50 +652,6 @@
         "documentation": {}
     },
     {
-        "label": "*",
-        "importPath": "data.common.LiveData",
-        "description": "data.common.LiveData",
-        "isExtraImport": true,
-        "detail": "data.common.LiveData",
-        "documentation": {}
-    },
-    {
-        "label": "utils.O3dUtil",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "utils.O3dUtil",
-        "description": "utils.O3dUtil",
-        "detail": "utils.O3dUtil",
-        "documentation": {}
-    },
-    {
-        "label": "pickle",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pickle",
-        "description": "pickle",
-        "detail": "pickle",
-        "documentation": {}
-    },
-    {
-        "label": "logging",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "logging",
-        "description": "logging",
-        "detail": "logging",
-        "documentation": {}
-    },
-    {
-        "label": "open3d",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "open3d",
-        "description": "open3d",
-        "detail": "open3d",
-        "documentation": {}
-    },
-    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -751,6 +707,50 @@
         "description": "ui.dialogs.TipsDialog",
         "isExtraImport": true,
         "detail": "ui.dialogs.TipsDialog",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "data.common.LiveData",
+        "description": "data.common.LiveData",
+        "isExtraImport": true,
+        "detail": "data.common.LiveData",
+        "documentation": {}
+    },
+    {
+        "label": "utils.O3dUtil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "utils.O3dUtil",
+        "description": "utils.O3dUtil",
+        "detail": "utils.O3dUtil",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "open3d",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "open3d",
+        "description": "open3d",
+        "detail": "open3d",
         "documentation": {}
     },
     {
@@ -821,7 +821,7 @@
         "kind": 6,
         "importPath": "data.Tumor",
         "description": "data.Tumor",
-        "peekOfCode": "class TumorModelData:\n    \"\"\"\n    종양의 기본정보와 체적 및 point cloud를 포함한다.\n    Attributes:\n        points(list): 종양의 surface를 이루는 point cloud. [[x0, y0, z0], [x1, y1, z1], ...] (in cm)\n        volume(float): 종양의 계측된 체적 (in cm3)\n        date(datetime.date): 촬영일자\n        patient_birthday(datetime.date): 환자 생년월일\n    Methods:\n        from_tumor_model_data(classmethod): TumorModelData로부터 TumorModel을 생성한다.",
+        "peekOfCode": "class TumorModelData:\n    \"\"\"\n    point cloud로 구성된 3D 종양 모델을 표현한다.\n    surface reconstruction을 통해, mesh로 구성된 3D 종양 모델(TumorModel)로 변환할 수 있다.\n    Attributes:\n        points(list): 종양의 표면을 이루는 point cloud. [x0, y0, z0, x1, y1, z1, ...] (mm)\n        volume(float): 종양의 부피(mm2)\n        date(datetime.date): 촬영일자\n        patient_birthday(datetime.date): 환자 생년월일\n    \"\"\"",
         "detail": "data.Tumor",
         "documentation": {}
     },
@@ -830,7 +830,7 @@
         "kind": 6,
         "importPath": "data.Tumor",
         "description": "data.Tumor",
-        "peekOfCode": "class TumorModel:\n    \"\"\"\n    종양의 기본정보와 체적 및 3D mesh를 포함한다.\n    Attributes:\n        mesh(TriangleMesh): 종양의 surface를 나타내는 mesh\n        volume(float): 종양의 계측된 체적 (in cm3)\n        date(datetime.date): 촬영일자\n        patient_birthday(datetime.date): 환자 생년월일\n    \"\"\"\n    def __init__(self, mesh, volume, date, patient_birthday):",
+        "peekOfCode": "class TumorModel:\n    \"\"\"\n    mesh로 구성된 3D 종양 모델을 표현한다.\n    TumorModelData를 surface reconstruction을 통해 이 클래스로 변환할 수 있다.\n    Attributes:\n        mesh(TriangleMesh): 종양의 표면을 이루는 mesh\n        volume(float): 종양의 부피(mm2)\n        date(datetime.date): 촬영일자\n        patient_birthday(datetime.date): 환자의 생년월일\n        Methods:",
         "detail": "data.Tumor",
         "documentation": {}
     },
@@ -895,6 +895,15 @@
         "description": "ui.rendering.RenderingWidget",
         "peekOfCode": "class RenderingWidget(QOpenGLWidget):\n    \"\"\"\n    입력받은 mesh를 렌더링하는 위젯.\n    - OpenGL perspective projection을 적용한다.\n    - 드래그를 인식해 mesh의 회전, scale을 조정한다.\n    Attributes:\n        mesh (TriangleMesh):    렌더링할 mesh\n        mouse_latest(NDArray):  드래그 마지막 위치.(x=[0], y=[1])\n        rotation(NDArray):      mesh 적용될 3D rotation matrix (4 x 4)\n        scale(float):           mesh 적용될 scale 배율. 확대(>1), 축소(<1)",
         "detail": "ui.rendering.RenderingWidget",
+        "documentation": {}
+    },
+    {
+        "label": "MainWindow",
+        "kind": 6,
+        "importPath": "ui.App",
+        "description": "ui.App",
+        "peekOfCode": "class MainWindow(QMainWindow):\n    \"\"\"\n    프로그램의 메인 윈도우. \n    - 화면은 layer fragment, rendering fragment 로 구성된다.\n      대부분의 기능이 fragment에 구현되어 있다. (상세: 각 class doc)\n    - menubar, toolbar, status bar를 가지며 뷰모델과 연동한다.\n    Attributes:\n        view_model(ViewModel): 뷰모델 (poject-level)\n        layout_top(QHBoxLayout): 최상위 레이아웃\n        layers_fragment(LayersFragment): Layer 탐색 및 편집 UI - 화면 좌측",
+        "detail": "ui.App",
         "documentation": {}
     },
     {
@@ -965,7 +974,7 @@
         "kind": 6,
         "importPath": "ui.ViewModel",
         "description": "ui.ViewModel",
-        "peekOfCode": "class PromptExportModel(Event): pass\nclass PromptOpenModels(Event): pass\nclass ShowGrowthPattern(Event):\n    def __init__(self, tumor_models):\n        self.tumor_models = tumor_models\nclass ConfirmExit(Event): pass\nclass TerminateApp(Event): pass\nclass ViewModel(QObject):\n    event = pyqtSignal(Event)\n    current_filename = MutableLiveData(None)",
+        "peekOfCode": "class PromptExportModel(Event): pass\nclass PromptOpenModels(Event): pass\nclass ShowGrowthPattern(Event):\n    def __init__(self, tumor_models):\n        self.tumor_models = tumor_models\nclass ConfirmExit(Event): pass\nclass TerminateApp(Event): pass\nclass ViewModel(QObject):\n    \"\"\"\n    프로젝트의 단일한 뷰모델",
         "detail": "ui.ViewModel",
         "documentation": {}
     },
@@ -974,7 +983,7 @@
         "kind": 6,
         "importPath": "ui.ViewModel",
         "description": "ui.ViewModel",
-        "peekOfCode": "class PromptOpenModels(Event): pass\nclass ShowGrowthPattern(Event):\n    def __init__(self, tumor_models):\n        self.tumor_models = tumor_models\nclass ConfirmExit(Event): pass\nclass TerminateApp(Event): pass\nclass ViewModel(QObject):\n    event = pyqtSignal(Event)\n    current_filename = MutableLiveData(None)\n    current_world_position = MutableLiveData(None)",
+        "peekOfCode": "class PromptOpenModels(Event): pass\nclass ShowGrowthPattern(Event):\n    def __init__(self, tumor_models):\n        self.tumor_models = tumor_models\nclass ConfirmExit(Event): pass\nclass TerminateApp(Event): pass\nclass ViewModel(QObject):\n    \"\"\"\n    프로젝트의 단일한 뷰모델\n    - ViewModel에 연결된 UI 모듈: MainWindow, LayerFragment, RenderingFragment",
         "detail": "ui.ViewModel",
         "documentation": {}
     },
@@ -983,7 +992,7 @@
         "kind": 6,
         "importPath": "ui.ViewModel",
         "description": "ui.ViewModel",
-        "peekOfCode": "class ShowGrowthPattern(Event):\n    def __init__(self, tumor_models):\n        self.tumor_models = tumor_models\nclass ConfirmExit(Event): pass\nclass TerminateApp(Event): pass\nclass ViewModel(QObject):\n    event = pyqtSignal(Event)\n    current_filename = MutableLiveData(None)\n    current_world_position = MutableLiveData(None)\n    layer_map: MutableLiveData = MutableLiveData(dict())",
+        "peekOfCode": "class ShowGrowthPattern(Event):\n    def __init__(self, tumor_models):\n        self.tumor_models = tumor_models\nclass ConfirmExit(Event): pass\nclass TerminateApp(Event): pass\nclass ViewModel(QObject):\n    \"\"\"\n    프로젝트의 단일한 뷰모델\n    - ViewModel에 연결된 UI 모듈: MainWindow, LayerFragment, RenderingFragment\n    - Observer 패턴을 구현하기 위해 data를 LiveData 형태로 노출한다.",
         "detail": "ui.ViewModel",
         "documentation": {}
     },
@@ -992,7 +1001,7 @@
         "kind": 6,
         "importPath": "ui.ViewModel",
         "description": "ui.ViewModel",
-        "peekOfCode": "class ConfirmExit(Event): pass\nclass TerminateApp(Event): pass\nclass ViewModel(QObject):\n    event = pyqtSignal(Event)\n    current_filename = MutableLiveData(None)\n    current_world_position = MutableLiveData(None)\n    layer_map: MutableLiveData = MutableLiveData(dict())\n    series: MutableLiveData = MutableLiveData(None)\n    position: MutableLiveData = MutableLiveData(0)\n    layer: LiveData",
+        "peekOfCode": "class ConfirmExit(Event): pass\nclass TerminateApp(Event): pass\nclass ViewModel(QObject):\n    \"\"\"\n    프로젝트의 단일한 뷰모델\n    - ViewModel에 연결된 UI 모듈: MainWindow, LayerFragment, RenderingFragment\n    - Observer 패턴을 구현하기 위해 data를 LiveData 형태로 노출한다.\n    Ability:\n        - Dicom file로부터 *series, **layer를 읽어들이고 data model로 변환할 수 있다.\n        - Series, layer model에 대한 연산(select, delete, tumor marking)을 수행할 수 있다.",
         "detail": "ui.ViewModel",
         "documentation": {}
     },
@@ -1001,7 +1010,7 @@
         "kind": 6,
         "importPath": "ui.ViewModel",
         "description": "ui.ViewModel",
-        "peekOfCode": "class TerminateApp(Event): pass\nclass ViewModel(QObject):\n    event = pyqtSignal(Event)\n    current_filename = MutableLiveData(None)\n    current_world_position = MutableLiveData(None)\n    layer_map: MutableLiveData = MutableLiveData(dict())\n    series: MutableLiveData = MutableLiveData(None)\n    position: MutableLiveData = MutableLiveData(0)\n    layer: LiveData\n    series_description: LiveData",
+        "peekOfCode": "class TerminateApp(Event): pass\nclass ViewModel(QObject):\n    \"\"\"\n    프로젝트의 단일한 뷰모델\n    - ViewModel에 연결된 UI 모듈: MainWindow, LayerFragment, RenderingFragment\n    - Observer 패턴을 구현하기 위해 data를 LiveData 형태로 노출한다.\n    Ability:\n        - Dicom file로부터 *series, **layer를 읽어들이고 data model로 변환할 수 있다.\n        - Series, layer model에 대한 연산(select, delete, tumor marking)을 수행할 수 있다.\n        - Memento pattern을 통해 undo, redo 동작을 수행할 수 있다.",
         "detail": "ui.ViewModel",
         "documentation": {}
     },
@@ -1010,7 +1019,7 @@
         "kind": 6,
         "importPath": "ui.ViewModel",
         "description": "ui.ViewModel",
-        "peekOfCode": "class ViewModel(QObject):\n    event = pyqtSignal(Event)\n    current_filename = MutableLiveData(None)\n    current_world_position = MutableLiveData(None)\n    layer_map: MutableLiveData = MutableLiveData(dict())\n    series: MutableLiveData = MutableLiveData(None)\n    position: MutableLiveData = MutableLiveData(0)\n    layer: LiveData\n    series_description: LiveData\n    area: LiveData",
+        "peekOfCode": "class ViewModel(QObject):\n    \"\"\"\n    프로젝트의 단일한 뷰모델\n    - ViewModel에 연결된 UI 모듈: MainWindow, LayerFragment, RenderingFragment\n    - Observer 패턴을 구현하기 위해 data를 LiveData 형태로 노출한다.\n    Ability:\n        - Dicom file로부터 *series, **layer를 읽어들이고 data model로 변환할 수 있다.\n        - Series, layer model에 대한 연산(select, delete, tumor marking)을 수행할 수 있다.\n        - Memento pattern을 통해 undo, redo 동작을 수행할 수 있다.\n        - Tumor marking을 통해 구성된 point cloud로 3D mesh 및 TumorModel을 빌드할 수 있다.",
         "detail": "ui.ViewModel",
         "documentation": {}
     },
@@ -1051,30 +1060,21 @@
         "documentation": {}
     },
     {
-        "label": "MainWindow",
-        "kind": 6,
-        "importPath": "App",
-        "description": "App",
-        "peekOfCode": "class MainWindow(QMainWindow):\n    \"\"\"\n    Attributes:\n        view_model(ViewModel): 뷰모델 (poject-level)\n        layout_top(QHBoxLayout): 최상위 레이아웃\n        layers_fragment(LayersFragment): 단층(layer) 탐색 화면 - 화면 좌측\n        rendering_fragment(RenderingFragment): 종양(3D) 렌더링 화면 - 화면 우측\n    Methods:\n        setup_menu: 메뉴를 초기화한다. (계층도는 함수 doc 참조)\n        setup_toolbar: 툴바를 초기화한다.",
-        "detail": "App",
-        "documentation": {}
-    },
-    {
         "label": "about_text",
         "kind": 5,
-        "importPath": "Strings",
-        "description": "Strings",
+        "importPath": "utils.Strings",
+        "description": "utils.Strings",
         "peekOfCode": "about_text = \"\"\"\nBrain Tumor Simulator 1.0\nPurpose: Tumor volume measurement, comparison, and analysis\nDisclaimer: This software is not intended to replace professional medical diagnosis.\nCopyright 2023. Sung Won Jo. All rights reserved.\nContact: waterbottle54@naver.com\n\"\"\"\n#==================================== Tip Text ==========================================\n# Used in TipsDialog.py\ntip_text = \"\"\"",
-        "detail": "Strings",
+        "detail": "utils.Strings",
         "documentation": {}
     },
     {
         "label": "tip_text",
         "kind": 5,
-        "importPath": "Strings",
-        "description": "Strings",
+        "importPath": "utils.Strings",
+        "description": "utils.Strings",
         "peekOfCode": "tip_text = \"\"\"\nZoom Image: \\t Ctrl + Mouse Wheel\nMove Focus: \\t Right Drag\nMark Tumor: \\t Left Drag\nChange Layer: \\t Mouse Wheel\nSkip Layers: \\t Page Up / Page Down\nSkip All Layers: \\t Home / End\nZoom 3D Tumor: \\t Mouse Wheel\nRotate 3D Tumor: \\t Mouse Drag\n* Import folder that directly contains DICOM files.",
-        "detail": "Strings",
+        "detail": "utils.Strings",
         "documentation": {}
     }
 ]

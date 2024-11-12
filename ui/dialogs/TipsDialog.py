@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QDialog, QHBoxLayout, QLabel
 from PyQt5.QtGui import QPixmap
-from Strings import tip_text
+from utils.Strings import tip_text
 
 class TipsDialog(QDialog):
     """
