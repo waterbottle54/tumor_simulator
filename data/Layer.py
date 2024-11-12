@@ -10,7 +10,7 @@ class Layer:
     """ DICOM을 구성하는 한 시리즈(series)의 한 단면(layer)을 나타낸다
 
     Attributes:
-        series(str): 이 layer를 포함하는 시리즈의 이름 (e.g. G/A Inhanced Axial)
+        series(str): 이 layer를 포함하는 시리즈의 이름 (e.g. Gd Inhanced Axial)
         study_date(date): 촬영일자(UTC+0)
         birth_date(date): 환자 생년월일
         pixel_spacing(list[float]): 이미지의 픽셀 간 물리적 거리 (dx=[0], dy=[1])

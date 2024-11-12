@@ -812,7 +812,7 @@
         "kind": 6,
         "importPath": "data.Layer",
         "description": "data.Layer",
-        "peekOfCode": "class Layer:\n    \"\"\" DICOM을 구성하는 한 시리즈(series)의 한 단면(layer)을 나타낸다\n    Attributes:\n        series(str): 이 layer를 포함하는 시리즈의 이름 (e.g. G/A Inhanced Axial)\n        study_date(date): 촬영일자(UTC+0)\n        birth_date(date): 환자 생년월일\n        pixel_spacing(list[float]): 이미지의 픽셀 간 물리적 거리 (dx=[0], dy=[1])\n        position(list[float]): 환자의 물리적 위치, x(L/R)=[0], y(A/P)=[1], z(H/F)=[2])\n        direction_row(list[float]): 이미지의 픽셀행(row)의 물리적(world) 방향벡터\n        direction_column(list[float]): 이미지의 픽셀열(column)의 물리적 방향벡터",
+        "peekOfCode": "class Layer:\n    \"\"\" DICOM을 구성하는 한 시리즈(series)의 한 단면(layer)을 나타낸다\n    Attributes:\n        series(str): 이 layer를 포함하는 시리즈의 이름 (e.g. Gd Inhanced Axial)\n        study_date(date): 촬영일자(UTC+0)\n        birth_date(date): 환자 생년월일\n        pixel_spacing(list[float]): 이미지의 픽셀 간 물리적 거리 (dx=[0], dy=[1])\n        position(list[float]): 환자의 물리적 위치, x(L/R)=[0], y(A/P)=[1], z(H/F)=[2])\n        direction_row(list[float]): 이미지의 픽셀행(row)의 물리적(world) 방향벡터\n        direction_column(list[float]): 이미지의 픽셀열(column)의 물리적 방향벡터",
         "detail": "data.Layer",
         "documentation": {}
     },
@@ -1055,7 +1055,7 @@
         "kind": 6,
         "importPath": "App",
         "description": "App",
-        "peekOfCode": "class MainWindow(QMainWindow):\n    \"\"\"\n    Attributes:\n        view_model(ViewModel): 뷰모델 (poject-level)\n        layout_top(QHBoxLayout): 최상위 레이아웃\n        layers_fragment(LayersFragment): 단층(layer) 탐색 화면 (화면 좌측)\n        rendering_fragment(RenderingFragment): 3D 렌더링 화면 (화면 우측)\n    Methods:\n        setup_menu: \n        setup_toolbar: ",
+        "peekOfCode": "class MainWindow(QMainWindow):\n    \"\"\"\n    Attributes:\n        view_model(ViewModel): 뷰모델 (poject-level)\n        layout_top(QHBoxLayout): 최상위 레이아웃\n        layers_fragment(LayersFragment): 단층(layer) 탐색 화면 - 화면 좌측\n        rendering_fragment(RenderingFragment): 종양(3D) 렌더링 화면 - 화면 우측\n    Methods:\n        setup_menu: 메뉴를 초기화한다. (계층도는 함수 doc 참조)\n        setup_toolbar: 툴바를 초기화한다.",
         "detail": "App",
         "documentation": {}
     },
