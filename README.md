@@ -34,21 +34,21 @@ Windows 10, 11
 
 #### Basic Instruction
 
-Move Camera: \t Left Button Drag
+Move Camera: Left Button Drag
 
-Zoom In/Out: \t Mouse Wheel
+Zoom In/Out: Mouse Wheel
 
-Mark Tumor: \t Right Button Drag
+Mark Tumor: Right Button Drag
 
-Change Layer: \t Ctrl + Mouse Wheel
+Change Layer: Ctrl + Mouse Wheel
 
-Skip Layers: \t Page Up / Page Down
+Skip Layers: Page Up / Page Down
 
-Skip All Layers: \t Home / End
+Skip All Layers: Home / End
 
-Zoom 3D Tumor: \t Mouse Wheel
+Zoom 3D Tumor: Mouse Wheel
 
-Rotate 3D Tumor: \t Mouse Drag
+Rotate 3D Tumor: Mouse Drag
 
 * Import folder that directly contains DICOM files.
 
