@@ -11,19 +11,10 @@ comparison, and time series analysis.
 
 ## Description
 
-
-
-## Description (on Development)
-
-주요 기술: Qt5, OpenGL, Open3d, MVVM Pattern
-
-가까운 사람의 암 투병 중, 종양의 입체적 구조를 확인하고 
-정확한 부피 측정을 통해 병의 진행을 가늠할 수 있도록 개인적으로 개발한 QT Desktop Application입니다.
-DICOM 파일을 읽어 들인 후, 종양의 경계를 이루는 point cloud를 구성하고, 3D 모델을 빌드하여 종양의 구조를 파악합니다. 
+종양의 입체적 구조를 확인하고 정확한 부피 측정을 통해 병의 진행을 가늠할 수 있도록 개발된 QT Desktop Application입니다.
+DICOM 파일을 읽어들인 후, 종양의 경계를 이루는 point cloud를 구성하고, 3D 모델을 빌드하여 종양의 구조를 파악합니다. 
 내부 체적을 계산하고 및 OpenGL 3d rendering하였습니다. 체적 계산에는 shoelace formula로 얻은 단면의 넓이를 구분구적하는 방식이 사용되었습니다. 
-기존에 종양 모델을 볼록껍질(Convex hull)로 계산하였으나, 종양 표면의 요철을 반영하지 못하는 문제가 있었습니다. 오차를 감소시키기 위해 3D data processing 분야를 조사하여 Poisson reconstruction algorithm을 적용한 결과 목표한 품질을 달성할 수 있었습니다. 
-micro-CT 생명공학 모델링을 연구하는 학생의 요청으로 본 프로그램의 소스코드를 제공한 바 있습니다. 의료와 소프트웨어를 접목시키는 이러한 경험을 통해 디지털 헬스케어 분야의 이로움에 주목하였고, 해당 분야에 기여하고자 하는 목표를 갖게 되었습니다.
-
+기존에 종양 모델을 볼록껍질(Convex hull)로 계산하였으나, 종양 표면의 요철을 반영하지 못하는 문제가 있었습니다. 오차를 감소시키기 위해 Poisson reconstruction algorithm을 적용한 결과 목표한 품질을 달성할 수 있었습니다. 
 
 ## Getting Started
 
@@ -37,13 +28,6 @@ Windows 10, 11
 * 선택 1. 이 repository에서 소스코드를 받아서 python 인터프리터로 실행합니다. (실행하기 전에, Consts.py 안의 debug_or_release==True인지 확인합니다.)
 * 선택 2: 다음 링크에서 실행파일을 다운로드하고 압축을 해제합니다. https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing
 
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
 
 ## Help
 
