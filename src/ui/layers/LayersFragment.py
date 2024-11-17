@@ -148,7 +148,7 @@ class LayersFragment(QWidget):
         Args:
             up_down (bool): 휠 up이면 true, down이면 false
         """
-        self.view_model.on_layer_wheel_scroll_by(1 if up_down == True else -1)
+        self.view_model.on_layer_scroll_by(1 if up_down == True else -1)
 
     def update_series_list_view(self, layers):
         """

@@ -109,7 +109,6 @@ class ViewModel(QObject):
 
         _is_valid_selection:        주어진 series가 실존하고 layer index가 유효한 범위에 있으면 True, 아니면 False를 리턴한다.
         _get_series_at:             주어진 index번째 series를 리턴한다.
-        _get_series_index:          주어진 series가 위치한 index를 리턴한다.
         _delete_series:             현재 선택된 series를 삭제한다.
         _import_dicom_files:        주어진 dicom 파일들을 읽어 layer들을 생성하고 series별로 정리한다.
 
@@ -124,10 +123,11 @@ class ViewModel(QObject):
         _undo_state:                현재 상태를 redo 스택에 저장한 후 undo 한다.
         _redo_state:                현재 상태를 undo 스택에 저장한 후 redo 한다.
         _backup_undo:               undo 스택에 현재 상태를 백업한다.
+   
+    Copyright (c) 2023 Sung Won Jo
+    
+    For more details: [Github](https://github.com/waterbottle54/tumor_simulator)
     """
-
-    # Copyright (c) 2023 Sung Won Jo
-    # For more details: https://github.com/waterbottle54/tumor_simulator
 
     event = pyqtSignal(Event)
     
@@ -138,6 +138,9 @@ class ViewModel(QObject):
         self.current_world_position = MutableLiveData(None)
 
         self.current_series = MutableLiveData(None)
+
+        # 각 series를 이루는 layer의 배열을 value로 하고, 각 series의 이름을 key로 하는 dict형 자료구조
+        # 'Flare Axial' series의 첫 번째 layer에 접근하려면 self.layers['Flare Axial'][0] 과 같이 접근한다.
         self.layers = MutableLiveData(dict[str, list[Layer]]())
         self.index_layer = MutableLiveData(0)
 
@@ -183,43 +186,36 @@ class ViewModel(QObject):
 
     def is_valid_selection(self, series_title, index_layer):
         """
-        주어진 series가 실존하고 layer index가 유효한 범위에 있으면 True, 아니면 False를 리턴한다.
+        주어진 series가 존재하고 layer index가 유효한 범위에 있으면 True, 아니면 False를 리턴한다.
 
         Args:
             series_title (str): Series 제목
             index_layer (int): Layer 인덱스
 
         Returns:
-            bool: True: 주어진 series가 실존하고 layer index가 유효한 범위에 있다.\n
+            bool: True: 주어진 series가 존재하고 layer index가 유효한 범위에 있다.\n
             False: Otherwise
         """
         layers = self.layers.value
-        return series_title in layers and 0 <= index_layer < len(layers[series_title])
+        if series_title not in layers:
+            return False
+        if (index_layer < 0) or (index_layer >= len(layers[series_title])):
+            return False
+        return True
 
-    def get_series_at(self, index):
+    def get_series_at(self, layers: dict[str, list[Layer]], index):
         """
-        주어진 index번째 series를 리턴한다.
+        주어진ㄹ layer의 key(=series title)들 중 index번째 key를 리턴한다.
 
         Args:
-            index (int): 선택할 series의 index
+            layers (dict[str, list[Layer]]): 검색할 layers(dict)
+            index (int): 찾고자 하는 series의 index
 
         Returns:
             str: index번째 series의 제목
         """
-        return list(self.layers.value.keys())[index]
+        return list(layers.keys())[index]
     
-    def get_series_index(self, series):
-        """
-        주어진 series가 위치한 index를 리턴한다.
-
-        Args:
-            series (str): index를 구할 series의 제목
-
-        Returns:
-            int: series가 위치한 index
-        """
-        return list(self.layers.value.keys()).index(series)
-
     def on_import_dicom_click(self):
         """
         import 메뉴 클릭 시 파일 탐색기 이벤트를 발생시킨다.
@@ -266,11 +262,12 @@ class ViewModel(QObject):
                 layers[series] = [layer]
 
         if len(layers) > 0:
-            self.layers.publish()                       # 리스트 변화를 publish한다. (set_value()가 사용되지 않았으므로.)
-            first_series = self.get_series_at(0)        # 첫 번째 series의 첫 번째 layer를 선택한다
+            first_series = self.get_series_at(layers, 0)        #  첫 번째 series를 선택한다
             self.current_series.set_value(first_series)
+            self.layers.publish()                               # 리스트 변화를 publish한다. (set_value()가 사용되지 않았으므로.)
             if len(layers[first_series]) > 0:
                 self.index_layer.set_value(0)
+                
 
     def on_delete_layer_click(self):
         """
@@ -319,14 +316,14 @@ class ViewModel(QObject):
             self.backup_undo()                      # 삭제 전 상태를 undo 스택에 백업한다.
             self.delete_series(series_title)
 
-    def on_series_click(self, new_index_series):
+    def on_series_click(self, idx_new):
         """
         series 가 클릭된 경우 해당 series를 선택하고 0번째 layer를 선택한다.
 
         Args:
-            new_index_series (int): 변경
+            idx_new (int): 선택할 시리즈의 index 
         """
-        new_series = self.get_series_at(new_index_series)
+        new_series = self.get_series_at(self.layers.value, idx_new)
         self.current_series.set_value(new_series)
         self.index_layer.set_value(0)
     
@@ -377,6 +374,8 @@ class ViewModel(QObject):
             offset (int): 이 값만큼 index를 변경한다.
         """
         series = self.current_series.value
+        if series is None:
+            return
         index = self.index_layer.value
         if self.is_valid_selection(series, index + offset):     # index를 offset만큼 이동했을 때 유효 범위인지 검사한다.
             self.index_layer.set_value(index + offset)          # 유효 범위이므로 offset만큼 이동한다.
@@ -407,7 +406,10 @@ class ViewModel(QObject):
         """
         Build 메뉴 클릭 시 종양의 point cloud로부터 종양의 곡면(mesh)을 계산한다.
         """
-        self.reconstruct_surface()
+        try:
+            self.reconstruct_surface()
+        except Exception as e:
+            print(str(e))
 
     def on_new_project_click(self):
         """
@@ -441,7 +443,10 @@ class ViewModel(QObject):
             with open(filename, 'rb') as file:
                 data = pickle.load(file)
             self.set_current_state(data)
-            self.reconstruct_surface()
+            try:
+                self.reconstruct_surface()
+            except Exception as e:
+                print(str(e))
             self.current_filename.set_value(filename)
         except IOError as e:
             print(str(e))
@@ -636,21 +641,23 @@ class ViewModel(QObject):
             series (str): 삭제할 series의 제목
         """
         layers = self.layers.value
-        series_index = self.get_series_index(series)
+        series_index = list(self.layers.value.keys()).index(series)
         del layers[series]  # series 삭제
         if len(layers) == 0:
             # 새로 선택할 series가 없으면 선택을 무효값으로 한다.
             self.current_series.set_value(None)
             self.index_layer.set_value(-1)
+            self.layers.set_value(dict())
+            self.mesh.set_value(None)
         else:
             # 삭제에 의해 현재 index로 이동한 series를 선택하되, 범위를 벗어난 경우 마지막 series를 선택한다.
             if series_index == len(layers):
                 series_index -= 1
-            new_series = self.get_series_at(series_index)
+            new_series = self.get_series_at(layers, series_index)
             self.current_series.set_value(new_series)
             self.index_layer.set_value(0)
-        self.layers.publish()
-        self.mesh.set_value(None)
+            self.layers.publish()
+            self.mesh.set_value(None)
 
     def get_current_state(self):
         """
@@ -673,7 +680,7 @@ class ViewModel(QObject):
         프로젝트 상태를 주어진 state로 설정한다. serialization, undo, redo 등에 사용된다.
 
         Args:
-            state (tuple): 불러올 프로젝트 상태: (layers, current_series, index_layer)
+            state (tuple): 설정할 프로젝트 상태: (layers, current_series, index_layer)
         """
         self.current_series.set_value(state['series'])
         self.index_layer.set_value(state['index_layer'])

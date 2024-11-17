@@ -194,6 +194,14 @@
         "documentation": {}
     },
     {
+        "label": "QPixmap",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
         "label": "pydicom",
         "kind": 6,
         "isExtraImport": true,
@@ -217,6 +225,14 @@
         "description": "mritopng.models",
         "isExtraImport": true,
         "detail": "mritopng.models",
+        "documentation": {}
+    },
+    {
+        "label": "PickableQPixmap",
+        "importPath": "utils.PickableQPixmap",
+        "description": "utils.PickableQPixmap",
+        "isExtraImport": true,
+        "detail": "utils.PickableQPixmap",
         "documentation": {}
     },
     {
@@ -444,6 +460,14 @@
         "documentation": {}
     },
     {
+        "label": "QApplication",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "Qt",
         "importPath": "PyQt5.QtCore",
         "description": "PyQt5.QtCore",
@@ -516,43 +540,91 @@
         "documentation": {}
     },
     {
-        "label": "about_text",
-        "importPath": "utils.Strings",
-        "description": "utils.Strings",
+        "label": "QByteArray",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
         "isExtraImport": true,
-        "detail": "utils.Strings",
+        "detail": "PyQt5.QtCore",
         "documentation": {}
     },
     {
-        "label": "dir_icons",
-        "importPath": "utils.Strings",
-        "description": "utils.Strings",
+        "label": "QDataStream",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
         "isExtraImport": true,
-        "detail": "utils.Strings",
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QIODevice",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "about_text",
+        "importPath": "Strings",
+        "description": "Strings",
+        "isExtraImport": true,
+        "detail": "Strings",
+        "documentation": {}
+    },
+    {
+        "label": "url_youtube",
+        "importPath": "Strings",
+        "description": "Strings",
+        "isExtraImport": true,
+        "detail": "Strings",
+        "documentation": {}
+    },
+    {
+        "label": "get_image_path",
+        "importPath": "Strings",
+        "description": "Strings",
+        "isExtraImport": true,
+        "detail": "Strings",
+        "documentation": {}
+    },
+    {
+        "label": "url_github",
+        "importPath": "Strings",
+        "description": "Strings",
+        "isExtraImport": true,
+        "detail": "Strings",
         "documentation": {}
     },
     {
         "label": "tip_text",
-        "importPath": "utils.Strings",
-        "description": "utils.Strings",
+        "importPath": "Strings",
+        "description": "Strings",
         "isExtraImport": true,
-        "detail": "utils.Strings",
+        "detail": "Strings",
         "documentation": {}
     },
     {
         "label": "dir_icons",
-        "importPath": "utils.Strings",
-        "description": "utils.Strings",
+        "importPath": "Strings",
+        "description": "Strings",
         "isExtraImport": true,
-        "detail": "utils.Strings",
+        "detail": "Strings",
         "documentation": {}
     },
     {
-        "label": "dir_icons",
-        "importPath": "utils.Strings",
-        "description": "utils.Strings",
+        "label": "get_image_path",
+        "importPath": "Strings",
+        "description": "Strings",
         "isExtraImport": true,
-        "detail": "utils.Strings",
+        "detail": "Strings",
+        "documentation": {}
+    },
+    {
+        "label": "get_image_path",
+        "importPath": "Strings",
+        "description": "Strings",
+        "isExtraImport": true,
+        "detail": "Strings",
         "documentation": {}
     },
     {
@@ -649,6 +721,15 @@
         "description": "data.Camera",
         "isExtraImport": true,
         "detail": "data.Camera",
+        "documentation": {}
+    },
+    {
+        "label": "keyboard",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "keyboard",
+        "description": "keyboard",
+        "detail": "keyboard",
         "documentation": {}
     },
     {
@@ -767,6 +848,22 @@
         "importPath": "open3d",
         "description": "open3d",
         "detail": "open3d",
+        "documentation": {}
+    },
+    {
+        "label": "MainWindow",
+        "importPath": "ui.MainWindow",
+        "description": "ui.MainWindow",
+        "isExtraImport": true,
+        "detail": "ui.MainWindow",
+        "documentation": {}
+    },
+    {
+        "label": "debug_or_release",
+        "importPath": "Consts",
+        "description": "Consts",
+        "isExtraImport": true,
+        "detail": "Consts",
         "documentation": {}
     },
     {
@@ -916,10 +1013,10 @@
     {
         "label": "MainWindow",
         "kind": 6,
-        "importPath": "src.ui.App",
-        "description": "src.ui.App",
-        "peekOfCode": "class MainWindow(QMainWindow):\n    \"\"\"\n    프로그램의 메인 윈도우. \n    - 화면은 LayersFragment(좌), RenderingFragment(우) 로 구성된다.\n    - Fragment는 UI의 일부를 모듈화한 section이다. (reusable)\n      대부분의 기능이 fragment에 구현되어 있다. (상세: 각 class doc)\n    - menubar, toolbar, status bar를 가지며 뷰모델과 연동한다.\n    Attributes:\n        view_model(ViewModel): 뷰모델 (poject-level)\n        layout_top(QHBoxLayout): 최상위 레이아웃",
-        "detail": "src.ui.App",
+        "importPath": "src.ui.MainWindow",
+        "description": "src.ui.MainWindow",
+        "peekOfCode": "class MainWindow(QMainWindow):\n    \"\"\"\n    프로그램의 메인 윈도우. \n    - 화면은 LayersFragment(좌), RenderingFragment(우) 로 구성된다.\n    - Fragment는 UI의 일부를 모듈화한 section이다. (reusable)<br>\n    대부분의 기능이 fragment에 구현되어 있다. (상세: 각 class doc)\n    - menubar, toolbar, status bar를 가지며 뷰모델과 연동한다.\n    Attributes:\n        view_model(ViewModel): 뷰모델 (poject-level)\n        layout_top(QHBoxLayout): 최상위 레이아웃",
+        "detail": "src.ui.MainWindow",
         "documentation": {}
     },
     {
@@ -1044,8 +1141,17 @@
         "kind": 2,
         "importPath": "src.utils.O3dUtil",
         "description": "src.utils.O3dUtil",
-        "peekOfCode": "def reconstruct_surface(points):\n    # build mesh object\n    points = np.array(points)\n    point_cloud = o3d.geometry.PointCloud()\n    point_cloud.points = o3d.utility.Vector3dVector(points)\n    point_cloud.estimate_normals()\n    point_cloud.orient_normals_towards_camera_location(point_cloud.get_center())\n    point_cloud.normals = o3d.utility.Vector3dVector( - np.asarray(point_cloud.normals))\n    mesh = o3d.geometry.TriangleMesh.create_from_point_cloud_poisson(point_cloud, depth=7, width=0, scale=1.1, linear_fit=False)[0]\n    mesh = mesh.simplify_quadric_decimation(1000)",
+        "peekOfCode": "def reconstruct_surface(points):\n    # build mesh object\n    points = np.array(points)\n    point_cloud = o3d.geometry.PointCloud()\n    point_cloud.points = o3d.utility.Vector3dVector(points)\n    point_cloud.estimate_normals()\n    # a call to orient_normals_towards_camera_location() invokes runtime crash for unknown reason. what I have tried:\n    # removing point_cloud.get_center(), version adjustment(both python and open3d), data inspection(points)\n    # As a workaround, I chose to adjust lighting in openGL part (in RenderingWidget.py) - 2024.11\n    #point_cloud.orient_normals_towards_camera_location(point_cloud.get_center()) <= INVOKES CRASH",
         "detail": "src.utils.O3dUtil",
+        "documentation": {}
+    },
+    {
+        "label": "PickableQPixmap",
+        "kind": 6,
+        "importPath": "src.utils.PickableQPixmap",
+        "description": "src.utils.PickableQPixmap",
+        "peekOfCode": "class PickableQPixmap(QPixmap):\n    def __reduce__(self):\n        return type(self), (), self.__getstate__()\n    def __getstate__(self):\n        ba = QByteArray()\n        stream = QDataStream(ba, QIODevice.WriteOnly)\n        stream << self\n        return ba\n    def __setstate__(self, ba):\n        stream = QDataStream(ba, QIODevice.ReadOnly)",
+        "detail": "src.utils.PickableQPixmap",
         "documentation": {}
     },
     {
@@ -1076,39 +1182,93 @@
         "documentation": {}
     },
     {
+        "label": "debug_or_release",
+        "kind": 5,
+        "importPath": "src.Consts",
+        "description": "src.Consts",
+        "peekOfCode": "debug_or_release = False",
+        "detail": "src.Consts",
+        "documentation": {}
+    },
+    {
         "label": "resource_path",
         "kind": 2,
-        "importPath": "src.utils.Strings",
-        "description": "src.utils.Strings",
-        "peekOfCode": "def resource_path(relative_path):\n    try:\n        base_path = sys._MEIPASS\n    except Exception:\n        base_path = os.path.abspath(\".\")\n    return os.path.join(base_path, relative_path)\n#=================================== Directories ==========================================\ndir_icons = 'resources/icons'\n#==================================== About Text ==========================================\nabout_text = \"\"\"",
-        "detail": "src.utils.Strings",
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "def resource_path(relative_path):\n    try:\n        base_path = sys._MEIPASS\n    except Exception:\n        base_path = os.path.abspath(\".\")\n    return os.path.join(base_path, relative_path)\ndef get_image_path(filename: str):\n    \"\"\"Get absolute path of the image whose name is given by the arguement.\n    The path may differ depending on whether its debug mode or release mode (See consts.py).\n    Args:",
+        "detail": "src.Strings",
+        "documentation": {}
+    },
+    {
+        "label": "get_image_path",
+        "kind": 2,
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "def get_image_path(filename: str):\n    \"\"\"Get absolute path of the image whose name is given by the arguement.\n    The path may differ depending on whether its debug mode or release mode (See consts.py).\n    Args:\n        filename (str): The name of the image, not including its directory.\n    Returns:\n        str: The absolute path of an image\n    \"\"\"\n    return dir_icons + f'/{filename}' if debug_or_release else resource_path(filename)\n#==================================== About Text ==========================================",
+        "detail": "src.Strings",
+        "documentation": {}
+    },
+    {
+        "label": "version_name",
+        "kind": 5,
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "version_name = '1.02'\n#====================================== URLs ==============================================\nurl_github = 'https://github.com/waterbottle54/tumor_simulator'\nurl_youtube = 'https://www.youtube.com/channel/UChfv3TOHGociOKYMXSzS6hw'\n#===================================== Contact ============================================\nemail = 'waterbottle54@naver.com'\n#=================================== Directories ==========================================\ndir_icons = 'resources/icons'\ndef resource_path(relative_path):\n    try:",
+        "detail": "src.Strings",
+        "documentation": {}
+    },
+    {
+        "label": "url_github",
+        "kind": 5,
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "url_github = 'https://github.com/waterbottle54/tumor_simulator'\nurl_youtube = 'https://www.youtube.com/channel/UChfv3TOHGociOKYMXSzS6hw'\n#===================================== Contact ============================================\nemail = 'waterbottle54@naver.com'\n#=================================== Directories ==========================================\ndir_icons = 'resources/icons'\ndef resource_path(relative_path):\n    try:\n        base_path = sys._MEIPASS\n    except Exception:",
+        "detail": "src.Strings",
+        "documentation": {}
+    },
+    {
+        "label": "url_youtube",
+        "kind": 5,
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "url_youtube = 'https://www.youtube.com/channel/UChfv3TOHGociOKYMXSzS6hw'\n#===================================== Contact ============================================\nemail = 'waterbottle54@naver.com'\n#=================================== Directories ==========================================\ndir_icons = 'resources/icons'\ndef resource_path(relative_path):\n    try:\n        base_path = sys._MEIPASS\n    except Exception:\n        base_path = os.path.abspath(\".\")",
+        "detail": "src.Strings",
+        "documentation": {}
+    },
+    {
+        "label": "email",
+        "kind": 5,
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "email = 'waterbottle54@naver.com'\n#=================================== Directories ==========================================\ndir_icons = 'resources/icons'\ndef resource_path(relative_path):\n    try:\n        base_path = sys._MEIPASS\n    except Exception:\n        base_path = os.path.abspath(\".\")\n    return os.path.join(base_path, relative_path)\ndef get_image_path(filename: str):",
+        "detail": "src.Strings",
         "documentation": {}
     },
     {
         "label": "dir_icons",
         "kind": 5,
-        "importPath": "src.utils.Strings",
-        "description": "src.utils.Strings",
-        "peekOfCode": "dir_icons = 'resources/icons'\n#==================================== About Text ==========================================\nabout_text = \"\"\"\nBrain Tumor Simulator 1.0\nPurpose: Tumor volume measurement, comparison, and analysis\nDisclaimer: This software is not intended to replace professional medical diagnosis.\nCopyright 2023. Sung Won Jo. All rights reserved.\nContact: waterbottle54@naver.com\n\"\"\"\n#==================================== Tip Text ==========================================",
-        "detail": "src.utils.Strings",
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "dir_icons = 'resources/icons'\ndef resource_path(relative_path):\n    try:\n        base_path = sys._MEIPASS\n    except Exception:\n        base_path = os.path.abspath(\".\")\n    return os.path.join(base_path, relative_path)\ndef get_image_path(filename: str):\n    \"\"\"Get absolute path of the image whose name is given by the arguement.\n    The path may differ depending on whether its debug mode or release mode (See consts.py).",
+        "detail": "src.Strings",
         "documentation": {}
     },
     {
         "label": "about_text",
         "kind": 5,
-        "importPath": "src.utils.Strings",
-        "description": "src.utils.Strings",
-        "peekOfCode": "about_text = \"\"\"\nBrain Tumor Simulator 1.0\nPurpose: Tumor volume measurement, comparison, and analysis\nDisclaimer: This software is not intended to replace professional medical diagnosis.\nCopyright 2023. Sung Won Jo. All rights reserved.\nContact: waterbottle54@naver.com\n\"\"\"\n#==================================== Tip Text ==========================================\n# Used in TipsDialog.py\ntip_text = \"\"\"",
-        "detail": "src.utils.Strings",
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "about_text = f\"\"\"\nBrain Tumor Simulator {version_name}\nPurpose: Tumor volume measurement, comparison, and analysis\nDisclaimer: This software is not intended to replace professional medical diagnosis.\nCopyright 2023. Sung Won Jo. All rights reserved.\nContact: {email}\n\"\"\"\n#==================================== Tip Text ==========================================\n# Used in TipsDialog.py\ntip_text = \"\"\"",
+        "detail": "src.Strings",
         "documentation": {}
     },
     {
         "label": "tip_text",
         "kind": 5,
-        "importPath": "src.utils.Strings",
-        "description": "src.utils.Strings",
-        "peekOfCode": "tip_text = \"\"\"\nZoom Image: \\t Ctrl + Mouse Wheel\nMove Focus: \\t Right Drag\nMark Tumor: \\t Left Drag\nChange Layer: \\t Mouse Wheel\nSkip Layers: \\t Page Up / Page Down\nSkip All Layers: \\t Home / End\nZoom 3D Tumor: \\t Mouse Wheel\nRotate 3D Tumor: \\t Mouse Drag\n* Import folder that directly contains DICOM files.",
-        "detail": "src.utils.Strings",
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "tip_text = \"\"\"\nMove Camera: \\t Left Button Drag\nZoom In/Out: \\t Mouse Wheel\nMark Tumor: \\t Right Button Drag\nChange Layer: \\t Ctrl + Mouse Wheel\nSkip Layers: \\t Page Up / Page Down\nSkip All Layers: \\t Home / End\nZoom 3D Tumor: \\t Mouse Wheel\nRotate 3D Tumor: \\t Mouse Drag\n* Import folder that directly contains DICOM files.",
+        "detail": "src.Strings",
         "documentation": {}
     }
 ]

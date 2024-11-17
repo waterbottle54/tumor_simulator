@@ -1,7 +1,8 @@
 from PyQt5.QtWidgets import QDialog, QHBoxLayout, QLabel
 from PyQt5.QtGui import QPixmap
-from utils.Strings import tip_text
-from utils.Strings import dir_icons
+from Strings import tip_text
+from Strings import dir_icons
+from Strings import get_image_path
 
 class TipsDialog(QDialog):
     """
@@ -19,19 +20,19 @@ class TipsDialog(QDialog):
         self.setStyleSheet("background-color: white;")
 
         # Create a QVBoxLayout to hold the content
-        layout = QHBoxLayout()
-        layout.setContentsMargins(32, 32, 32, 32)
+        layout_top = QHBoxLayout()
+        layout_top.setContentsMargins(32, 32, 32, 32)
 
         # Create a QLabel to display the application information
-        label = QLabel(tip_text)
-        layout.addWidget(label)
+        label_tip = QLabel(tip_text)
+        layout_top.addWidget(label_tip)
 
-        layout.addSpacing(64)
+        layout_top.addSpacing(64)
 
-        image = QLabel()
-        image.setPixmap(QPixmap(f'{dir_icons}/tips.png'))
-        image.setContentsMargins(16, 16, 16, 16)
-        layout.addWidget(image)
+        image_tip = QLabel()
+        image_tip.setPixmap(QPixmap(get_image_path('tips.png')))
+        image_tip.setContentsMargins(16, 16, 16, 16)
+        layout_top.addWidget(image_tip)
 
         # Set the layout for the dialog
-        self.setLayout(layout)
+        self.setLayout(layout_top)
