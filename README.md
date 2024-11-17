@@ -13,8 +13,9 @@ comparison, and time series analysis.
 
 종양의 입체적 구조를 확인하고 정확한 부피 측정을 통해 병의 진행을 가늠할 수 있도록 개발된 QT Desktop Application입니다.
 DICOM 파일을 읽어들인 후, 종양의 경계를 이루는 point cloud를 구성하고, 3D 모델을 빌드하여 종양의 구조를 파악합니다. 
-내부 체적을 계산하고 및 OpenGL 3d rendering하였습니다. 체적 계산에는 shoelace formula로 얻은 단면의 넓이를 구분구적하는 방식이 사용되었습니다. 
-기존에 종양 모델을 볼록껍질(Convex hull)로 계산하였으나, 종양 표면의 요철을 반영하지 못하는 문제가 있었습니다. 오차를 감소시키기 위해 Poisson reconstruction algorithm을 적용한 결과 목표한 품질을 달성할 수 있었습니다. 
+내부 체적을 계산하고, OpenGL을 이용해 3D rendering 합니다. (체적 계산에는 shoelace formula로 얻은 단면의 넓이를 구분구적함) 
+기존에 종양 모델을 볼록껍질(Convex hull)로 계산하였으나, 종양 표면의 요철을 반영하지 못하는 문제가 있었습니다. 
+오차를 감소시키기 위해 Poisson reconstruction algorithm을 적용한 결과 품질이 개선됨. 
 
 ## Getting Started
 
