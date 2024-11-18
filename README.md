@@ -10,27 +10,12 @@ Brain Tumor Simulator는 Qt5 / Python 으로 작성된 의료 영상 소프트�
 
 (Consts.py 모듈의 debug_or_release를 True로 설정하고 실행하십시오.)
 
-[Google Drive - EXE.zip] https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing
+[Google Drive - EXE.zip](https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing)
 
 
 
 
 
-DICOM VIEWER 로는 종양의 입체 모양이나 부피
-
-종양을 3D 로 재구성하여 
-
-작성자는 조성원(Sung Won Jo)
-
-
-응용프로그램은 DICOM 데이터에 촬영되어 있는 악성 종양의 
-입체적 모양을 확인하고, 부피를 측정하기 위한 목적으로 작성되었습니다.
-
-종양의 진행을 알 수 있도록, 다른 시간에 촬영된 종양을 육안 비교하거나,
-시계열적인 성장패턴을 시각화하는 기능을 사용합니다.
-
-This application is developed for tumor 3D modeling, volume measurement, 
-comparison, and time series analysis.
 
 ## Description
 
