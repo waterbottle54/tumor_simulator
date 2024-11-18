@@ -1,12 +1,17 @@
 # Brain Tumor Simulator
 
-Brain Tumor Simulator는 Qt5 / Python 으로 작성된 의료영상 소프트웨어입니다.
+Brain Tumor Simulator는 Qt5 / Python 으로 작성된 의료 영상 소프트웨어입니다.
 
-이 프로그램의 목적은 종양을 3D 모델로 나타내고 종양의 부피 등을 측정하는 것입니다.
+이 프로그램은 종양을 3D 모델로 나타내고 그 부피 등을 측정할 수 있습니다.
 
-실행파일(.exe)은 다음의 링크에서 다운받을 수 있습니다. (Consts.py 모듈의 debug_or_release를 True로 설정하고 실행하십시오.)
+(의료 진단을 대체하는 용도로 사용될 수 없습니다.)
+
+실행파일(.exe)은 아래의 링크에서 다운받을 수 있습니다. 
+
+(Consts.py 모듈의 debug_or_release를 True로 설정하고 실행하십시오.)
 
 [Google Drive - EXE.zip] https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing
+
 
 
 
