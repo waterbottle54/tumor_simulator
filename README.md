@@ -1,9 +1,11 @@
 # Brain Tumor Simulator  
-
+>
 > ## Description
+>
 >Tumor 3D Modeling          |  Growth Pattern Analysis
 >:-------------------------:|:-------------------------:
 >![](https://github.com/waterbottle54/tumor_simulator/blob/main/demo-model.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/demo-graph.png)
+> 
 > **Brain Tumor Simulator**는 **Qt5 / Python** 으로 작성된 의료 영상 소프트웨어입니다.<br>
 > 이 프로그램은 **DICOM** 데이터로부터 종양을 3D 모델로 나타내고, 부피(㎤) 등을 측정합니다.<br>
 > ⚠️ *이 프로그램은 의료 진단을 대체하는 용도로는 사용될 수 없습니다.*
