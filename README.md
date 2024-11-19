@@ -8,12 +8,12 @@
 > 
 > * **Brain Tumor Simulator**는 **Qt5 / Python** 으로 작성된 **Desktop** 의료 영상 소프트웨어입니다.<br>
 >
->   이 프로그램은 **DICOM** 데이터로부터 병변을 나타내는 3D 모델을 생성하고, 병변의 체적을 계산합니다.<br>
+>   이 프로그램은 **DICOM** 데이터로부터 종양을 나타내는 3D 모델을 생성하고, 종양의 체적을 계산합니다.<br>
 >
 > * 이 프로그램은 의료 진단을 대체하는 용도로 사용될 수 없습니다.
 >   
 >   This application can't replace professional medical diagnosis.
->
+
 > ## Getting Started
 >> ### Dependencies
 >> * Windows: **10, 11**
@@ -30,7 +30,7 @@
 >>     [[EXE] Brain Tumor Simulator.zip](https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing)
 >>   
 >>     *(Consts.py 모듈의 debug_or_release를 True로 설정하고 실행하십시오.)*
->   
+
 > ## Funtionality
 >> ### Viewing
 >> * MRI 및 CT 영상이 담긴 DICOM 파일을 열람할 수 있다.
@@ -51,14 +51,20 @@
 >> ### Etc.
 >> * 프로젝트를 파일(.bts)로 저장하고 불러와서 모델을 수정할 수 있다.
 >> * Tip, About 메뉴로부터 프로그램 사용 방법, 프로그램 정보를 확인할 수 있다.
->
+
+> ## Project Overview
+>> ### Architecture
+>> * MVVM(Model-View-ViewModel) 패턴
+>>
+> 
+
 > ## Author
 > * 조성원 (Sung Won Jo)
 > * 📧 waterbottle54@naver.com
 > * 📚 [Portfolio](https://drive.google.com/file/d/1r5OdxgLtvBusoBgj6E4EQvhhNkQtayVf/view?usp=sharing)
 > * 📹 [YouTube Channel](https://github.com/waterbottle54)
 > <img src="https://github.com/waterbottle54/tumor_simulator/blob/main/demo-about.png" alt="My Image" width="70%">
->
+
 > ## Version History
 > * **1.01** (2023.4): 종양 렌더링 기능 구현
 >   
