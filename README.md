@@ -1,29 +1,18 @@
 # Brain Tumor Simulator  
 
-Tumor 3D Modeling             |  Tumor Growth Pattern
+
+Tumor 3D Modeling          |  Tumor Growth Pattern
 :-------------------------:|:-------------------------:
 ![](https://github.com/waterbottle54/tumor_simulator/blob/main/demo-model.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/demo-graph.png)
-
-**Brain Tumor Simulator**는 **Qt5 / Python** 으로 작성된 의료 영상 소프트웨어입니다.
-
-이 프로그램은 **DICOM** 데이터로부터 종양을 **3D** 모델로 나타내고, 부피 등을 측정할 수 있습니다.
-
-*(이 프로그램은 의료 진단을 대체하는 용도로 사용될 수 없습니다.)*
-
-**실행파일**(.exe)은 아래의 링크에서 다운받을 수 있습니다. 
-
-*(Consts.py 모듈의 debug_or_release를 True로 설정하고 실행하십시오.)*
-
-[Google Drive - EXE.zip](https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing)
 
 
 ## Description
 
-종양의 입체적 구조를 확인하고 정확한 부피 측정을 통해 병의 진행을 가늠할 수 있도록 개발된 QT Desktop Application입니다.
-DICOM 파일을 읽어들인 후, 종양의 경계를 이루는 point cloud를 구성하고, 3D 모델을 빌드하여 종양의 구조를 파악합니다. 
-내부 체적을 계산하고, OpenGL을 이용해 3D rendering 합니다. (체적 계산에는 shoelace formula로 얻은 단면의 넓이를 구분구적함) 
-기존에 종양 모델을 볼록껍질(Convex hull)로 계산하였으나, 종양 표면의 요철을 반영하지 못하는 문제가 있었습니다. 
-오차를 감소시키기 위해 Poisson reconstruction algorithm을 적용한 결과 품질이 개선됨. 
+**Brain Tumor Simulator**는 **Qt5 / Python** 으로 작성된 의료 영상 소프트웨어입니다.
+
+이 프로그램은 **DICOM** 데이터로부터 종양을 3D 모델로 나타내고, 부피(㎤) 등을 측정할 수 있습니다.
+
+ :warning: *이 프로그램은 의료 진단을 대체하는 용도로는 사용될 수 없습니다.*
 
 
 ## Getting Started
@@ -40,7 +29,9 @@ DICOM 파일을 읽어들인 후, 종양의 경계를 이루는 point cloud를 �
 
 * 방법1. Repository의 **Main.py**를 python 인터프리터(>=3.0.9)로 실행합니다. *(Consts.py 모듈의 debug_or_release 를 True 로 설정합니다.)*
   
-* 방법2: 다음 링크에서 **실행파일**(.exe)을 다운로드 합니다. [Google Drive - EXE.zip](https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing)
+* 방법2: 다음 링크에서 **실행파일**(.exe)을 다운로드 합니다. [BTS_exe.zip](https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing)
+
+>> *(Consts.py 모듈의 debug_or_release를 True로 설정하고 실행하십시오.)*
 
 
 ## Help
@@ -76,17 +67,18 @@ Rotate 3D Tumor: Mouse Drag
 
 조성원 (Sung Won Jo)
 
-Contact: waterbottle54@naver.com
+:email: waterbottle54@naver.com
 
-[YouTube Channel](https://github.com/waterbottle54)
+ [YouTube Channel](https://github.com/waterbottle54)
 
 <img src="https://github.com/waterbottle54/tumor_simulator/blob/main/demo-about.png" alt="My Image" width="70%">
 
+
 ## Version History
 
-* 1.00:
-    * 종양 렌더링 기능 구현
 * 1.01:
+    * 종양 렌더링 기능 구현
+* 1.02:
     * 종양 성장 패턴 analyze 기능 구현
 
 
