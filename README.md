@@ -17,7 +17,6 @@
 > ## Getting Started
 >> ### Dependencies
 >> * Windows: **10, 11**
->> * macOS: **unidentified**
 >> * python >= **3.0.9**
 >> 
 >
