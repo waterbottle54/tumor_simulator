@@ -1,5 +1,9 @@
 # Brain Tumor Simulator
 
+![3D model of a tumor](https://github.com/waterbottle54/tumor_simulator/blob/main/demo-model.png)
+![3D model of a tumor](https://github.com/waterbottle54/tumor_simulator/blob/main/demo-graph.png)
+![3D model of a tumor](https://github.com/waterbottle54/tumor_simulator/blob/main/demo-about.png)
+
 **Brain Tumor Simulator**는 **Qt5 / Python** 으로 작성된 의료 영상 소프트웨어입니다.
 
 이 프로그램은 **DICOM** 데이터로부터 종양을 **3D** 모델로 나타내고, 부피 등을 측정할 수 있습니다.
@@ -14,8 +18,6 @@
 
 
 ## Description
-
-
 
 종양의 입체적 구조를 확인하고 정확한 부피 측정을 통해 병의 진행을 가늠할 수 있도록 개발된 QT Desktop Application입니다.
 DICOM 파일을 읽어들인 후, 종양의 경계를 이루는 point cloud를 구성하고, 3D 모델을 빌드하여 종양의 구조를 파악합니다. 
