@@ -1,21 +1,16 @@
 # Brain Tumor Simulator
 
-Brain Tumor Simulator는 Qt5 / Python 으로 작성된 의료 영상 소프트웨어입니다.
+**Brain Tumor Simulator**는 **Qt5 / Python** 으로 작성된 의료 영상 소프트웨어입니다.
 
-이 프로그램은 종양을 3D 모델로 나타내고 그 부피 등을 측정할 수 있습니다.
+이 프로그램은 **DICOM** 데이터로부터 종양을 **3D** 모델로 나타내고, 부피 등을 측정할 수 있습니다.
 
-(의료 진단을 대체하는 용도로 사용될 수 없습니다.)
+*(이 프로그램은 의료 진단을 대체하는 용도로 사용될 수 없습니다.)*
 
-실행파일(.exe)은 아래의 링크에서 다운받을 수 있습니다. 
+**실행파일**(.exe)은 아래의 링크에서 다운받을 수 있습니다. 
 
-(Consts.py 모듈의 debug_or_release를 True로 설정하고 실행하십시오.)
+*(Consts.py 모듈의 debug_or_release를 True로 설정하고 실행하십시오.)*
 
 [Google Drive - EXE.zip](https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing)
-
-
-
-
-
 
 ## Description
 
@@ -29,13 +24,17 @@ DICOM 파일을 읽어들인 후, 종양의 경계를 이루는 point cloud를 �
 
 ### Dependencies
 
-Windows 10, 11
-(macOS 작동 여부는 미확인)
+Windows: **10, 11**
+
+macOS: **unidentified**
+
+python >= **3.0.9**
 
 ### Installing
 
-* 선택 1. 이 repository에서 소스코드를 받아서 python 인터프리터로 실행합니다. (실행하기 전에, Consts.py 안의 debug_or_release==True인지 확인합니다.)
-* 선택 2: 다음 링크에서 실행파일을 다운로드하고 압축을 해제합니다. https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing
+* 방법1. Repository의 **Main.py**를 **python 인터프리터**로 실행합니다. *(Consts.py 모듈의 debug_or_release 를 True 로 설정합니다.)*
+  
+* 방법2: 다음 링크에서 **실행파일**(.exe)을 다운로드 합니다. [Google Drive - EXE.zip](https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing)
 
 
 ## Help
