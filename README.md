@@ -74,7 +74,7 @@
 >> * Layer 간 결합도를 낮추기 위해 Observer 패턴을 사용하였다.
 >> * Observer 패턴의 구현을 위해 data와 callback을 갖는 LiveData 모듈을 작성하였다.
 > 
->> #### 3D Graphics
+>> ### 3D Graphics
 >> * 렌더링과 기하 연산에 각각 PyOpenGL(3.1.7), Open3d(0.18.0)를 사용하였다.
 >> * 사용자가 각 단면마다 입력한 종양 경계점을 적층하여 3D point cloud 를 구성하였다.
 >> * point cloud 로부터 mesh 를 얻는 계산에는 Poission reconstruction 이 적용되었다.
