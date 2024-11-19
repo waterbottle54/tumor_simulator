@@ -21,27 +21,32 @@
 >> * python >= **3.0.9**
 >
 >> ### Installation
->> * 방법1. Repository의 **Main.py**를 python 인터프리터(>=3.0.9)로 실행합니다. *(Consts.py 모듈의 debug_or_release 를 True 로 설정합니다.)*
->> * 방법2: 다음 링크에서 **실행파일**(.exe)을 다운로드 합니다. [BTS_exe.zip](https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing)
->> *(Consts.py 모듈의 debug_or_release를 True로 설정하고 실행하십시오.)*
-> ### Funtionality
->> #### Viewing
+>> * 방법1. Repository의 **Main.py**를 python 인터프리터(>=3.0.9)로 실행합니다.
+>>   
+>>     *(Consts.py 모듈의 debug_or_release 를 True 로 설정합니다.)*
+>>   
+>> * 방법2: 다음 링크에서 **실행파일**(.exe)을 다운로드 합니다.[BTS_exe.zip](https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing)
+>>   
+>>     *(Consts.py 모듈의 debug_or_release를 True로 설정하고 실행하십시오.)*
+>   
+> ## Funtionality
+>> ### Viewing
 >> * MRI 및 CT 영상이 담긴 DICOM 파일을 열람할 수 있다.
 >> * 특정 시리즈의 특정 단면 이미지를 탐색할 수 있다.
 >> * 단면의 특정 영역을 확대하거나 축소하여 볼 수 있다.
 >
->> #### 3D Modeling
+>> ### 3D Modeling
 >> * 각 단면에서 종양에 해당하는 영역을 표시할 수 있다.
 >> * 적층된 종양 단면으로부터 종양의 입체 모델을 생성할 수 있다.
 >> * 종양 모델을 렌더링하고 회전 등 변환을 가할 수 있다.
 >> * 종양 모델을 파일(*.tmr)로 내보낼 수 있다.
 >
->> #### Analyzing
+>> ### Analyzing
 >> * 종양 모델의 부피를 계산할 수 있다.
 >> * 촬영 시점이 다른 종양 모델을 파일(*.tmr)로부터 불러와 서로 육안 비교할 수 있다.
 >> * 촬영 시점에 따른 종양의 부피 및 성장율을 그래프로 나타낼 수 있다.
 >
->> #### Etc.
+>> ### Etc.
 >> * 프로젝트를 파일(.bts)로 저장하고 불러와서 모델을 수정할 수 있다.
 >> * Tip, About 메뉴로부터 프로그램 사용 방법, 프로그램 정보를 확인할 수 있다.
 >
