@@ -21,16 +21,15 @@
 >> * 방법2: 다음 링크에서 **실행파일**(.exe)을 다운로드 합니다. [BTS_exe.zip](https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing)
 >> *(Consts.py 모듈의 debug_or_release를 True로 설정하고 실행하십시오.)*
 
-
 > ## Help
 > #### Basic Instruction
-
 
 > ## Author
 > * 조성원 (Sung Won Jo)
 > * 📧 waterbottle54@naver.com
 > * 📹 [YouTube Channel](https://github.com/waterbottle54)
 > <img src="https://github.com/waterbottle54/tumor_simulator/blob/main/demo-about.png" alt="My Image" width="70%">
+
 > ## Version History
 > * 1.01:
 >     * 종양 렌더링 기능 구현
