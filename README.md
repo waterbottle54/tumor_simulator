@@ -11,14 +11,15 @@
 >   이 프로그램은 **DICOM** 데이터로부터 종양을 나타내는 3D 모델을 생성하고, 종양의 체적을 계산합니다.<br>
 >
 > * 이 프로그램은 의료 진단을 대체하는 용도로 사용될 수 없습니다.
->   
->   This application can't replace professional medical diagnosis.
+>
+>   This application is not intended to replace professional medical diagnosis.
 
 > ## Getting Started
 >> ### Dependencies
 >> * Windows: **10, 11**
 >> * macOS: **unidentified**
 >> * python >= **3.0.9**
+>> 
 >
 >> ### Installation
 >> * **Choice 1**. Repository의 **Main.py**를 python 인터프리터(>=3.0.9)로 실행합니다.
@@ -45,7 +46,7 @@
 >
 >> ### Analyzing
 >> * 종양 모델의 부피를 계산할 수 있다.
->> * 촬영 시점이 다른 종양 모델을 파일(*.tmr)로부터 불러와 서로 육안 비교할 수 있다.
+>> * 촬영 시점이 다른 종양 모델을 파일(*.tmr)로부터 불러와 서로 비교할 수 있다.
 >> * 촬영 시점에 따른 종양의 부피 및 성장율을 그래프로 나타낼 수 있다.
 >
 >> ### Etc.
@@ -53,10 +54,28 @@
 >> * Tip, About 메뉴로부터 프로그램 사용 방법, 프로그램 정보를 확인할 수 있다.
 
 > ## Project Overview
->> ### Architecture
->> * MVVM(Model-View-ViewModel) 패턴
->>
+>> ### Language
+>> Python (3.9.0 interpreter)
+>
+>> ### IDE
+>> Visual Studio Code (1.95.3) 
+>
+>> ### Framework
+>> Qt5 (5.15.11)
 > 
+>> ### GUI
+>> * 단일한 윈도우(MainWindow.py)가 존재한다.
+>> * 윈도우는 하위 Fragment로 구성되며 대부분의 동작은 Fragment가 처리한다.
+> 
+>> ### Architecture
+>> * MVVM Pattern
+>> * 단일한 뷰모델(ViewModel.py)이 존재한다.
+>> * Layer 간 결합도를 낮추기 위해 Observer 패턴을 사용하였다.
+>> * Observer 패턴의 구현을 위해 data와 callback을 갖는 LiveData 모듈을 작성하였다.
+> 
+>> #### 3D Graphics
+>> 
+>> 
 
 > ## Author
 > * 조성원 (Sung Won Jo)
