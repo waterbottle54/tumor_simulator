@@ -12,13 +12,17 @@
 
 [Google Drive - EXE.zip](https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing)
 
+
 ## Description
+
+
 
 종양의 입체적 구조를 확인하고 정확한 부피 측정을 통해 병의 진행을 가늠할 수 있도록 개발된 QT Desktop Application입니다.
 DICOM 파일을 읽어들인 후, 종양의 경계를 이루는 point cloud를 구성하고, 3D 모델을 빌드하여 종양의 구조를 파악합니다. 
 내부 체적을 계산하고, OpenGL을 이용해 3D rendering 합니다. (체적 계산에는 shoelace formula로 얻은 단면의 넓이를 구분구적함) 
 기존에 종양 모델을 볼록껍질(Convex hull)로 계산하였으나, 종양 표면의 요철을 반영하지 못하는 문제가 있었습니다. 
 오차를 감소시키기 위해 Poisson reconstruction algorithm을 적용한 결과 품질이 개선됨. 
+
 
 ## Getting Started
 
@@ -32,7 +36,7 @@ python >= **3.0.9**
 
 ### Installing
 
-* 방법1. Repository의 **Main.py**를 **python 인터프리터**로 실행합니다. *(Consts.py 모듈의 debug_or_release 를 True 로 설정합니다.)*
+* 방법1. Repository의 **Main.py**를 python 인터프리터(>=3.0.9)로 실행합니다. *(Consts.py 모듈의 debug_or_release 를 True 로 설정합니다.)*
   
 * 방법2: 다음 링크에서 **실행파일**(.exe)을 다운로드 합니다. [Google Drive - EXE.zip](https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing)
 
@@ -65,6 +69,7 @@ Rotate 3D Tumor: Mouse Drag
 
 * Tumor object files are *.tmr files.
 
+
 ## Authors
 
 Contributors names and contact info
@@ -72,12 +77,14 @@ Contributors names and contact info
 조성원 (Sung Won Jo)
 [waterbottle54@naver.com]
 
+
 ## Version History
 
-* 1.00
+* 1.00:
     * 종양 렌더링 기능 구현
-* 1.01
-    * 종양 성장패턴 확인 기능 구현
+* 1.01:
+    * 종양 성장 패턴 analyze 기능 구현
+
 
 ## Acknowledgments
 
