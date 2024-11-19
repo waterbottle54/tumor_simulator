@@ -75,19 +75,23 @@
 >> * Observer 패턴의 구현을 위해 data와 callback을 갖는 LiveData 모듈을 작성하였다.
 > 
 >> #### 3D Graphics
->> 렌더링과 기하 연산에 각각 PyOpenGL(3.1.7), Open3d(0.18.0)를 사용하였다.
->> 사용자가 각 단면마다 입력한 종양 경계점을 적층하여 3D point cloud 를 구성하였다.
->> point cloud 로부터 mesh 를 얻는 계산에는 Poission reconstruction 이 적용되었다.
->> 종양 모델의 부피는 n번째 단면적 Sn, 단면간격 Δh에 대하여 V = Σ(Sn*Δh)로 결정하였다.
->> 단면적은 Shoelace formula 에 경계점을 입력하여 계산하였다.
->> 동일한 종양을 여러 개의 시리즈(Axial, Coronal, Sagittal)에서 마크한 경우, 모든 시리즈로부터 point cloud를 취한다.
->> 위 경우 각 시리즈가 서로의 단면 사이에 있는 공백을 보완해주므로 실제에 가까운 모델을 생성할 수 있다. (부피는 산술평균을 취한다)
+>> * 렌더링과 기하 연산에 각각 PyOpenGL(3.1.7), Open3d(0.18.0)를 사용하였다.
+>> * 사용자가 각 단면마다 입력한 종양 경계점을 적층하여 3D point cloud 를 구성하였다.
+>> * point cloud 로부터 mesh 를 얻는 계산에는 Poission reconstruction 이 적용되었다.
+>> * 종양 모델의 부피는 n번째 단면적 Sn, 단면간격 Δh에 대하여 V = Σ(Sn*Δh)로 결정하였다.
+>> * 단면적은 Shoelace formula 에 경계점을 입력하여 계산하였다.
+>> * 동일한 종양을 여러 개의 시리즈(Axial, Coronal, Sagittal)에서 마크한 경우, 모든 시리즈로부터 point cloud를 취한다.
+>> * 위 경우 각 시리즈가 서로의 단면 사이에 있는 공백을 보완해주므로 실제에 가까운 모델을 생성할 수 있다. (부피는 산술평균을 취한다)
 
 > ## Author
 > * 조성원 (Sung Won Jo)
-> * 📧 waterbottle54@naver.com
-> * 📚 [Portfolio](https://drive.google.com/file/d/1r5OdxgLtvBusoBgj6E4EQvhhNkQtayVf/view?usp=sharing)
-> * 📹 [YouTube Channel](https://github.com/waterbottle54)
+> 
+>     📧 waterbottle54@naver.com
+>   
+>     📚 [Portfolio](https://drive.google.com/file/d/1r5OdxgLtvBusoBgj6E4EQvhhNkQtayVf/view?usp=sharing)
+>   
+>     📹 [YouTube Channel](https://github.com/waterbottle54)
+>   
 > <img src="https://github.com/waterbottle54/tumor_simulator/blob/main/demo-about.png" alt="My Image" width="70%">
 
 > ## Version History
@@ -96,8 +100,9 @@
 > * **1.02** (2023.5): 종양 성장 패턴 analyze 기능 구현
 
 > ## Acknowledgments
-> * Darcy Mason, Adit Panchal, MIT (pydicom library: https://github.com/pydicom/pydicom)
-
+> * Darcy Mason, Adit Panchal, MIT (pydicom: https://github.com/pydicom/pydicom)
+> * Mike C. Fletcher (pyopengl: http://pyopengl.sourceforge.net)
+> * Open3D Team (open3d: https://www.open3d.org)
 
 
 
