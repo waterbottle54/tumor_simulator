@@ -1,4 +1,4 @@
-# Brain Tumor Simulator
+# Brain Tumor Simulator  
 
 Tumor 3D Modeling             |  Tumor Growth Pattern
 :-------------------------:|:-------------------------:
@@ -30,11 +30,11 @@ DICOM 파일을 읽어들인 후, 종양의 경계를 이루는 point cloud를 �
 
 ### Dependencies
 
-Windows: **10, 11**
+* Windows: **10, 11**
 
-macOS: **unidentified**
+* macOS: **unidentified**
 
-python >= **3.0.9**
+* python >= **3.0.9**
 
 ### Installing
 
@@ -72,13 +72,15 @@ Rotate 3D Tumor: Mouse Drag
 * Tumor object files are *.tmr files.
 
 
-## Authors
-
-Contributors names and contact info
+## Author
 
 조성원 (Sung Won Jo)
-[waterbottle54@naver.com]
 
+Contact: waterbottle54@naver.com
+
+[YouTube Channel](https://github.com/waterbottle54)
+
+<img src="https://github.com/waterbottle54/tumor_simulator/blob/main/demo-about.png" alt="My Image" width="70%">
 
 ## Version History
 
