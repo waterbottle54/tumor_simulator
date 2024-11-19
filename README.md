@@ -65,7 +65,9 @@
 > 
 >> ### GUI
 >> * 단일한 윈도우(MainWindow.py)가 존재한다.
->> * 윈도우는 하위 Fragment로 구성되며 대부분의 동작은 Fragment가 처리한다.
+>> * 윈도우는 2개의 하위 Fragment 모듈들로 구성되며, 대부분의 동작은 각 Fragment가 처리한다.
+>> * LayersFragment 는 시리즈 및 단면 탐색, 종양 경계 입력을 수행한다.
+>> * RenderingFragment 는 3D 렌더링, 모델 변환(rotate, scale)을 수행한다.
 > 
 >> ### Architecture
 >> * MVVM Pattern
@@ -74,8 +76,8 @@
 >> * Observer 패턴의 구현을 위해 data와 callback을 갖는 LiveData 모듈을 작성하였다.
 > 
 >> #### 3D Graphics
->> 
->> 
+>> 렌더링과 기하 연산에 각각 PyOpenGL(3.1.7), Open3d(0.18.0)를 사용하였다.
+>>
 
 > ## Author
 > * 조성원 (Sung Won Jo)
