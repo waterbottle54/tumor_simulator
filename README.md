@@ -21,11 +21,13 @@
 >> * python >= **3.0.9**
 >
 >> ### Installation
->> * 방법1. Repository의 **Main.py**를 python 인터프리터(>=3.0.9)로 실행합니다.
+>> * **Choice 1**. Repository의 **Main.py**를 python 인터프리터(>=3.0.9)로 실행합니다.
 >>   
 >>     *(Consts.py 모듈의 debug_or_release 를 True 로 설정합니다.)*
 >>   
->> * 방법2: 다음 링크에서 **실행파일**(.exe)을 다운로드 합니다.[BTS_exe.zip](https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing)
+>> * **Choice 2**: 다음 링크에서 **실행파일**(.exe)을 다운로드 합니다.
+>>   
+>>     [[EXE] Brain Tumor Simulator.zip](https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing)
 >>   
 >>     *(Consts.py 모듈의 debug_or_release를 True로 설정하고 실행하십시오.)*
 >   
