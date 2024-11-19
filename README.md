@@ -1,8 +1,11 @@
 # Brain Tumor Simulator
 
-![3D model of a tumor](https://github.com/waterbottle54/tumor_simulator/blob/main/demo-model.png)
-![3D model of a tumor](https://github.com/waterbottle54/tumor_simulator/blob/main/demo-graph.png)
-![3D model of a tumor](https://github.com/waterbottle54/tumor_simulator/blob/main/demo-about.png)
+<p align="center">
+  <img src="https://github.com/waterbottle54/tumor_simulator/blob/main/demo-model.png" alt="3D model of tumor" width="300">
+  <img src="https://github.com/waterbottle54/tumor_simulator/blob/main/demo-about.png" alt="The growth pattern" width="300">
+</p>
+![3D model of a tumor]() ![3D model of a tumor](https://github.com/waterbottle54/tumor_simulator/blob/main/demo-graph.png)
+![3D model of a tumor]()
 
 **Brain Tumor Simulator**는 **Qt5 / Python** 으로 작성된 의료 영상 소프트웨어입니다.
 
