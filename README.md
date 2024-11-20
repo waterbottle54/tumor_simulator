@@ -28,8 +28,6 @@
 >> * **Choice 2**: 다음 링크에서 **실행파일**(.exe)을 다운로드 합니다.
 >>   
 >>     [[EXE] Brain Tumor Simulator.zip](https://drive.google.com/file/d/1jTMRluP4cpLhTS-4g9lGYfiC0SxKQW2w/view?usp=sharing)
->>   
->>     *(Consts.py 모듈의 debug_or_release를 True로 설정하고 실행하십시오.)*
 
 > ## Funtionality
 >> ### Viewing
