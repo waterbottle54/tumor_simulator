@@ -11,7 +11,10 @@ from ui.dialogs.ChartDialog import *
 from ui.dialogs.AboutDialog import *
 from ui.dialogs.TipsDialog import *
 from Strings import get_image_path
+<<<<<<< HEAD
 from src.ui.dialogs.DetectionDialog import DetectionDialog
+=======
+>>>>>>> 8fcab17a001e8d8da21e572b3094a84a4c8dfe35
 
 class MainWindow(QMainWindow):
     """
@@ -170,6 +173,7 @@ class MainWindow(QMainWindow):
 
         edit_menu.addSeparator()
 
+<<<<<<< HEAD
         action_detect = QAction("Detect Tumor", self)
         action_detect.triggered.connect(self.view_model.on_detection_click)
         action_detect.setShortcut('Ctrl+D')
@@ -177,6 +181,8 @@ class MainWindow(QMainWindow):
 
         edit_menu.addSeparator()
 
+=======
+>>>>>>> 8fcab17a001e8d8da21e572b3094a84a4c8dfe35
         action_delete_layer = QAction("Delete Layer", self)
         action_delete_layer.triggered.connect(self.view_model.on_delete_layer_click)
         action_delete_layer.setShortcut('Ctrl+Del')
@@ -231,11 +237,19 @@ class MainWindow(QMainWindow):
         # Help menus
 
         action_tips = QAction("Tips", self)
+<<<<<<< HEAD
         action_tips.triggered.connect(self.__show_tips_dialog)
         help_menu.addAction(action_tips)
 
         action_about = QAction("About", self)
         action_about.triggered.connect(self.__show_about_dialog)
+=======
+        action_tips.triggered.connect(self.__show_tips)
+        help_menu.addAction(action_tips)
+
+        action_about = QAction("About", self)
+        action_about.triggered.connect(self.__show_about)
+>>>>>>> 8fcab17a001e8d8da21e572b3094a84a4c8dfe35
         help_menu.addAction(action_about)
 
     def __setup_toolbar(self):
@@ -400,9 +414,12 @@ class MainWindow(QMainWindow):
             choice = message_box.exec_()
             if choice == QMessageBox.StandardButton.Yes:
                 self.view_model.on_new_project_confirm()
+<<<<<<< HEAD
         elif isinstance(event, ShowDetectionUI):
             # Layer image 로부터 boundary detection 하는 대화상자를 띄운다.
             self.__show_dection_dialog(event.pixmap_layer)
+=======
+>>>>>>> 8fcab17a001e8d8da21e572b3094a84a4c8dfe35
         elif isinstance(event, ConfirmDeleteSeries):
             # 유저에게 series 삭제 여부를 묻는 대화상자를 띄운다.
             # show a message box to confirm whether or not the user wants to delete the requested series.
@@ -453,19 +470,28 @@ class MainWindow(QMainWindow):
             # terminate the application.
             QApplication.quit()
 
+<<<<<<< HEAD
     def __show_tips_dialog(self):
+=======
+    def __show_tips(self):
+>>>>>>> 8fcab17a001e8d8da21e572b3094a84a4c8dfe35
         """
         사용법 및 주의사항이 담긴 대화상자를 띄운다.
         """
         dialog = TipsDialog()
         dialog.exec_()
 
+<<<<<<< HEAD
     def __show_about_dialog(self):
+=======
+    def __show_about(self):
+>>>>>>> 8fcab17a001e8d8da21e572b3094a84a4c8dfe35
         """
         프로그램 및 저작권 정보가 담긴 대화상자를 띄운다.
         """
         dialog = AboutDialog()
         dialog.exec_()
+<<<<<<< HEAD
 
     def __show_dection_dialog(self, pixmap_layer: PickableQPixmap):
         """
@@ -475,3 +501,5 @@ class MainWindow(QMainWindow):
         dialog.set_layer_pixmap(pixmap_layer)
         dialog.exec_()
         
+=======
+>>>>>>> 8fcab17a001e8d8da21e572b3094a84a4c8dfe35

@@ -226,14 +226,6 @@
         "documentation": {}
     },
     {
-        "label": "QCloseEvent",
-        "importPath": "PyQt5.QtGui",
-        "description": "PyQt5.QtGui",
-        "isExtraImport": true,
-        "detail": "PyQt5.QtGui",
-        "documentation": {}
-    },
-    {
         "label": "QPixmap",
         "importPath": "PyQt5.QtGui",
         "description": "PyQt5.QtGui",
@@ -533,54 +525,6 @@
     },
     {
         "label": "QOpenGLWidget",
-        "importPath": "PyQt5.QtWidgets",
-        "description": "PyQt5.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PyQt5.QtWidgets",
-        "documentation": {}
-    },
-    {
-        "label": "QApplication",
-        "importPath": "PyQt5.QtWidgets",
-        "description": "PyQt5.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PyQt5.QtWidgets",
-        "documentation": {}
-    },
-    {
-        "label": "QMainWindow",
-        "importPath": "PyQt5.QtWidgets",
-        "description": "PyQt5.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PyQt5.QtWidgets",
-        "documentation": {}
-    },
-    {
-        "label": "QToolBar",
-        "importPath": "PyQt5.QtWidgets",
-        "description": "PyQt5.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PyQt5.QtWidgets",
-        "documentation": {}
-    },
-    {
-        "label": "QAction",
-        "importPath": "PyQt5.QtWidgets",
-        "description": "PyQt5.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PyQt5.QtWidgets",
-        "documentation": {}
-    },
-    {
-        "label": "QMessageBox",
-        "importPath": "PyQt5.QtWidgets",
-        "description": "PyQt5.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PyQt5.QtWidgets",
-        "documentation": {}
-    },
-    {
-        "label": "QFileDialog",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
         "isExtraImport": true,
@@ -949,14 +893,6 @@
     },
     {
         "label": "*",
-        "importPath": "ui.ViewModel",
-        "description": "ui.ViewModel",
-        "isExtraImport": true,
-        "detail": "ui.ViewModel",
-        "documentation": {}
-    },
-    {
-        "label": "*",
         "importPath": "ui.layers.LayerWidget",
         "description": "ui.layers.LayerWidget",
         "isExtraImport": true,
@@ -1048,34 +984,10 @@
     },
     {
         "label": "*",
-        "importPath": "ui.layers.LayersFragment",
-        "description": "ui.layers.LayersFragment",
-        "isExtraImport": true,
-        "detail": "ui.layers.LayersFragment",
-        "documentation": {}
-    },
-    {
-        "label": "*",
         "importPath": "ui.rendering.RenderingFragment",
         "description": "ui.rendering.RenderingFragment",
         "isExtraImport": true,
         "detail": "ui.rendering.RenderingFragment",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "ui.rendering.RenderingFragment",
-        "description": "ui.rendering.RenderingFragment",
-        "isExtraImport": true,
-        "detail": "ui.rendering.RenderingFragment",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "ui.dialogs.ChartDialog",
-        "description": "ui.dialogs.ChartDialog",
-        "isExtraImport": true,
-        "detail": "ui.dialogs.ChartDialog",
         "documentation": {}
     },
     {
@@ -1096,34 +1008,10 @@
     },
     {
         "label": "*",
-        "importPath": "ui.dialogs.AboutDialog",
-        "description": "ui.dialogs.AboutDialog",
-        "isExtraImport": true,
-        "detail": "ui.dialogs.AboutDialog",
-        "documentation": {}
-    },
-    {
-        "label": "*",
         "importPath": "ui.dialogs.TipsDialog",
         "description": "ui.dialogs.TipsDialog",
         "isExtraImport": true,
         "detail": "ui.dialogs.TipsDialog",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "ui.dialogs.TipsDialog",
-        "description": "ui.dialogs.TipsDialog",
-        "isExtraImport": true,
-        "detail": "ui.dialogs.TipsDialog",
-        "documentation": {}
-    },
-    {
-        "label": "dir_icons",
-        "importPath": "utils.Strings",
-        "description": "utils.Strings",
-        "isExtraImport": true,
-        "detail": "utils.Strings",
         "documentation": {}
     },
     {
@@ -1262,7 +1150,7 @@
         "kind": 6,
         "importPath": "src.data.Layer",
         "description": "src.data.Layer",
-        "peekOfCode": "class Layer:\n    \"\"\" DICOM을 구성하는 한 시리즈(series)의 한 단면(layer)을 나타낸다\n    Attributes:\n        series(str): 이 layer를 포함하는 시리즈의 이름 (e.g. Gd Inhanced Axial)\n        study_date(date): 촬영일자(UTC+0)\n        birth_date(date): 환자 생년월일\n        pixel_spacing(list[float]): 이미지의 픽셀 간 물리적 거리 (dx=[0], dy=[1])\n        position(list[float]): 환자의 물리적 위치, x(L/R)=[0], y(A/P)=[1], z(H/F)=[2])\n        direction_row(list[float]): 이미지의 픽셀행(row)의 물리적(world) 방향벡터\n        direction_column(list[float]): 이미지의 픽셀열(column)의 물리적 방향벡터",
+        "peekOfCode": "class Layer:\n    \"\"\" DICOM을 구성하는 한 시리즈(series)의 한 단면(layer)을 나타낸다\n    Attributes:\n        series(str): 이 layer를 포함하는 시리즈의 이름 (e.g. Gd Enhanced Axial)\n        study_date(date): 촬영일자(UTC+0)\n        birth_date(date): 환자 생년월일\n        pixel_spacing(list[float]): 이미지의 픽셀 간 물리적 거리 (dx=[0], dy=[1])\n        position(list[float]): 환자의 물리적 위치, x(L/R)=[0], y(A/P)=[1], z(H/F)=[2])\n        direction_row(list[float]): 이미지의 픽셀행(row)의 물리적(world) 방향벡터\n        direction_column(list[float]): 이미지의 픽셀열(column)의 물리적 방향벡터",
         "detail": "src.data.Layer",
         "documentation": {}
     },
@@ -1354,15 +1242,6 @@
         "description": "src.ui.rendering.RenderingWidget",
         "peekOfCode": "class RenderingWidget(QOpenGLWidget):\n    \"\"\"\n    입력받은 mesh를 렌더링하는 위젯.\n    - OpenGL perspective projection을 적용한다.\n    - 드래그를 인식해 mesh의 회전, scale을 조정한다.\n    Attributes:\n        mesh (TriangleMesh):    렌더링할 mesh\n        mouse_latest(NDArray):  드래그 마지막 위치.(x=[0], y=[1])\n        rotation(NDArray):      mesh 적용될 3D rotation matrix (4 x 4)\n        scale(float):           mesh 적용될 scale 배율. 확대(>1), 축소(<1)",
         "detail": "src.ui.rendering.RenderingWidget",
-        "documentation": {}
-    },
-    {
-        "label": "MainWindow",
-        "kind": 6,
-        "importPath": "src.ui.App",
-        "description": "src.ui.App",
-        "peekOfCode": "class MainWindow(QMainWindow):\n    \"\"\"\n    프로그램의 메인 윈도우. \n    - 화면은 LayersFragment(좌), RenderingFragment(우) 로 구성된다.\n    - Fragment는 UI의 일부를 모듈화한 section이다. (reusable)\n      대부분의 기능이 fragment에 구현되어 있다. (상세: 각 class doc)\n    - menubar, toolbar, status bar를 가지며 뷰모델과 연동한다.\n    Attributes:\n        view_model(ViewModel): 뷰모델 (poject-level)\n        layout_top(QHBoxLayout): 최상위 레이아웃",
-        "detail": "src.ui.App",
         "documentation": {}
     },
     {
@@ -1582,39 +1461,12 @@
         "documentation": {}
     },
     {
-        "label": "resource_path",
-        "kind": 2,
-        "importPath": "src.utils.Strings",
-        "description": "src.utils.Strings",
-        "peekOfCode": "def resource_path(relative_path):\n    try:\n        base_path = sys._MEIPASS\n    except Exception:\n        base_path = os.path.abspath(\".\")\n    return os.path.join(base_path, relative_path)\n#=================================== Directories ==========================================\ndir_icons = 'resources/icons'\n#==================================== About Text ==========================================\nabout_text = \"\"\"",
-        "detail": "src.utils.Strings",
-        "documentation": {}
-    },
-    {
-        "label": "dir_icons",
+        "label": "debug_or_release",
         "kind": 5,
-        "importPath": "src.utils.Strings",
-        "description": "src.utils.Strings",
-        "peekOfCode": "dir_icons = 'resources/icons'\n#==================================== About Text ==========================================\nabout_text = \"\"\"\nBrain Tumor Simulator 1.0\nPurpose: Tumor volume measurement, comparison, and analysis\nDisclaimer: This software is not intended to replace professional medical diagnosis.\nCopyright 2023. Sung Won Jo. All rights reserved.\nContact: waterbottle54@naver.com\n\"\"\"\n#==================================== Tip Text ==========================================",
-        "detail": "src.utils.Strings",
-        "documentation": {}
-    },
-    {
-        "label": "about_text",
-        "kind": 5,
-        "importPath": "src.utils.Strings",
-        "description": "src.utils.Strings",
-        "peekOfCode": "about_text = \"\"\"\nBrain Tumor Simulator 1.0\nPurpose: Tumor volume measurement, comparison, and analysis\nDisclaimer: This software is not intended to replace professional medical diagnosis.\nCopyright 2023. Sung Won Jo. All rights reserved.\nContact: waterbottle54@naver.com\n\"\"\"\n#==================================== Tip Text ==========================================\n# Used in TipsDialog.py\ntip_text = \"\"\"",
-        "detail": "src.utils.Strings",
-        "documentation": {}
-    },
-    {
-        "label": "tip_text",
-        "kind": 5,
-        "importPath": "src.utils.Strings",
-        "description": "src.utils.Strings",
-        "peekOfCode": "tip_text = \"\"\"\nZoom Image: \\t Ctrl + Mouse Wheel\nMove Focus: \\t Right Drag\nMark Tumor: \\t Left Drag\nChange Layer: \\t Mouse Wheel\nSkip Layers: \\t Page Up / Page Down\nSkip All Layers: \\t Home / End\nZoom 3D Tumor: \\t Mouse Wheel\nRotate 3D Tumor: \\t Mouse Drag\n* Import folder that directly contains DICOM files.",
-        "detail": "src.utils.Strings",
+        "importPath": "src.Consts",
+        "description": "src.Consts",
+        "peekOfCode": "debug_or_release = True\n=======\ndebug_or_release = False\n>>>>>>> 8fcab17a001e8d8da21e572b3094a84a4c8dfe35",
+        "detail": "src.Consts",
         "documentation": {}
     },
     {
@@ -1622,7 +1474,7 @@
         "kind": 5,
         "importPath": "src.Consts",
         "description": "src.Consts",
-        "peekOfCode": "debug_or_release = True",
+        "peekOfCode": "debug_or_release = False\n>>>>>>> 8fcab17a001e8d8da21e572b3094a84a4c8dfe35",
         "detail": "src.Consts",
         "documentation": {}
     },

@@ -272,12 +272,15 @@ class ViewModel(QObject):
             if len(layers[first_series]) > 0:
                 self.index_layer.set_value(0)
                 
+<<<<<<< HEAD
     def on_detection_click(self):
         layer = self.current_layer.value
         if (layer is not None) and (layer.pixmap is not None):
             self.event.emit(ShowDetectionUI(layer.pixmap))
         else:
             self.event.emit(ShowMessage("No layer image."))
+=======
+>>>>>>> 8fcab17a001e8d8da21e572b3094a84a4c8dfe35
 
     def on_delete_layer_click(self):
         """
