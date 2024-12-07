@@ -58,6 +58,38 @@
         "documentation": {}
     },
     {
+        "label": "QPainter",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QTransform",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QColor",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
         "label": "QPixmap",
         "importPath": "PyQt5.QtGui",
         "description": "PyQt5.QtGui",
@@ -194,6 +226,38 @@
         "documentation": {}
     },
     {
+        "label": "QCloseEvent",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QImage",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PyQt5.QtGui",
+        "description": "PyQt5.QtGui",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtGui",
+        "documentation": {}
+    },
+    {
         "label": "pydicom",
         "kind": 6,
         "isExtraImport": true,
@@ -217,6 +281,14 @@
         "description": "mritopng.models",
         "isExtraImport": true,
         "detail": "mritopng.models",
+        "documentation": {}
+    },
+    {
+        "label": "PickableQPixmap",
+        "importPath": "utils.PickableQPixmap",
+        "description": "utils.PickableQPixmap",
+        "isExtraImport": true,
+        "detail": "utils.PickableQPixmap",
         "documentation": {}
     },
     {
@@ -269,6 +341,78 @@
     },
     {
         "label": "QVBoxLayout",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QGraphicsView",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QGraphicsScene",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSlider",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
         "isExtraImport": true,
@@ -444,6 +588,62 @@
         "documentation": {}
     },
     {
+        "label": "QApplication",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMainWindow",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QToolBar",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QAction",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFileDialog",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "Qt",
         "importPath": "PyQt5.QtCore",
         "description": "PyQt5.QtCore",
@@ -453,6 +653,14 @@
     },
     {
         "label": "QUrl",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
         "importPath": "PyQt5.QtCore",
         "description": "PyQt5.QtCore",
         "isExtraImport": true,
@@ -516,43 +724,123 @@
         "documentation": {}
     },
     {
-        "label": "about_text",
-        "importPath": "utils.Strings",
-        "description": "utils.Strings",
+        "label": "QByteArray",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
         "isExtraImport": true,
-        "detail": "utils.Strings",
+        "detail": "PyQt5.QtCore",
         "documentation": {}
     },
     {
-        "label": "dir_icons",
-        "importPath": "utils.Strings",
-        "description": "utils.Strings",
+        "label": "QDataStream",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
         "isExtraImport": true,
-        "detail": "utils.Strings",
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QIODevice",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "about_text",
+        "importPath": "Strings",
+        "description": "Strings",
+        "isExtraImport": true,
+        "detail": "Strings",
+        "documentation": {}
+    },
+    {
+        "label": "url_youtube",
+        "importPath": "Strings",
+        "description": "Strings",
+        "isExtraImport": true,
+        "detail": "Strings",
+        "documentation": {}
+    },
+    {
+        "label": "get_image_path",
+        "importPath": "Strings",
+        "description": "Strings",
+        "isExtraImport": true,
+        "detail": "Strings",
+        "documentation": {}
+    },
+    {
+        "label": "url_github",
+        "importPath": "Strings",
+        "description": "Strings",
+        "isExtraImport": true,
+        "detail": "Strings",
+        "documentation": {}
+    },
+    {
+        "label": "about_text",
+        "importPath": "Strings",
+        "description": "Strings",
+        "isExtraImport": true,
+        "detail": "Strings",
+        "documentation": {}
+    },
+    {
+        "label": "url_youtube",
+        "importPath": "Strings",
+        "description": "Strings",
+        "isExtraImport": true,
+        "detail": "Strings",
+        "documentation": {}
+    },
+    {
+        "label": "get_image_path",
+        "importPath": "Strings",
+        "description": "Strings",
+        "isExtraImport": true,
+        "detail": "Strings",
+        "documentation": {}
+    },
+    {
+        "label": "url_github",
+        "importPath": "Strings",
+        "description": "Strings",
+        "isExtraImport": true,
+        "detail": "Strings",
         "documentation": {}
     },
     {
         "label": "tip_text",
-        "importPath": "utils.Strings",
-        "description": "utils.Strings",
+        "importPath": "Strings",
+        "description": "Strings",
         "isExtraImport": true,
-        "detail": "utils.Strings",
+        "detail": "Strings",
         "documentation": {}
     },
     {
         "label": "dir_icons",
-        "importPath": "utils.Strings",
-        "description": "utils.Strings",
+        "importPath": "Strings",
+        "description": "Strings",
         "isExtraImport": true,
-        "detail": "utils.Strings",
+        "detail": "Strings",
         "documentation": {}
     },
     {
-        "label": "dir_icons",
-        "importPath": "utils.Strings",
-        "description": "utils.Strings",
+        "label": "get_image_path",
+        "importPath": "Strings",
+        "description": "Strings",
         "isExtraImport": true,
-        "detail": "utils.Strings",
+        "detail": "Strings",
+        "documentation": {}
+    },
+    {
+        "label": "get_image_path",
+        "importPath": "Strings",
+        "description": "Strings",
+        "isExtraImport": true,
+        "detail": "Strings",
         "documentation": {}
     },
     {
@@ -585,6 +873,62 @@
         "description": "data.Tumor",
         "isExtraImport": true,
         "detail": "data.Tumor",
+        "documentation": {}
+    },
+    {
+        "label": "PickableQPixmap",
+        "importPath": "src.utils.PickableQPixmap",
+        "description": "src.utils.PickableQPixmap",
+        "isExtraImport": true,
+        "detail": "src.utils.PickableQPixmap",
+        "documentation": {}
+    },
+    {
+        "label": "Camera",
+        "importPath": "src.data.Camera",
+        "description": "src.data.Camera",
+        "isExtraImport": true,
+        "detail": "src.data.Camera",
+        "documentation": {}
+    },
+    {
+        "label": "map3",
+        "importPath": "src.data.common.LiveData",
+        "description": "src.data.common.LiveData",
+        "isExtraImport": true,
+        "detail": "src.data.common.LiveData",
+        "documentation": {}
+    },
+    {
+        "label": "MutableLiveData",
+        "importPath": "src.data.common.LiveData",
+        "description": "src.data.common.LiveData",
+        "isExtraImport": true,
+        "detail": "src.data.common.LiveData",
+        "documentation": {}
+    },
+    {
+        "label": "detectPixmapContour",
+        "importPath": "src.utils.OpenCVUtil",
+        "description": "src.utils.OpenCVUtil",
+        "isExtraImport": true,
+        "detail": "src.utils.OpenCVUtil",
+        "documentation": {}
+    },
+    {
+        "label": "ContourDetectionResult",
+        "importPath": "src.utils.OpenCVUtil",
+        "description": "src.utils.OpenCVUtil",
+        "isExtraImport": true,
+        "detail": "src.utils.OpenCVUtil",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "ui.ViewModel",
+        "description": "ui.ViewModel",
+        "isExtraImport": true,
+        "detail": "ui.ViewModel",
         "documentation": {}
     },
     {
@@ -652,6 +996,15 @@
         "documentation": {}
     },
     {
+        "label": "keyboard",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "keyboard",
+        "description": "keyboard",
+        "detail": "keyboard",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "ui.rendering.RenderingWidget",
         "description": "ui.rendering.RenderingWidget",
@@ -695,10 +1048,34 @@
     },
     {
         "label": "*",
+        "importPath": "ui.layers.LayersFragment",
+        "description": "ui.layers.LayersFragment",
+        "isExtraImport": true,
+        "detail": "ui.layers.LayersFragment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
         "importPath": "ui.rendering.RenderingFragment",
         "description": "ui.rendering.RenderingFragment",
         "isExtraImport": true,
         "detail": "ui.rendering.RenderingFragment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "ui.rendering.RenderingFragment",
+        "description": "ui.rendering.RenderingFragment",
+        "isExtraImport": true,
+        "detail": "ui.rendering.RenderingFragment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "ui.dialogs.ChartDialog",
+        "description": "ui.dialogs.ChartDialog",
+        "isExtraImport": true,
+        "detail": "ui.dialogs.ChartDialog",
         "documentation": {}
     },
     {
@@ -719,10 +1096,42 @@
     },
     {
         "label": "*",
+        "importPath": "ui.dialogs.AboutDialog",
+        "description": "ui.dialogs.AboutDialog",
+        "isExtraImport": true,
+        "detail": "ui.dialogs.AboutDialog",
+        "documentation": {}
+    },
+    {
+        "label": "*",
         "importPath": "ui.dialogs.TipsDialog",
         "description": "ui.dialogs.TipsDialog",
         "isExtraImport": true,
         "detail": "ui.dialogs.TipsDialog",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "ui.dialogs.TipsDialog",
+        "description": "ui.dialogs.TipsDialog",
+        "isExtraImport": true,
+        "detail": "ui.dialogs.TipsDialog",
+        "documentation": {}
+    },
+    {
+        "label": "dir_icons",
+        "importPath": "utils.Strings",
+        "description": "utils.Strings",
+        "isExtraImport": true,
+        "detail": "utils.Strings",
+        "documentation": {}
+    },
+    {
+        "label": "DetectionDialog",
+        "importPath": "src.ui.dialogs.DetectionDialog",
+        "description": "src.ui.dialogs.DetectionDialog",
+        "isExtraImport": true,
+        "detail": "src.ui.dialogs.DetectionDialog",
         "documentation": {}
     },
     {
@@ -767,6 +1176,31 @@
         "importPath": "open3d",
         "description": "open3d",
         "detail": "open3d",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "MainWindow",
+        "importPath": "ui.MainWindow",
+        "description": "ui.MainWindow",
+        "isExtraImport": true,
+        "detail": "ui.MainWindow",
+        "documentation": {}
+    },
+    {
+        "label": "debug_or_release",
+        "importPath": "Consts",
+        "description": "Consts",
+        "isExtraImport": true,
+        "detail": "Consts",
         "documentation": {}
     },
     {
@@ -869,6 +1303,15 @@
         "documentation": {}
     },
     {
+        "label": "DetectionDialog",
+        "kind": 6,
+        "importPath": "src.ui.dialogs.DetectionDialog",
+        "description": "src.ui.dialogs.DetectionDialog",
+        "peekOfCode": "class DetectionDialog(QDialog):\n    \"\"\"\n    단면 영상에서 종양의 경계를 자동 지정하는 대화상자\n    A dialog that automatically sets the boundary of tumor within a layter image\n    유저가 조정 가능한 detection 파라미터들\n    - binarization 시의 threshhold 값 \n    - countour의 minumum area 값 (noise filtering)\n    \"\"\"\n    # Copyright (c) 2023 Sung Won Jo\n    # For more details: https://github.com/waterbottle54/tumor_simulator",
+        "detail": "src.ui.dialogs.DetectionDialog",
+        "documentation": {}
+    },
+    {
         "label": "TipsDialog",
         "kind": 6,
         "importPath": "src.ui.dialogs.TipsDialog",
@@ -920,6 +1363,15 @@
         "description": "src.ui.App",
         "peekOfCode": "class MainWindow(QMainWindow):\n    \"\"\"\n    프로그램의 메인 윈도우. \n    - 화면은 LayersFragment(좌), RenderingFragment(우) 로 구성된다.\n    - Fragment는 UI의 일부를 모듈화한 section이다. (reusable)\n      대부분의 기능이 fragment에 구현되어 있다. (상세: 각 class doc)\n    - menubar, toolbar, status bar를 가지며 뷰모델과 연동한다.\n    Attributes:\n        view_model(ViewModel): 뷰모델 (poject-level)\n        layout_top(QHBoxLayout): 최상위 레이아웃",
         "detail": "src.ui.App",
+        "documentation": {}
+    },
+    {
+        "label": "MainWindow",
+        "kind": 6,
+        "importPath": "src.ui.MainWindow",
+        "description": "src.ui.MainWindow",
+        "peekOfCode": "class MainWindow(QMainWindow):\n    \"\"\"\n    프로그램의 메인 윈도우. \n    - 화면은 LayersFragment(좌), RenderingFragment(우) 로 구성된다.\n    - Fragment는 UI의 일부를 모듈화한 section이다. (reusable)<br>\n    대부분의 기능이 fragment에 구현되어 있다. (상세: 각 class doc)\n    - menubar, toolbar, status bar를 가지며 뷰모델과 연동한다.\n    Attributes:\n        view_model(ViewModel): 뷰모델 (poject-level)\n        layout_top(QHBoxLayout): 최상위 레이아웃",
+        "detail": "src.ui.MainWindow",
         "documentation": {}
     },
     {
@@ -981,7 +1433,7 @@
         "kind": 6,
         "importPath": "src.ui.ViewModel",
         "description": "src.ui.ViewModel",
-        "peekOfCode": "class ConfirmDeleteSeries(Event):\n    def __init__(self, series, any_point):\n        self.series = series\n        self.any_point = any_point\nclass PromptExportModel(Event): pass\nclass PromptOpenModels(Event): pass\nclass ShowGrowthPattern(Event):\n    def __init__(self, tumor_models):\n        self.tumor_models = tumor_models\nclass ConfirmExit(Event): pass",
+        "peekOfCode": "class ConfirmDeleteSeries(Event):\n    def __init__(self, series, any_point):\n        self.series = series\n        self.any_point = any_point\nclass PromptExportModel(Event): pass\nclass PromptOpenModels(Event): pass\nclass ShowGrowthPattern(Event):\n    def __init__(self, tumor_models):\n        self.tumor_models = tumor_models\nclass ShowDetectionUI(Event):",
         "detail": "src.ui.ViewModel",
         "documentation": {}
     },
@@ -990,7 +1442,7 @@
         "kind": 6,
         "importPath": "src.ui.ViewModel",
         "description": "src.ui.ViewModel",
-        "peekOfCode": "class PromptExportModel(Event): pass\nclass PromptOpenModels(Event): pass\nclass ShowGrowthPattern(Event):\n    def __init__(self, tumor_models):\n        self.tumor_models = tumor_models\nclass ConfirmExit(Event): pass\nclass TerminateApp(Event): pass\nclass ViewModel(QObject):\n    \"\"\"\n    프로젝트의 단일한 뷰모델",
+        "peekOfCode": "class PromptExportModel(Event): pass\nclass PromptOpenModels(Event): pass\nclass ShowGrowthPattern(Event):\n    def __init__(self, tumor_models):\n        self.tumor_models = tumor_models\nclass ShowDetectionUI(Event):\n    def __init__(self, pixmap_layer: PickableQPixmap):\n        self.pixmap_layer = pixmap_layer\nclass ConfirmExit(Event): pass\nclass TerminateApp(Event): pass",
         "detail": "src.ui.ViewModel",
         "documentation": {}
     },
@@ -999,7 +1451,7 @@
         "kind": 6,
         "importPath": "src.ui.ViewModel",
         "description": "src.ui.ViewModel",
-        "peekOfCode": "class PromptOpenModels(Event): pass\nclass ShowGrowthPattern(Event):\n    def __init__(self, tumor_models):\n        self.tumor_models = tumor_models\nclass ConfirmExit(Event): pass\nclass TerminateApp(Event): pass\nclass ViewModel(QObject):\n    \"\"\"\n    프로젝트의 단일한 뷰모델\n    - ViewModel에 연결된 UI 모듈: MainWindow, LayerFragment, RenderingFragment",
+        "peekOfCode": "class PromptOpenModels(Event): pass\nclass ShowGrowthPattern(Event):\n    def __init__(self, tumor_models):\n        self.tumor_models = tumor_models\nclass ShowDetectionUI(Event):\n    def __init__(self, pixmap_layer: PickableQPixmap):\n        self.pixmap_layer = pixmap_layer\nclass ConfirmExit(Event): pass\nclass TerminateApp(Event): pass\nclass ViewModel(QObject):",
         "detail": "src.ui.ViewModel",
         "documentation": {}
     },
@@ -1008,7 +1460,16 @@
         "kind": 6,
         "importPath": "src.ui.ViewModel",
         "description": "src.ui.ViewModel",
-        "peekOfCode": "class ShowGrowthPattern(Event):\n    def __init__(self, tumor_models):\n        self.tumor_models = tumor_models\nclass ConfirmExit(Event): pass\nclass TerminateApp(Event): pass\nclass ViewModel(QObject):\n    \"\"\"\n    프로젝트의 단일한 뷰모델\n    - ViewModel에 연결된 UI 모듈: MainWindow, LayerFragment, RenderingFragment\n    - Observer 패턴을 구현하기 위해 data를 LiveData 형태로 노출한다.",
+        "peekOfCode": "class ShowGrowthPattern(Event):\n    def __init__(self, tumor_models):\n        self.tumor_models = tumor_models\nclass ShowDetectionUI(Event):\n    def __init__(self, pixmap_layer: PickableQPixmap):\n        self.pixmap_layer = pixmap_layer\nclass ConfirmExit(Event): pass\nclass TerminateApp(Event): pass\nclass ViewModel(QObject):\n    \"\"\"",
+        "detail": "src.ui.ViewModel",
+        "documentation": {}
+    },
+    {
+        "label": "ShowDetectionUI",
+        "kind": 6,
+        "importPath": "src.ui.ViewModel",
+        "description": "src.ui.ViewModel",
+        "peekOfCode": "class ShowDetectionUI(Event):\n    def __init__(self, pixmap_layer: PickableQPixmap):\n        self.pixmap_layer = pixmap_layer\nclass ConfirmExit(Event): pass\nclass TerminateApp(Event): pass\nclass ViewModel(QObject):\n    \"\"\"\n    프로젝트의 단일한 뷰모델\n    - ViewModel에 연결된 UI 모듈: MainWindow, LayerFragment, RenderingFragment\n    - Observer 패턴을 구현하기 위해 data를 LiveData 형태로 노출한다.",
         "detail": "src.ui.ViewModel",
         "documentation": {}
     },
@@ -1044,8 +1505,53 @@
         "kind": 2,
         "importPath": "src.utils.O3dUtil",
         "description": "src.utils.O3dUtil",
-        "peekOfCode": "def reconstruct_surface(points):\n    # build mesh object\n    points = np.array(points)\n    point_cloud = o3d.geometry.PointCloud()\n    point_cloud.points = o3d.utility.Vector3dVector(points)\n    point_cloud.estimate_normals()\n    point_cloud.orient_normals_towards_camera_location(point_cloud.get_center())\n    point_cloud.normals = o3d.utility.Vector3dVector( - np.asarray(point_cloud.normals))\n    mesh = o3d.geometry.TriangleMesh.create_from_point_cloud_poisson(point_cloud, depth=7, width=0, scale=1.1, linear_fit=False)[0]\n    mesh = mesh.simplify_quadric_decimation(1000)",
+        "peekOfCode": "def reconstruct_surface(points):\n    # build mesh object\n    points = np.array(points)\n    point_cloud = o3d.geometry.PointCloud()\n    point_cloud.points = o3d.utility.Vector3dVector(points)\n    point_cloud.estimate_normals()\n    # a call to orient_normals_towards_camera_location() invokes runtime crash for unknown reason. what I have tried:\n    # removing point_cloud.get_center(), version adjustment(both python and open3d), data inspection(points)\n    # As a workaround, I chose to adjust lighting in openGL part (in RenderingWidget.py) - 2024.11\n    #point_cloud.orient_normals_towards_camera_location(point_cloud.get_center()) <= INVOKES CRASH",
         "detail": "src.utils.O3dUtil",
+        "documentation": {}
+    },
+    {
+        "label": "ContourDetectionResult",
+        "kind": 6,
+        "importPath": "src.utils.OpenCVUtil",
+        "description": "src.utils.OpenCVUtil",
+        "peekOfCode": "class ContourDetectionResult:\n    \"\"\"\n    이 클래스는 Contour detection 결과를 저장하는 데이터 클래스입니다.\n    This class represents data structure that Contour detection returns\n    \"\"\"\n    def __init__(self, contours, hierarchy, pixmap):\n        self.contours = contours\n        self.hierarchy = hierarchy\n        self.pixmap = pixmap\ndef detectPixmapContour(pixmap_src: QPixmap, threshold: int, min_area: int) -> ContourDetectionResult:",
+        "detail": "src.utils.OpenCVUtil",
+        "documentation": {}
+    },
+    {
+        "label": "detectPixmapContour",
+        "kind": 2,
+        "importPath": "src.utils.OpenCVUtil",
+        "description": "src.utils.OpenCVUtil",
+        "peekOfCode": "def detectPixmapContour(pixmap_src: QPixmap, threshold: int, min_area: int) -> ContourDetectionResult:\n    \"\"\"\n    주어진 pixmap에 contour detection을 적용한 결과(ContourDetectionResult)를 리턴합니다.\n    Args:\n        pixmap_src (QPixmap): contour detection을 적용할 pixmap\n        threshold (int): binarization threshold 값. 0~255\n        min_area (int): 이 값보다 면적이 작은 contour는 noise로 간주하여 제거한다\n    Returns:\n        ContourDetectionResult: detection 결과를 담은 데이터 구조체\n    \"\"\"",
+        "detail": "src.utils.OpenCVUtil",
+        "documentation": {}
+    },
+    {
+        "label": "pixmapToCv2Image",
+        "kind": 2,
+        "importPath": "src.utils.OpenCVUtil",
+        "description": "src.utils.OpenCVUtil",
+        "peekOfCode": "def pixmapToCv2Image(pixmap):\n    # pixmap을 cv2 이미지로 변환한다.\n    qimage = pixmap.toImage()\n    width = qimage.width()\n    height = qimage.height()\n    channels = 4  # 4채널 RGBA 포맷\n    image_data = qimage.bits().asarray(height * width * channels)\n    cv_image = np.frombuffer(image_data, dtype=np.uint8).reshape((height, width, channels))\n    cv_image = cv2.cvtColor(cv_image, cv2.COLOR_RGBA2BGR)\n    return cv_image",
+        "detail": "src.utils.OpenCVUtil",
+        "documentation": {}
+    },
+    {
+        "label": "cv2ImageToPixmap",
+        "kind": 2,
+        "importPath": "src.utils.OpenCVUtil",
+        "description": "src.utils.OpenCVUtil",
+        "peekOfCode": "def cv2ImageToPixmap(cv_image):\n    # cv2 이미지를 pixmap으로 변환한다.\n    rgb_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)\n    height, width, channels = rgb_image.shape\n    qt_image = QImage(rgb_image.data, width, height, channels * width, QImage.Format_RGB888)\n    return QPixmap.fromImage(qt_image)",
+        "detail": "src.utils.OpenCVUtil",
+        "documentation": {}
+    },
+    {
+        "label": "PickableQPixmap",
+        "kind": 6,
+        "importPath": "src.utils.PickableQPixmap",
+        "description": "src.utils.PickableQPixmap",
+        "peekOfCode": "class PickableQPixmap(QPixmap):\n    def __reduce__(self):\n        return type(self), (), self.__getstate__()\n    def __getstate__(self):\n        ba = QByteArray()\n        stream = QDataStream(ba, QIODevice.WriteOnly)\n        stream << self\n        return ba\n    def __setstate__(self, ba):\n        stream = QDataStream(ba, QIODevice.ReadOnly)",
+        "detail": "src.utils.PickableQPixmap",
         "documentation": {}
     },
     {
@@ -1109,6 +1615,96 @@
         "description": "src.utils.Strings",
         "peekOfCode": "tip_text = \"\"\"\nZoom Image: \\t Ctrl + Mouse Wheel\nMove Focus: \\t Right Drag\nMark Tumor: \\t Left Drag\nChange Layer: \\t Mouse Wheel\nSkip Layers: \\t Page Up / Page Down\nSkip All Layers: \\t Home / End\nZoom 3D Tumor: \\t Mouse Wheel\nRotate 3D Tumor: \\t Mouse Drag\n* Import folder that directly contains DICOM files.",
         "detail": "src.utils.Strings",
+        "documentation": {}
+    },
+    {
+        "label": "debug_or_release",
+        "kind": 5,
+        "importPath": "src.Consts",
+        "description": "src.Consts",
+        "peekOfCode": "debug_or_release = True",
+        "detail": "src.Consts",
+        "documentation": {}
+    },
+    {
+        "label": "resource_path",
+        "kind": 2,
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "def resource_path(relative_path):\n    try:\n        base_path = sys._MEIPASS\n    except Exception:\n        base_path = os.path.abspath(\".\")\n    return os.path.join(base_path, relative_path)\ndef get_image_path(filename: str):\n    \"\"\"Get absolute path of the image whose name is given by the arguement.\n    The path may differ depending on whether its debug mode or release mode (See consts.py).\n    Args:",
+        "detail": "src.Strings",
+        "documentation": {}
+    },
+    {
+        "label": "get_image_path",
+        "kind": 2,
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "def get_image_path(filename: str):\n    \"\"\"Get absolute path of the image whose name is given by the arguement.\n    The path may differ depending on whether its debug mode or release mode (See consts.py).\n    Args:\n        filename (str): The name of the image, not including its directory.\n    Returns:\n        str: The absolute path of an image\n    \"\"\"\n    return dir_icons + f'/{filename}' if debug_or_release else resource_path(filename)\n#==================================== About Text ==========================================",
+        "detail": "src.Strings",
+        "documentation": {}
+    },
+    {
+        "label": "version_name",
+        "kind": 5,
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "version_name = '1.02'\n#====================================== URLs ==============================================\nurl_github = 'https://github.com/waterbottle54/tumor_simulator'\nurl_youtube = 'https://www.youtube.com/channel/UChfv3TOHGociOKYMXSzS6hw'\n#===================================== Contact ============================================\nemail = 'waterbottle54@naver.com'\n#=================================== Directories ==========================================\ndir_icons = 'resources/icons'\ndef resource_path(relative_path):\n    try:",
+        "detail": "src.Strings",
+        "documentation": {}
+    },
+    {
+        "label": "url_github",
+        "kind": 5,
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "url_github = 'https://github.com/waterbottle54/tumor_simulator'\nurl_youtube = 'https://www.youtube.com/channel/UChfv3TOHGociOKYMXSzS6hw'\n#===================================== Contact ============================================\nemail = 'waterbottle54@naver.com'\n#=================================== Directories ==========================================\ndir_icons = 'resources/icons'\ndef resource_path(relative_path):\n    try:\n        base_path = sys._MEIPASS\n    except Exception:",
+        "detail": "src.Strings",
+        "documentation": {}
+    },
+    {
+        "label": "url_youtube",
+        "kind": 5,
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "url_youtube = 'https://www.youtube.com/channel/UChfv3TOHGociOKYMXSzS6hw'\n#===================================== Contact ============================================\nemail = 'waterbottle54@naver.com'\n#=================================== Directories ==========================================\ndir_icons = 'resources/icons'\ndef resource_path(relative_path):\n    try:\n        base_path = sys._MEIPASS\n    except Exception:\n        base_path = os.path.abspath(\".\")",
+        "detail": "src.Strings",
+        "documentation": {}
+    },
+    {
+        "label": "email",
+        "kind": 5,
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "email = 'waterbottle54@naver.com'\n#=================================== Directories ==========================================\ndir_icons = 'resources/icons'\ndef resource_path(relative_path):\n    try:\n        base_path = sys._MEIPASS\n    except Exception:\n        base_path = os.path.abspath(\".\")\n    return os.path.join(base_path, relative_path)\ndef get_image_path(filename: str):",
+        "detail": "src.Strings",
+        "documentation": {}
+    },
+    {
+        "label": "dir_icons",
+        "kind": 5,
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "dir_icons = 'resources/icons'\ndef resource_path(relative_path):\n    try:\n        base_path = sys._MEIPASS\n    except Exception:\n        base_path = os.path.abspath(\".\")\n    return os.path.join(base_path, relative_path)\ndef get_image_path(filename: str):\n    \"\"\"Get absolute path of the image whose name is given by the arguement.\n    The path may differ depending on whether its debug mode or release mode (See consts.py).",
+        "detail": "src.Strings",
+        "documentation": {}
+    },
+    {
+        "label": "about_text",
+        "kind": 5,
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "about_text = f\"\"\"\nBrain Tumor Simulator {version_name}\nPurpose: Tumor volume measurement, comparison, and analysis\nDisclaimer: This software is not intended to replace professional medical diagnosis.\nCopyright 2023. Sung Won Jo. All rights reserved.\nContact: {email}\n\"\"\"\n#==================================== Tip Text ==========================================\n# Used in TipsDialog.py\ntip_text = \"\"\"",
+        "detail": "src.Strings",
+        "documentation": {}
+    },
+    {
+        "label": "tip_text",
+        "kind": 5,
+        "importPath": "src.Strings",
+        "description": "src.Strings",
+        "peekOfCode": "tip_text = \"\"\"\nMove Camera: \\t Left Button Drag\nZoom In/Out: \\t Mouse Wheel\nMark Tumor: \\t Right Button Drag\nChange Layer: \\t Ctrl + Mouse Wheel\nSkip Layers: \\t Page Up / Page Down\nSkip All Layers: \\t Home / End\nZoom 3D Tumor: \\t Mouse Wheel\nRotate 3D Tumor: \\t Mouse Drag\n* Import folder that directly contains DICOM files.",
+        "detail": "src.Strings",
         "documentation": {}
     }
 ]

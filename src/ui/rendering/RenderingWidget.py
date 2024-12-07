@@ -56,11 +56,13 @@ class RenderingWidget(QOpenGLWidget):
 
         glClearColor(0.0, 0.0, 0.0, 1.0)
         glEnable(GL_DEPTH_TEST)
+        glEnable(GL_NORMALIZE)
         glEnable(GL_LIGHTING)
         glEnable(GL_LIGHT0)
         glEnable(GL_COLOR_MATERIAL)
+        glLightModeli(GL_LIGHT_MODEL_TWO_SIDE, GL_TRUE)
         glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE)
-        self.setup_lighting()
+        #self.setup_lighting()
 
     def resizeGL(self, width, height):
         """
@@ -89,7 +91,7 @@ class RenderingWidget(QOpenGLWidget):
         """
         mesh model의 음영, 질감 표현을 위해 조명, material을 설정한다.
         """
-        light_position = [0.0, 50.0, 150.0, 0.0]
+        light_position = [0.0, 50.0, 100.0, 1.0]
         glLightfv(GL_LIGHT0, GL_POSITION, light_position)
         glMaterialf(GL_FRONT_AND_BACK, GL_SHININESS, 100.0)
 
@@ -101,9 +103,11 @@ class RenderingWidget(QOpenGLWidget):
 
         glMatrixMode(GL_MODELVIEW)
         glPushMatrix()
-
+        
         mesh = self.mesh
+      
         if mesh is not None:
+           
             # mesh model을 원점으로 옮기고 scale 및 rotation을 적용한다.
             center = mesh.get_center()
             glMultMatrixf(self.rotation)
@@ -119,8 +123,8 @@ class RenderingWidget(QOpenGLWidget):
                 triangle = mesh.triangles[i]
                 for j in range(3):
                     vertex_idx = triangle[j]
-                    normal = normals[vertex_idx]
                     vertex = vertices[vertex_idx]
+                    normal = normals[vertex_idx]
                     glNormal3f(*normal)
                     glVertex3f(*vertex)
             glEnd()
@@ -203,7 +207,7 @@ class RenderingWidget(QOpenGLWidget):
         glPushMatrix()
         glLoadMatrixf(applied)
         glMultMatrixf(original)
-        new = glGetFloatv(GL_MODELVIEW_MATRIX)
+        new = glGetFloatv(GL_MODELVIEW_MATRIX) # [[x,y,z,w], [x,y,z,w], ...]
         glPopMatrix()
         return new
 

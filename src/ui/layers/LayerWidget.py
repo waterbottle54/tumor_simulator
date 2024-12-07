@@ -3,6 +3,7 @@ from PyQt5.QtGui import QPixmap, QPen, QColor, QMouseEvent, QWheelEvent, QKeyEve
 from PyQt5.QtCore import QPoint, Qt, QPointF
 from data.Camera import *
 from data.Layer import *
+import keyboard
 
 class LayerWidget(QGraphicsView):
     """
@@ -50,6 +51,7 @@ class LayerWidget(QGraphicsView):
         self.setScene(self.scene)
         self.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
         self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        self.setMouseTracking(True)
 
         self.pen = QPen(QColor(0, 255, 0, 128))
         self.pen.setWidth(10)
@@ -63,15 +65,39 @@ class LayerWidget(QGraphicsView):
         Args:
             layer (Layer): 위젯에 그려질 레이어(Layer) 객체
         """
-        self.layer = None
         self.pixmap = None
         if layer is not None:
             pixmap = layer.pixmap
             if self.layer is None or self.layer.series != layer.series:
                 # 카메라의 zoom 배율을 layer의 이미지 크기에 맞춘다
                 self.camera.fit_to(pixmap.width(), pixmap.height(), float(self.width()) / self.height())
-            self.layer = layer
+        self.layer = layer
         self.drawShapes()
+
+    
+    def drawShapes(self):
+        """
+        설정된 layer의 영상 이미지와 종양 경계를 scene 위에 그린다.
+        """
+        self.scene.clear()
+
+        # layer가 그려진 pixmap을 생성하고 scene에 연결한다
+        viewport_pixmap = self.create_viewport_pixmap()
+        if viewport_pixmap is not None:
+            self.scene.addPixmap(viewport_pixmap)
+    
+        # 종양의 경계가 존재하면, 경계를 pixmap에 그린다 (path)
+        if self.layer is not None and len(self.layer.path) > 1:
+            path = QPainterPath()
+            for i, pos_world in enumerate(self.layer.path):
+                pos_image = self.layer.world_to_image(pos_world)
+                pos_viewport = self.image_to_viewport(pos_image)
+                if i == 0:
+                    path.moveTo(QPointF(*pos_viewport))
+                else:
+                    path.lineTo(QPointF(*pos_viewport))
+            self.pen.setWidth(5 if self.camera.w() > self.width()/2 else 10)
+            self.scene.addPath(path, self.pen)
 
     def mousePressEvent(self, event: QMouseEvent) -> None:
         """
@@ -82,7 +108,7 @@ class LayerWidget(QGraphicsView):
         """
         if event.button() == Qt.MouseButton.RightButton:
             self.right_mouse = event.pos()
-        elif event.button() == Qt.MouseButton.LeftButton and self.layer is not None:
+        elif event.button() == Qt.MouseButton.LeftButton:
             self.left_mouse = event.pos()
         super().mousePressEvent(event)
 
@@ -102,31 +128,32 @@ class LayerWidget(QGraphicsView):
     def mouseMoveEvent(self, event: QMouseEvent) -> None:
         """
         1. 마우스 움직임이 감지되면 마우스 위치에 대응되는 실제 공간 좌표를 계산하고 관련 콜백을 호출한다. (3D 좌표 표시, etc)
-        2. 우측 버튼 드래그가 감지되면 그에 따라 카메라(시점)을 움직인다.
-        3. 좌측 버튼 드래그가 감지되면 관련 콜백을 호출한다. (종양 경계 마킹, etc)
+        2. 좌측 버튼 드래그가 감지되면 그에 따라 카메라(시점)을 움직인다.
+        3. Ctrl + 좌측 버튼 드래그가 감지되면 관련 콜백을 호출한다. (종양 경계 마킹, etc)
 
         Args:
             event (QMouseEvent): 마우스 상태를 담은 이벤트
         """
+
         if self.layer is not None:
+            # call hovering callback
             x, y = event.pos().x(), event.pos().y()
             pos_image = self.viewport_to_image([x, y])
             pos_world = self.layer.image_to_world(pos_image)
             self.on_hover(pos_world)
 
-        if self.right_mouse is not None:
-            delta = event.pos() - self.right_mouse
-            dx, dy = float(delta.x()), float(delta.y())
-            self.camera.move_by(-dx / self.width(), -dy / self.height())
-            self.right_mouse = event.pos()
-            self.drawShapes()
-        elif self.left_mouse is not None:
-            if self.on_drag is not None and self.layer is not None:
-                x, y = event.pos().x(), event.pos().y()
-                pos_image = self.viewport_to_image([x, y])
-                pos_world = self.layer.image_to_world(pos_image)
+            if self.left_mouse is not None:
+                # move camera position
+                delta = event.pos() - self.left_mouse
+                dx, dy = float(delta.x()), float(delta.y())
+                self.camera.move_by(-dx / self.width(), -dy / self.height())
+                self.left_mouse = event.pos()
+                self.drawShapes()
+
+            elif (self.right_mouse is not None) and (self.on_drag is not None):
+                # call drag callback
                 self.on_drag(pos_world)
-            self.left_mouse = event.pos()
+                self.right_mouse = event.pos()
 
         super().mouseMoveEvent(event)
 
@@ -153,31 +180,7 @@ class LayerWidget(QGraphicsView):
         """
         if self.on_key_press is not None:
             self.on_key_press(event)
-         
-    def drawShapes(self):
-        """
-        설정된 layer의 영상 이미지와 종양 경계를 scene 위에 그린다.
-        """
-        self.scene.clear()
-
-        # layer가 그려진 pixmap을 생성하고 scene에 연결한다
-        viewport_pixmap = self.create_viewport_pixmap()
-        if viewport_pixmap is not None:
-            self.scene.addPixmap(viewport_pixmap)
-    
-        # 종양의 경계가 존재하면, 경계를 pixmap에 그린다 (path)
-        if self.layer is not None and len(self.layer.path) > 1:
-            path = QPainterPath()
-            for i, pos_world in enumerate(self.layer.path):
-                pos_image = self.layer.world_to_image(pos_world)
-                pos_viewport = self.image_to_viewport(pos_image)
-                if i == 0:
-                    path.moveTo(QPointF(*pos_viewport))
-                else:
-                    path.lineTo(QPointF(*pos_viewport))
-            self.pen.setWidth(5 if self.camera.w() > self.width()/2 else 10)
-            self.scene.addPath(path, self.pen)
-
+     
     def create_viewport_pixmap(self) -> QPixmap:
         """
         새로운 pixmap 위에 현재 layer의 영상 이미지를 그려서 리턴한다.
@@ -188,7 +191,7 @@ class LayerWidget(QGraphicsView):
         # 검정색 pixmap 을 생성한다
         pixmap = QPixmap(self.width(), self.height())
         pixmap.fill(QColor.fromRgb(0, 0, 0, 255))
-        if self.layer is None:
+        if self.layer is None or self.layer.pixmap is None:
             return pixmap
         # 설정된 layer의 이미지를 그린다
         painter = QPainter(pixmap)

@@ -4,6 +4,7 @@ from PyQt5.QtGui import QPixmap, QImage
 import pydicom
 import mritopng
 from mritopng.models import GrayscaleImage
+from utils.PickableQPixmap import PickableQPixmap
 
 
 class Layer:
@@ -17,7 +18,7 @@ class Layer:
         position(list[float]): 환자의 물리적 위치, x(L/R)=[0], y(A/P)=[1], z(H/F)=[2])
         direction_row(list[float]): 이미지의 픽셀행(row)의 물리적(world) 방향벡터
         direction_column(list[float]): 이미지의 픽셀열(column)의 물리적 방향벡터
-        pixmap(QPixmap): 단면의 픽셀 이미지 (grayscaled)
+        pixmap(PickableQPixmap): 단면의 픽셀 이미지 (grayscaled)
         path(list[list[float]]): 종양의 경계를 이루는 vertex의 리스트. [x0, y0, z0, x1, y1, z1, ...]
 
     Methods:
@@ -42,7 +43,7 @@ class Layer:
         position,
         direction_row,
         direction_col,
-        pixmap,
+        pixmap: PickableQPixmap,
         path,
     ):
         self.series = series
@@ -52,7 +53,7 @@ class Layer:
         self.position = position
         self.direction_row = direction_row
         self.direction_col = direction_col
-        self.pixmap = pixmap
+        self.pixmap: PickableQPixmap = pixmap
         self.path = path
 
     @classmethod
@@ -85,7 +86,10 @@ class Layer:
                 raise ValueError(f"dicom must have '{attr}' attribute")
         series = dicom.SeriesDescription
         study_date = datetime.datetime.strptime(dicom.StudyDate, "%Y%m%d").date()
-        birth_date = datetime.datetime.strptime(dicom.PatientBirthDate, "%Y%m%d").date()
+        if dicom.PatientBirthDate == "":
+            birth_date = datetime.datetime.strptime("19000101", "%Y%m%d").date()
+        else:
+            birth_date = datetime.datetime.strptime(dicom.PatientBirthDate, "%Y%m%d").date()
         pixel_spacing = dicom.PixelSpacing
         position = dicom.ImagePositionPatient
         direction_row = dicom.ImageOrientationPatient[:3]
@@ -99,7 +103,7 @@ class Layer:
             grayscale_image.height,
             QImage.Format.Format_Grayscale8,
         )
-        pixmap = QPixmap.fromImage(image)
+        pixmap = PickableQPixmap(QPixmap.fromImage(image))
         if pixmap is None:
             raise ValueError("pixmap must not be None")
         return Layer(

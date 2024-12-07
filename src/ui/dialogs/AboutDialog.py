@@ -1,8 +1,9 @@
 from PyQt5.QtWidgets import QDialog, QHBoxLayout, QVBoxLayout, QLabel, QPushButton
 from PyQt5.QtCore import Qt, QUrl
 from PyQt5.QtGui import QPixmap, QDesktopServices
-from utils.Strings import about_text
-from utils.Strings import dir_icons
+from Strings import about_text
+from Strings import url_youtube
+from Strings import get_image_path, url_github
 
 class AboutDialog(QDialog):
     """
@@ -24,46 +25,71 @@ class AboutDialog(QDialog):
         self.setWindowTitle("About")
         self.setStyleSheet("background-color: white;")
 
-        layout = QHBoxLayout()
-        layout.setContentsMargins(32, 32, 32, 32)
+        layout_dialog = QHBoxLayout()
+        layout_dialog.setContentsMargins(32, 32, 32, 32)
+        self.setLayout(layout_dialog)
 
-        left_layout = QVBoxLayout()
-        left_layout.setAlignment(Qt.AlignmentFlag.AlignTop)
-        layout.addLayout(left_layout)
+        # add left layout in the dialog layout
+        layout_left = QVBoxLayout()
+        layout_left.setAlignment(Qt.AlignmentFlag.AlignTop)
+        layout_dialog.addLayout(layout_left)
 
-        # About Text
-        label = QLabel(about_text)
-        left_layout.addWidget(label)
+        layout_dialog.addSpacing(64)
 
-        # YouTube icon
-        youtube_layout = QHBoxLayout()
-        left_layout.addLayout(youtube_layout)
+        # add about image in the dialog layout
+        image_about = QLabel()
+        image_about.setPixmap(QPixmap(get_image_path('render.png')))
+        image_about.setContentsMargins(16, 16, 16, 16)
+        layout_dialog.addWidget(image_about)
 
-        youtube_icon = QLabel(self)
-        youtube_pixmap = QPixmap(f"{dir_icons}/youtube.png").scaled(24, 24)
-        youtube_icon.setPixmap(youtube_pixmap)
-        youtube_icon.setFixedSize(24, 24)
-        youtube_layout.addWidget(youtube_icon)
+        # add About text in the left layout
+        label_about = QLabel(about_text)
+        layout_left.addWidget(label_about)
 
-        youtube_url = 'https://www.youtube.com/channel/UChfv3TOHGociOKYMXSzS6hw'
-        youtube_button = QPushButton(youtube_url)
-        youtube_button.setStyleSheet("QPushButton {"
+        # add Youtube label in the left layout
+        layout_youtube = QHBoxLayout()
+        layout_youtube.setAlignment(Qt.AlignmentFlag.AlignLeft)
+        layout_left.addLayout(layout_youtube)
+
+        # add Github label in the left layout
+        layout_github = QHBoxLayout()
+        layout_github.setAlignment(Qt.AlignmentFlag.AlignLeft)
+        layout_left.addLayout(layout_github)
+
+        # set Youtube icon
+        label_youtube_icon = QLabel(self)
+        layout_youtube.addWidget(label_youtube_icon)
+
+        pixmap_youtube = QPixmap(get_image_path('youtube.png')).scaled(24, 24)
+        label_youtube_icon.setPixmap(pixmap_youtube)
+        label_youtube_icon.setFixedSize(24, 24)
+
+        button_youtube_url = QPushButton(url_youtube)
+        button_youtube_url.setStyleSheet("QPushButton {"
                               "    border: none;"
                              "    color: #0000EE;"  # Blue color
                              "    text-decoration: underline;"
                              "    padding: 0px;"
                              "    background-color: transparent;"
                              "}")
-        youtube_button.clicked.connect(lambda: QDesktopServices.openUrl(QUrl(youtube_url)))
-        youtube_layout.addWidget(youtube_button)
+        button_youtube_url.clicked.connect(lambda: QDesktopServices.openUrl(QUrl(url_youtube)))
+        layout_youtube.addWidget(button_youtube_url)
 
-        layout.addSpacing(64)
+         # set Githun icon
+        
+        label_github_icon = QLabel(self)
+        pixmap_github = QPixmap(get_image_path('github.png')).scaled(24, 24)
+        label_github_icon.setPixmap(pixmap_github)
+        label_github_icon.setFixedSize(24, 24)
+        layout_github.addWidget(label_github_icon)
 
-        # app icon
-        image = QLabel()
-        image.setPixmap(QPixmap(f'{dir_icons}/render.png'))
-        image.setContentsMargins(16, 16, 16, 16)
-        layout.addWidget(image)
-
-        # Set the layout for the dialog
-        self.setLayout(layout)
+        button_github_url = QPushButton(url_github)
+        button_github_url.setStyleSheet("QPushButton {"
+                              "    border: none;"
+                             "    color: #0000EE;"  # Blue color
+                             "    text-decoration: underline;"
+                             "    padding: 0px;"
+                             "    background-color: transparent;"
+                             "}")
+        button_github_url.clicked.connect(lambda: QDesktopServices.openUrl(QUrl(url_github)))
+        layout_github.addWidget(button_github_url)
