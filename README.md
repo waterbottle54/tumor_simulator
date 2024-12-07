@@ -4,9 +4,7 @@
 
  Tumor Detection  | Tumor 3D Modeling | Growth Pattern Analysis
 :----------------:|:-----------------:|:-----------------------:
-![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-detection.png) 
-| ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-model.png) 
-| ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-graph.png)
+![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-detection.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-model.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-graph.png)
  
  * **Brain Tumor Simulator**는 **Qt5 / Python** 으로 작성된 **Desktop** 의료 영상 소프트웨어입니다.<br>
 
