@@ -2,9 +2,11 @@
 
  ## Introduction
 
- Tumor 3D Modeling         |  Growth Pattern Analysis
-:-------------------------:|:-------------------------:
-![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-model.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-graph.png)
+ Tumor Detection  | Tumor 3D Modeling | Growth Pattern Analysis
+:----------------:|:-----------------:|:-----------------------:
+![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-detection.png) 
+| ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-model.png) 
+| ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-graph.png)
  
  * **Brain Tumor Simulator**는 **Qt5 / Python** 으로 작성된 **Desktop** 의료 영상 소프트웨어입니다.<br>
 
@@ -35,7 +37,7 @@
 > * 시리즈, 단면의 특정 영역을 확대하거나 축소하여 볼 수 있다.
 
 > ### 3D Modeling
-> * 종양에 해당하는 영역을 contour detection 하거나 마크할 수 있다.
+> * 종양에 해당하는 영역을 감지하거나 수동으로 마킹할 수 있다.
 > * 적층된 종양 단면으로부터 종양의 입체 모델을 생성할 수 있다.
 > * 종양 모델을 렌더링, 회전 등 변환을 가할 수 있다.
 > * 종양 모델을 파일(*.tmr)로 내보낼 수 있다.
