@@ -4,7 +4,7 @@
 
  Tumor 3D Modeling         |  Growth Pattern Analysis
 :-------------------------:|:-------------------------:
-![](https://github.com/waterbottle54/tumor_simulator/blob/main/demo-model.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/demo-graph.png)
+![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-model.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-graph.png)
  
  * **Brain Tumor Simulator**는 **Qt5 / Python** 으로 작성된 **Desktop** 의료 영상 소프트웨어입니다.<br>
 
@@ -90,12 +90,14 @@
    
      📹 [YouTube Channel](https://github.com/waterbottle54)
    
- <img src="https://github.com/waterbottle54/tumor_simulator/blob/main/demo-about.png" alt="My Image" width="70%">
+ <img src="https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-about.png" alt="My Image" width="70%">
 
  ## Version History
  * **1.01** (2023.4): 종양 렌더링 기능 구현
    
  * **1.02** (2023.5): 종양 성장 패턴 analyze 기능 구현
+
+ * **1.03** (2024.12): 종양 경계 auto detection 구현
 
  ## Acknowledgments
  * Darcy Mason, Adit Panchal, MIT (pydicom: https://github.com/pydicom/pydicom)
