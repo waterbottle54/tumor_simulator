@@ -2,14 +2,14 @@
 <p align="right">Copyright © 2023 조성원(Sung Won Jo)</p>
 
  ## Introduction
-
- 종양 3D 모델링(Tumor 3D Modeling) | 성장패턴 분석(Growth Pattern Analysis)
-:-----------------------------:|:------------------------:
-![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-model.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-graph.png)
  
  종양 컨투어 탐지 (Contour Detection) | Binarization, area threshold custumization
 :-----------------------------:|:------------------------:
 ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/auto-detection.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/cv-code.png)
+
+ 종양 3D 모델링(Tumor 3D Modeling) | 성장패턴 분석(Growth Pattern Analysis)
+:-----------------------------:|:------------------------:
+![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-model.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-graph.png)
 
  * **Brain Tumor Simulator**는 **Qt5 / Python** 으로 작성된 **Desktop** 의료 영상 소프트웨어입니다.<br>
 
