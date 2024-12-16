@@ -1,4 +1,4 @@
-# Brain Tumor Simulator  
+# 뇌종양 분석기 (Brain Tumor Simulator)
 
  ## Introduction
 
