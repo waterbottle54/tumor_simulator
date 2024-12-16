@@ -3,7 +3,7 @@
 
  ## Introduction
 
- Tumor Detection & 3D Modeling | Growth Pattern Analysis
+ 종양 감지, 모델링(Tumor Detection & 3D Modeling) | 성장패턴 분석(Growth Pattern Analysis)
 :-----------------------------:|:------------------------:
 ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-model.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-graph.png)
  
