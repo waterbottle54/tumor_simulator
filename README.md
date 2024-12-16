@@ -7,7 +7,7 @@
 :-----------------------------:|:------------------------:
 ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/auto-detection.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/cv-code.png)
 
- 종양 3D 모델링(Tumor 3D Modeling) | 성장패턴 분석(Growth Pattern Analysis)
+ 종양 3D 재구성 (Poission Reconstruction) | 성장패턴 분석(Growth Pattern Analysis)
 :-----------------------------:|:------------------------:
 ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-model.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/demo-graph.png)
 
