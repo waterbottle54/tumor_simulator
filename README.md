@@ -1,5 +1,5 @@
 # 뇌종양 분석기 (Brain Tumor Simulator)
-##### Copyright (c) 2023 Sung Won Jo
+<p align="right">Copyright (c) 2023 Sung Won Jo</p>
 
  ## Introduction
 
