@@ -3,7 +3,7 @@
 
  ## Introduction
  
- 종양 컨투어 탐지 (Contour Detection) | Surface Reconstruction 과정
+ 종양 컨투어 탐지 (Contour Detection) | 표면 재구성 (Reconstruction) 과정
 :-----------------------------:|:------------------------:
 ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/auto-detection.png) | <img width="auto" height="auto" alt="image" src="https://github.com/user-attachments/assets/5c29a68e-be12-449b-9880-f7eb255c74a8" />
 
