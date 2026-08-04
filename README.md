@@ -3,9 +3,9 @@
 
  ## Introduction
  
- 종양 컨투어 탐지 (Contour Detection) | Binarization, area threshold custumization
+ 종양 컨투어 탐지 (Contour Detection) | Surface Reconstruction 과정
 :-----------------------------:|:------------------------:
-![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/auto-detection.png) | ![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/cv-code.png)
+![](https://github.com/waterbottle54/tumor_simulator/blob/main/screenshots/auto-detection.png) | <img width="auto" height="auto" alt="image" src="https://github.com/user-attachments/assets/5c29a68e-be12-449b-9880-f7eb255c74a8" />
 
  종양 3D 재구성 (Poission Reconstruction) | 성장패턴 분석(Growth Pattern Analysis)
 :-----------------------------:|:------------------------:
